@@ -62,7 +62,7 @@
       <h1>Seatles's premiere dog adoption agency</h1>
     </div>
     <div>
-      <button type="button" name="button"><a href="checkout.html">Checkout</a></button>
+      <a class="checkout-page-link" href="checkout.html">Checkout</a>
     </div>
   </header>
 
@@ -80,21 +80,21 @@
 
   <div>
     <form class="info-form" action="checkout.html" method="post">
-      <label for="name">Name</label>
-      <input type="text" name="name">
+      <label id="name">Name</label>
+      <input type="text" name="firstname">
 
-      <label for="email">Email Address</label>
+      <label id="email">Email Address</label>
       <input type="text" name="email">
 
-      <label for="<address></address>">Street Address</label>
+      <label id="<address></address>">Street Address</label>
       <input type="text" name="Street Address">
 
-      <label for="city">City</label>
+      <label id="city">City</label>
       <input type="text" name="City">
 
-      <label for="state">State</label>
+      <label id="state">State</label>
       <select name="state">
-        <option></option>
+        <option>select</option>
         <option value="AL">Alabama</option>
         <option value="AK">Alaska</option>
         <option value="AZ">Arizona</option>
@@ -148,16 +148,16 @@
         <option value="WY">Wyoming</option>
       </select>
 
-      <label for="zip">Zip Code</label>
+      <label id="zip">Zip Code</label>
       <input type="number" name="zip">
 
-      <label for="question">First Time Adopter?</label>
+      <label id="question">First Time Adopter?</label>
       <input type="radio" name="question" value="yes"> Yes
       <input type="radio" name="question" value="no"> No
 
-      <label for="location">Pickup location</label>
+      <label id="location">Pickup location</label>
       <select name="location">
-        <option value=""></option>
+        <option>select</option>
         <option value="Sea">Seattle</option>
         <option value="Tac">Tacoma</option>
         <option value="BLV">Bellevue</option>
@@ -166,7 +166,7 @@
   </div>
 
   <div>
-    <div><label for="checkout-label">Dogs Adopted</label></div>
+    <div><label id="checkout-label">Dogs Adopted</label></div>
     <div class="checkout-item"><a href="#"></a>
       <img src="images/lucas-card.jpg" alt="pic of Lucas">
       <h3>Lucas</h3>
@@ -184,7 +184,7 @@
   </div>
 
   <footer>
-    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 505.766 153.879">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 505.766 153.879">
       <defs>
         <style>
           .cls-1 {
@@ -218,7 +218,7 @@
             letter-spacing: 0em;
           }
         </style>
-        <clipPath id="clip-path" transform="translate(-1 -1.168)">
+        <clipPath transform="translate(-1 -1.168)">
           <rect class="cls-1" x="1" y="1.168" width="502.59" height="135.832" />
         </clipPath>
       </defs>
@@ -241,7 +241,7 @@
       <ul>
         <li><a href=index.html>Home</a></li>
         <li><a href="dogs.html">Dogs</a></li>
-        <li><a href="blogs.html">Blog</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
     <p>@ 2018 Adoptadog, LLC | Seattle, WA</p>
