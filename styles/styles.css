@@ -1,0 +1,21 @@
+* {box-sizing: border-box;}
+
+header {
+  background-image: url(header-image.jpg);
+  height: 30rem;
+}
+h2 {
+  color: #32CD32;
+}
+.price {
+  color: white;
+}
+.navigation {
+  list-style-type: none;
+}
+h5 {
+  font-weight: normal;
+}
+footer {
+  background-color: #4682B4;
+}
