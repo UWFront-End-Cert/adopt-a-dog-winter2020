@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width; initial-scale=1.0;">
+        <style>
+            
+            <link rel="stylesheet"
+                href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap"> 
+            
+            *       { box-sizing: border-box; }
+            body    { margin: 0 auto; max-width: 100%; }    
+            img     { width: 100%; }
+            h1, h2, h3, h4 { font-family: 'Open Sans', sans-serif; }
+            p       { font-family: 'Raleway', sans-serif; }
+            button  { font-family: 'Raleway', sans-serif; }
+        
+        </style>
+    
+    </head>
+    <body>
+        <header style="background-image: url('header-image.jpg')">
+            <section>
+                <!--Logo here-->
+                <img src="adoptadog-logo.svg" alt="Adoptadog">
+                <h1>Seattle's premiere dog adoption agency</h1>
+            </section>
+            <section>
+                <!--Cart here-->
+                <img src="cart-icon.svg" alt="Your Cart">
+                <p>$1234.56</p>
+            </section>
+            <button>
+                Checkout
+            </button>
+        </header>
+        <nav>
+            <ul>
+                <li> <a href="index.html">Home</a> </li>
+                <li> <p>/</p> </li>
+                <li> <a href="dog-list.html">Dogs</a> </li>
+                <li> <p>/</p> </li>
+                <li> <a href="blog.html">Blog</a> </li>
+            </ul>
+        </nav>
+        <main>
+            
+            <h2>Checkout</h2>
+            
+            <form>
+                Name: <br>
+                <input type="text" name="name">
+                Email Address: <br>
+                <input type="email" name="email">
+                Street Address: <br>
+                <input type="text" name="address">
+                City: 
+                <input type="text" name="city">
+                State:
+                <select name="location">
+                        <option value="WA">WA</option>
+                        <option value="not-WA">Not WA</option>
+                </select>
+                First Time Adopter?
+                <input type="radio" name="adopter" value="Yes">
+                <input type="radio" name="adopter" value="No">
+             
+                Pickup Location
+                <select name="pickup">
+                    <option value="Adoptadog">Adoptadog</option>
+                    <option value="Kennel">Kennel</option>
+                </select>
+            </form>
+            
+            
+            <h3>Dogs Adopted</h3>
+            <img src="lucas-card.jpg" alt="Lucas"> 
+                        <h3>Lucas</h3>
+                        <h4>Cost To Adopt:</h4>
+                        <p>$123.45</p>
+            <img src="duffy-card.jpg" alt="Duffy">             
+                        <h3>Duffy</h3>
+                        <h4>Cost To Adopt:</h4>
+                        <p>$123.45</p>
+            <h3>Total Adoption Cost</h3>
+            <p>$1234.56</p>
+            
+            <button>
+                Submit
+            </button>
+            
+        </main>
+        <footer>
+            <section>
+                <!--Logo here-->
+                <img src="adoptadog-logo.svg" alt="Adoptadog">
+            </section>
+            <section>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+            </section>
+            <section>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                        <a href="X">/</a>
+                        <a href="aa-page-2.html">Dogs</a>
+                        <a href="X">/</a>
+                        <a href="X">Blog</a>
+                    </li>
+                </ul>
+            </section>
+            <address>
+                <p>Adoptadog, LLC | Seattle, WA</p>
+            </address>
+        </footer>
+    </body>
+</html>
