@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>Adopt-A-Dog</title>
+  <link href="https://fonts.googleapis.com/css?family=Milonga%7COpen+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <header class="flex-container">
+    <div class="float-left">
+      <img src="images/adoptadog-logo.svg" alt="Adopt A Dog logo">
+      <h1>Seattle's Premiere Dog Adoption Agency</h1>
+    </div>
+    <div class="cart white">
+      <img class="small" src="images/cart-icon.svg" alt="shopping cart icon">  $123.45
+      <form><input type="submit" class="checkout" formaction="checkout.html" value="Checkout"></form>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html" class="done dark">Home</a>
+        <a href="dogs.html" class="dark">  Dogs</a>
+        <a href="blog.html" class="dark">  Blog</a>
+      </li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2>Checkout</h2>
+
+    <form method="POST">
+      <div class="flex-container column">
+        <label>Name:
+          <input type="text" name="Name">
+        </label>
+
+        <label>Email Address:
+          <input type="email" name="emailAddress">
+        </label>
+
+        <label>Address:
+          <input type="text" name="Address">
+        </label>
+      </div>
+
+      <div class="flex-container">
+        <label class="city">City:
+          <input type="text" name="City">
+        </label>
+
+        <label class="state">State:
+          <select name="state">
+            <option value="Alabama">AL</option>
+            <option value="Alaska">AK</option>
+            <option value="Arizona">AZ</option>
+            <option value="Arkansas">AR</option>
+          </select>
+        </label>
+
+        <label class="zip">Zip Code:
+          <input type="text" name="Zip">
+        </label>
+      </div>
+
+      <fieldset>
+        <legend>First Time Adopter?</legend>
+        <label>
+          <input type="radio" name="first" value="yes">Yes
+        </label>
+        <label class="city">
+          <input type="radio" name="first" value="no">No
+        </label>
+      </fieldset>
+
+      <div>
+        <label>Pickup Location:
+          <select name="pickup">
+            <option value="Seattle">Seattle</option>
+            <option value="Olympia">Olympia</option>
+            <option value="Yakima">Yakima</option>
+            <option value="Spokane">Spokane</option>
+          </select>
+        </label>
+      </div>
+
+      <div class="margin-top">
+        <label>Dogs Adopted:
+              </label>
+      </div>
+
+      <div class="margin-top zip">
+        <label class="city">Total Adoption Cost:
+          <input type="text" value="$246.90">
+        </label>
+      </div>
+
+      <div>
+        <input type="button" class="checkout city" value="Submit">
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <img class="logo" src="images/adoptadog-logo.svg" alt="Adopt A Dog logo">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+    <ul>
+      <li>
+        <a href="index.html" class="white done">Home</a>
+        <a href="dogs.html" class="white">  Dogs</a>
+        <a href="blog.html" class="white">  Blog</a>
+      </li>
+    </ul>
+    <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
+  </footer>
+
+</body>
+
+</html>
