@@ -33,6 +33,56 @@
       <div class="main-content-container">
         <h1>Checkout</h1>
         <form class="" method="post">
+          <label for="coName">Name</label>
+          <input id="coName" type="text" name="name" value="">
+
+          <label for="coEmail">Email Address</label>
+          <input id="coEmail" type="email" name="email" value="">
+
+          <label for="coStaddr">Street Address</label>
+          <input id="coStaddr" type="text" name="street address" value="">
+
+          <label for="coCity">City</label>
+          <input id="coCity" type="text" name="city" value="">
+
+          <label for="coState">State</label>
+          <select id="coState" class="" name="checkout-state">
+            <option value="None">None</option>
+          </select>
+
+          <label for="coZipcode">Zip Code</label>
+          <input id="coZipcode" type="text" name="zip code" value="">
+
+          <p>First Time Adopter?</p>
+          <input id="coFirsttimeYes" type="radio" name="checkout-firsttime" value="Yes">
+          <label for="coFirsttimeYes">Yes</label>
+          <input id="coFirsttimeNo" type="radio" name="checkout-firsttime" value="No">
+          <label for="coFirsttimeNo">No</label>
+
+          <label for="coPickup">Pickup Location</label>
+          <select id="coPickup" class="" name="checkout-pickup">
+            <option value="None">None</option>
+          </select>
+
+          <p>Dogs Adopted</p>
+          <div class="dogs-adopted">
+            <img src="images/lucas-checkout.jpg" alt="Lucas, dog">
+            <p>Lucas</p>
+            <div class="cost-to-adopt-container">
+              <p>Cost to Adopt:</p>
+              <p>$123.45</p>
+            </div>
+            <img src="images/duffy-checkout.jpg" alt="Duffy, dog">
+            <p>Duffy</p>
+            <div class="cost-to-adopt-container">
+              <p>Cost to Adopt:</p>
+              <p>$123.45</p>
+            </div>
+            <p>Total Adoption Cost</p>
+            <p>$1234.56</p>
+          </div>
+
+
           <input type="submit" name="Submit" value="Submit">
         </form>
       </div>
@@ -44,9 +94,9 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <nav>
           <ul>
-            <li>Home</li>
-            <li>Dogs</li>
-            <li>Contact</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
         </nav>
         <div class="copyright-content-container">
