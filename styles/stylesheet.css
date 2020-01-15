@@ -39,7 +39,8 @@ nav > ul {
   flex-direction: row;
 }
 header + nav > ul {
-    padding: 1.5rem 10rem ;
+    /* padding: 1.5rem 10rem; */
+    padding: 1% 10%;
 }
 nav ul li {
   margin: 0;
@@ -68,6 +69,28 @@ li:nth-child(-n+2)::after {
 }
 .cart-content-container > img {
   width: 5%
+}
+.main-content-container {
+  /* margin: 1.5rem 10rem; */
+  margin: 2% 10%;
+}
+.intro img {
+  float: left;
+  margin: 0 2rem 0 0;
+  width: 25%;
+}
+.dog-cards {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  clear: both;
+}
+.card {
+  border: solid grey;
+}
+.card img {
+  width: 100%;
 }
 footer {
   background-color: #144C85;
