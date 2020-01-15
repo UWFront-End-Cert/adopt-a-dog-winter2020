@@ -1,0 +1,75 @@
+body{
+  background-color: #EAEAEA;
+}
+.header-container{
+  display: flex;
+flex-direction: column;
+align-content: stretch;
+flex-wrap: wrap;
+}
+.navigation-bar li{
+  display: inline;
+  font-size: 1.2rem;
+}
+.logo-bar {
+  background-color: #093C60;
+}
+.image-bar img{
+  height: 200px;
+  flex:2;
+}
+.logo-bar img{
+  height: 200px;
+  flex:1;
+}
+.main-container{
+display: flex;
+background-color: white;
+}
+.dogs-container{
+  display: flex;
+flex-wrap: wrap;
+justify-content:space-between;
+background-color: white;
+}
+.blog-container{
+  display: flex;
+  flex-direction: row;
+justify-content:space-between;
+background-color: white;
+width:100%;
+}
+.main-container div, .dogs-container div , .blog-container div{
+  padding:10px;
+}
+.box-1
+{
+flex: -1;
+}
+.box-2
+{
+flex:1;
+}
+.box-3
+{
+flex:1;
+}
+.dog-container-box{
+  width:22%;
+}
+.blog-container-box{
+  display: flex;
+ flex-direction: column;
+ flex: 1;
+}
+.blog-image-container-box{
+  flex-grow: -1;
+}
+.dog-card-img{
+  width: 100%;
+}
+.footer-container{
+width: 100%;
+height: 100%;
+background-color: #3D3D3D;
+}
