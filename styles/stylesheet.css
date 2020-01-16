@@ -14,22 +14,23 @@ header {
 .header-content-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  padding-top: 1rem;
-  padding-left: 1rem;
-  padding-bottom: 1.5rem;
+  padding: 4rem 5rem 6rem 5rem;
 }
+.checkout-button-content-container,
 .cart-content-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
+  /* border: dashed red; */
 }
 .cart-content-container img {
   padding-right: .5rem;
+  justify-content: flex-end;
 }
 .checkout-content-container {
-  padding: 3rem;
+  /* margin: 5rem; */
   grid-column-start: 3;
-  text-align:center;
+  /* border: dashed purple; */
 }
 header + nav {
   width: 100%;
@@ -57,7 +58,7 @@ li:nth-child(-n+2)::after {
   content: "/";
 }
 .logo-content-container {
-  margin: 3rem;
+  /* border: dashed red; */
 }
 .logo-content-container > img {
   margin: 0;
