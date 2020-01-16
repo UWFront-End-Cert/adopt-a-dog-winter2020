@@ -33,7 +33,7 @@
     <main>
       <div class="main-content-container">
         <h1>Checkout</h1>
-        <form class="" method="post">
+        <form class="chekcout-container" method="post">
           <label for="coName">Name</label>
           <input id="coName" type="text" name="name" value="">
 
@@ -43,43 +43,53 @@
           <label for="coStaddr">Street Address</label>
           <input id="coStaddr" type="text" name="street address" value="">
 
-          <label for="coCity">City</label>
-          <input id="coCity" type="text" name="city" value="">
+          <div class="form-geography">
+            <label for="coCity">City</label>
+            <input id="coCity" type="text" name="city" value="">
 
-          <label for="coState">State</label>
-          <select id="coState" class="" name="checkout-state">
-            <option value="None">None</option>
-          </select>
+            <label for="coState">State</label>
+            <select id="coState" class="" name="checkout-state">
+              <option value="None">None</option>
+            </select>
 
-          <label for="coZipcode">Zip Code</label>
-          <input id="coZipcode" type="text" name="zip code" value="">
+            <label for="coZipcode">Zip Code</label>
+            <input id="coZipcode" type="text" name="zip code" value="">
+          </div>
 
-          <p>First Time Adopter?</p>
-          <input id="coFirsttimeYes" type="radio" name="checkout-firsttime" value="Yes">
-          <label for="coFirsttimeYes">Yes</label>
-          <input id="coFirsttimeNo" type="radio" name="checkout-firsttime" value="No">
-          <label for="coFirsttimeNo">No</label>
+          <div class="form-first-time">
+            <p>First Time Adopter?</p>
+            <input id="coFirsttimeYes" type="radio" name="checkout-firsttime" value="Yes">
+            <label for="coFirsttimeYes">Yes</label>
+            <input id="coFirsttimeNo" type="radio" name="checkout-firsttime" value="No">
+            <label for="coFirsttimeNo">No</label>
+          </div>
 
           <label for="coPickup">Pickup Location</label>
           <select id="coPickup" class="" name="checkout-pickup">
             <option value="None">None</option>
           </select>
 
-          <p>Dogs Adopted</p>
+          <h2>Dogs Adopted</h2>
           <div class="dogs-adopted">
-            <img src="images/lucas-checkout.jpg" alt="Lucas, dog">
-            <p>Lucas</p>
-            <div class="cost-to-adopt-container">
-              <p>Cost to Adopt:</p>
-              <p>$123.45</p>
-            </div>
-            <img src="images/duffy-checkout.jpg" alt="Duffy, dog">
-            <p>Duffy</p>
-            <div class="cost-to-adopt-container">
-              <p>Cost to Adopt:</p>
-              <p>$123.45</p>
-            </div>
-            <p>Total Adoption Cost</p>
+            <section>
+              <img src="images/lucas-checkout.jpg" alt="Lucas, dog">
+              <p>Lucas</p>
+              <div class="cost-to-adopt-container">
+                <p>Cost to Adopt:</p>
+                <p>$123.45</p>
+              </div>
+            </section>
+            <section>
+              <img src="images/duffy-checkout.jpg" alt="Duffy, dog">
+              <p>Duffy</p>
+              <div class="cost-to-adopt-container">
+                <p>Cost to Adopt:</p>
+                <p>$123.45</p>
+              </div>
+            </section>
+          </div>
+          <div class="total-cost">
+            <h3>Total Adoption Cost</h3>
             <p>$1234.56</p>
           </div>
 

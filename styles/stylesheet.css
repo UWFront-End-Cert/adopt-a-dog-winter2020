@@ -86,7 +86,7 @@ li:nth-child(-n+2)::after {
   margin: 0 2rem 0 0;
   width: 25%;
 }
-main input {
+main input[name="See More Dogs"] {
   display: block;
   margin: 0 auto 1rem auto;
   font-weight: bold;
@@ -188,4 +188,39 @@ footer nav a {
 }
 .blog-preview-container h2 {
   margin:0;
+}
+
+/* checkout form */
+form > input {
+  display: block;
+  margin: 0 0 1rem 0;
+}
+.form-geography, .form-first-time {
+  margin: 1.5rem 0 1rem 0;
+}
+.form-geography input,
+.form-geography select,
+.form-first-time input,
+.form-first-time select {
+  display: inline;
+}
+.form-geography label:nth-child(1n+2){
+  margin-left: 2rem;
+}
+.form-first-time p {
+  margin: 0 0 .5rem 0;
+}
+.dogs-adopted {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.dogs-adopted section img {
+  float: left;
+  margin: 0 1rem 0 0;
+}
+.dogs-adopted section{
+  clear: left;
+}
+.total-cost {
+  clear: left;
 }
