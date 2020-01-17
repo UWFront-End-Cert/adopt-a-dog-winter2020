@@ -1,0 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+button, input, select {
+  font-family: inherit;
+  font-size: 100%;
+}
+header, footer{
+  background-color: grey;
+}
