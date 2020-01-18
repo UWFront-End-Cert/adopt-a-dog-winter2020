@@ -5,6 +5,11 @@
 /* header */
 a {
   text-decoration: none;
+  font-family: 'Open Sans';
+}
+h1, h2, h3 {
+  color: #224971;
+  font-family: 'Gelasio';
 }
 header {
   width: 100%;
@@ -42,8 +47,8 @@ nav > ul {
   flex-direction: row;
 }
 header + nav > ul {
-    /* padding: 1.5rem 10rem; */
-    padding: 1% 10%;
+  /* padding: 1.5rem 10rem; */
+  padding: 1% 10%;
 }
 nav ul li {
   margin: 0;
@@ -51,14 +56,13 @@ nav ul li {
   padding-right: .7rem;
 }
 header + nav a {
-  color: black;
+  color: #224971;
+  font-family: 'Gelasio';
+  font-weight: bold;
 }
 li:nth-child(-n+2)::after {
   padding-left: .7rem;
   content: "/";
-}
-.logo-content-container {
-  /* border: dashed red; */
 }
 .logo-content-container > img {
   margin: 0;
@@ -69,12 +73,17 @@ li:nth-child(-n+2)::after {
   color: #95be66;
   margin: 0;
   display: block;
+  font-family: 'Gelasio';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 .cart-content-container > p {
   color: white;
 }
 .cart-content-container > img {
-  width: 5%
+  width: 7%;
+  min-width: 25px;
 }
 .main-content-container {
   /* margin: 1.5rem 10rem; */
@@ -97,11 +106,11 @@ main p {
 main input[name="See More Dogs"] {
   display: block;
   margin: 0 auto 3rem auto;
-  font-weight: bold;
+  font-weight: 800;
   padding: 1% 3%;
   border-style: none;
   border-radius: 2px;
-  color: #144C85;
+  color: #224971;
 }
 .dog-cards {
   padding-top: 2rem;
@@ -130,6 +139,10 @@ article h2 {
   padding-right: .5rem;
   font-weight: bold;
 }
+.cost-to-adopt-container p {
+  margin: .5rem 0;
+  font-size: .8rem;
+}
 article > p {
   margin: 0;
   font-weight: 300;
@@ -156,22 +169,28 @@ header input {
 
 /* footer */
 footer {
-  background-color: #144C85;
+  background-color: #224971;
   color: white;
   margin: auto;
   overflow: auto;
   display: flex;
   justify-content: center;
 }
+footer p,
+footer a {
+  font-family: 'Open Sans';
+  font-size: .8rem;
+}
 footer nav a {
   color: white;
 }
 .footer-content-container {
-  margin: 3rem;
+  margin: 3rem 30%;
   text-align: center;
+  word-wrap: break-word;
 }
 .footer-content-container > img {
-  width: 20%;
+  width: 40%;
 }
 .footer-content-container nav {
   display: flex;
@@ -194,14 +213,31 @@ footer nav a {
 .blog-preview-container {
   clear: left;
   overflow: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 .blog-preview-container h2 {
   margin:0;
 }
+.blog-preview-container p {
+  font-weight: 300;
+}
+
 
 /* checkout form */
-form > input {
+form input,
+form select {
+  box-sizing: border-box;
+  padding: .5rem 3rem;
+
+}
+form label,
+.form-first-time p {
+  color: #224971;
+  font-family: 'Gelasio';
+  font-weight: 800;
+}
+form > input,
+form > select {
   display: block;
   margin: 0 0 1rem 0;
 }
@@ -217,13 +253,16 @@ form > input {
 .form-geography, .form-first-time {
   margin: 1.5rem 0 1rem 0;
 }
-.form-geography input,
-.form-geography select,
-.form-first-time input,
-.form-first-time select {
-  display: inline;
+.form-geography label {
+  display: inline-block;
 }
-.form-geography label:nth-child(1n+2){
+.form-geography input,
+.form-geography select {
+  display: block;
+}
+.form-geography label:nth-child(1n+2),
+.form-geography input:nth-child(1n+2),
+.form-geography select:nth-child(1n+2){
   margin-left: 2rem;
 }
 .form-first-time p {

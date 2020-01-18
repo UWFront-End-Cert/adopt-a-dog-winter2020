@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Adopt A Dog: Checkout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400%7CGelasio&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/eb51aaebc6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
   </head>
@@ -22,7 +23,6 @@
           <div class="checkout-button-content-container">
             <input type="button" name="Checkout" value="Checkout">
           </div>
-          <!-- <input type="submit" name="Checkout" value="Checkout"> -->
         </div>
         </div>
       </header>
@@ -36,7 +36,7 @@
     <main>
       <div class="main-content-container">
         <h1>Checkout</h1>
-        <form class="chekcout-container" method="post">
+        <form class="checkout-container" method="post">
           <label for="coName">Name</label>
           <input id="coName" type="text" name="name" value="">
 
@@ -47,16 +47,19 @@
           <input id="coStaddr" type="text" name="street address" value="">
 
           <div class="form-geography">
-            <label for="coCity">City</label>
+            <label for="coCity">City
             <input id="coCity" type="text" name="city" value="">
+            </label>
 
-            <label for="coState">State</label>
+            <label for="coState">State
             <select id="coState" class="" name="checkout-state">
               <option value="None">None</option>
             </select>
+            </label>
 
-            <label for="coZipcode">Zip Code</label>
+            <label for="coZipcode">Zip Code
             <input id="coZipcode" type="text" name="zip code" value="">
+            </label>
           </div>
 
           <div class="form-first-time">
@@ -76,7 +79,7 @@
           <div class="dogs-adopted">
             <section>
               <img src="images/lucas-checkout.jpg" alt="Lucas, dog">
-              <p>Lucas</p>
+              <h3>Lucas</h3>
               <div class="cost-to-adopt-container">
                 <p>Cost to Adopt:</p>
                 <p>$123.45</p>
@@ -84,7 +87,7 @@
             </section>
             <section>
               <img src="images/duffy-checkout.jpg" alt="Duffy, dog">
-              <p>Duffy</p>
+              <h3>Duffy</h3>
               <div class="cost-to-adopt-container">
                 <p>Cost to Adopt:</p>
                 <p>$123.45</p>
