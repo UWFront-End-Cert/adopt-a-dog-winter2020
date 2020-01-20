@@ -172,3 +172,8 @@ footer {
 .footer-info a:hover {
   text-decoration: underline;
 }
+.complete-list {
+  font-family: 'Eczar', serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
