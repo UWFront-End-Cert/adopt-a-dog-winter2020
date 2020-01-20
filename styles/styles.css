@@ -150,12 +150,13 @@ section {
 }
 footer {
   background-color: #003366;
-  height: 30%;
+  height: 45%;
   padding: 2rem;
   font-family: 'Assistant', Arial, sans-serif;
 }
 .footer-info {
   color: white;
+  text-align: center;
 }
 .footer-info a {
   text-decoration: none;
