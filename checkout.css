@@ -1,6 +1,8 @@
 body {
   font-family: 'Josefin Slab', serif;
   font-size: 1.2rem;
+  color: darkblue;
+  font-weight: bold;
 }
 
 /* Header */
@@ -14,12 +16,16 @@ header img {
   /* float: left; */
 }
 
-header h1 {
+header p {
   color: green;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .checkout-page-link {
-  color: white
+  color: white;
+  float: right;
 }
 
 .menu-bar {
@@ -34,5 +40,42 @@ li {
 a {
   color: darkblue;
   text-decoration: none;
+  font-weight: bold;
+}
+
+input [type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px;
+  display: inline-block;
+}
+
+.form-container {
+  position: relative;
+  border-radius: 5px;
+  padding: 20px;
+  float: left;
+}
+
+footer {
+  /* background-color: #003366; */
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+footer img {
+  width: 200px;
+  height: 150px;
+}
+
+footer a {
+  color: white;
   font-weight: bold;
 }

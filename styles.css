@@ -14,12 +14,16 @@ header img {
   /* float: left; */
 }
 
-header h1 {
+header p {
   color: green;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .checkout-page-link {
-  color: white
+  color: white;
+  float: right;
 }
 
 .menu-bar {
@@ -58,10 +62,33 @@ article div {
 .homepage-box-wrapper {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
   border: dashed green;
 }
 
+p .homepage-box-wrapper {
+  size: 0.1rem;
+}
+
+h4 {
+  color: darkblue;
+  font-weight: bold;
+}
+
 footer {
-  background-color: #000066;
+  background-color: #003366;
+  color: white;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+footer img {
+  width: 200px;
+  height: 150px;
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
 }
