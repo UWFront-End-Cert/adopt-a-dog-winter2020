@@ -41,30 +41,42 @@ a {
   font-weight: bold;
 }
 
-#homepage {
-  width: 100%;
-  margin-top: 10px;
-  margin-left: 40px;
+.homepage-article {
+  display: flex;
 }
 
-article img {
-  float: left;
-  width: 30%;
-  height: 200px;
-  padding-right: 20px;
+.ha-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-article div {
-  padding: 20px;
-  width: 70%;
+.ha-right {
+  flex: 2;
+  padding: 10px;
+}
+
+.ha-left img {
+  width: 90%;
+  min-width: 200px;
+  margin: 10px 0 0 10px;
 }
 
 .homepage-box-wrapper {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  border: dashed green;
+  margin-top: 30px
+}
+
+.dog-box {
+  flex: 1 0 21%;
+  margin: 15px;
+}
+
+.dog-box img {
+  width: 100%;
+  min-width: 200px;
 }
 
 p .homepage-box-wrapper {
