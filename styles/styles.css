@@ -147,8 +147,3 @@ nav > ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-=======
-header, footer{
-  background-color: grey;
->>>>>>> 2fb6de7f0ba2e0e6f2563ee9c18b3868adbefedf
-}
