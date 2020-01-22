@@ -156,13 +156,11 @@ footer p {
   grid-template-columns: 40% 60%;
   padding: 1.5rem 0 1.5rem 0;
 }
-.home-page >div:first-child h1 {
+.home-page >div:first-child h2 {
   color: #103E67;
   padding-bottom: 0.8rem;
 }
-.home-page >div:first-child p{
-  color: black;
-}
+
 .home-page div:first-child img {
   padding-right: 2.5rem;
 }
