@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+button, input, select {
+  font-family: inherit;
+  font-size: 100%;
+}
+header {
+  background-image: url(../images/header-image.jpg);
+  background-size: cover;
+}
+footer {
+  color: white;
+  background-color: rgb(13, 45, 78);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 0 3rem;
+}
+body {
+  margin: auto;
+  font-size: 16px;
+}
+.logo {
+  padding: 3rem 0rem 0rem 6rem;
+  width: 100%;
+}
+.tagline {
+  font-size: 1.55rem;
+  margin-top: -1rem;
+  padding: 0rem 0rem 10rem 6rem;
+  color: rgb(116, 171, 42);
+}
+.cost {
+  color: white;
+}
+.checkout {
+  padding: .5rem;
+  width: 65%;
+  color: white;
+  border: none;
+  background-color: rgb(116, 171, 42);
+}
+.cart {
+  width: 15%;
+  padding-right: .5rem;
+}
+.cart-cost {
+  display: flex;
+  justify-content: flex-end;
+}
+.cart-cost-button {
+  padding: 3rem 6rem 0rem 0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.top-nav {
+  background-color: rgb(231, 231, 231);
+  /*padding: .5rem 0rem .5rem 12rem;*/
+}
+.top-nav a {
+  text-decoration: none;
+  color: rgb(11, 38, 66);
+}
+li {
+  display: inline;
+  text-decoration: none;
+  font-weight: bold;
+}
+li::after {
+  content: "/";
+  padding: .8rem;
+}
+li:last-of-type:after {
+  content: none;
+}
+ul {
+  padding-inline-start: 0;
+}
+.header-flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-tagline {
+  width: 40%;
+}
+.footer-logo {
+  width: 25%;
+}
+.first-main-content {
+  display: flex;
+  align-items: center;
+  padding: 2rem 12rem 3rem;
+}
+.first-main-image {
+  padding-right: 2.5rem;
+  width: 40%;
+}
+.home-dogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0rem 9.625rem 2rem;
+}
+.dog-card {
+  width: 20%;
+  border: 2px solid rgb(242, 242, 242);
+  margin: 1.25rem 1.25rem;
+}
+.dog-img {
+  width: 100%;
+}
+.more-dogs {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 5rem;
+}
+.adopt {
+  margin: 0 auto;
+  display: block;
+}
+.all-dogs {
+  padding: 2rem 0rem 0rem 12rem;
+}
+
+/*testing different width techniques*/
+
+nav > ul {
+  max-width: 75%;
+}
+.dogs-main {
+  margin: 0 auto;
+  max-width: 75%;
+}
+.dog-card-test {
+  max-width: 20%;
+  min-width: 20%;
+  border: 2px solid rgb(242, 242, 242);
+  margin: 1.25rem 1.25rem;
+}
+.dog-img-test {
+  max-width: 100%;
+}
+.flexbox-test {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
