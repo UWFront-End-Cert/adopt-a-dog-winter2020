@@ -35,8 +35,7 @@ body {
   color: white;
 }
 .checkout {
-  padding: .5rem 1rem;
-  width: 100%;
+  padding: .25rem 2rem;
   color: white;
   border: none;
   background-color: rgb(116, 171, 42);
@@ -76,7 +75,7 @@ li:last-of-type:after {
   content: none;
 }
 ul {
-  padding-inline-start: 0;
+  padding-left: 0;
 }
 .header-flexbox {
   display: flex;
@@ -128,6 +127,16 @@ h2 {
 .adopt {
   margin: 0 auto;
   display: block;
+  font-weight: bold;
+  width: 100%;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  color: white;
+  border: none;
+  background-color: rgb(116, 171, 42);
+}
+.card-padding {
+  padding: 0rem .75rem 1rem .75rem;
 }
 .all-dogs {
   padding: 2rem 0rem 0rem 12rem;
@@ -161,11 +170,15 @@ h2 {
   display: flex;
   flex-direction: row;
 }
-.adopt-img {
-  width: 20%;
+.submit {
+  font-weight: bold;
+  padding: .5rem 3rem;
+  color: white;
+  border: none;
+  background-color: rgb(116, 171, 42);
 }
 
-/*testing different width techniques*/
+/*testing different width techniques on dogs page*/
 
 nav > ul {
   max-width: 75%;
@@ -187,3 +200,4 @@ nav > ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
