@@ -1,0 +1,146 @@
+/*adoptadog stylesheet*/
+* {
+    box-sizing: border-box;
+}
+
+
+header {
+  width: 100%
+  border: none;
+  margin: none;
+  background-color: DarkCyan;
+  padding: 2%;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+}
+
+main {
+  margin-top: 0;
+  margin-right: 10%;
+  margin- bottom: 5%;
+  margin-left: 10%;
+}
+
+h3 {
+  font-size: 20px;
+  font-family: Gill sans, sans-serif;
+  color: chartreuse;
+}
+
+.checkouticon {
+  margin: 2%;
+}
+
+.checkbutton {
+  background-color: chartreuse;
+  color: white;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 70%;
+}
+
+nav {
+  width: 100%;
+  margin: 0 0 1%;
+  padding: .5%;
+  background-color: pink;
+}
+
+li {
+  display: inline;
+  padding: 1%;
+  font-size: 82%;
+}
+
+.topnav {
+  color: DarkCyan;
+  text-decoration: none;
+  fontfamily: Gill sans, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  color: DarkCyan;
+}
+
+h2 {
+  color: DarkCyan;
+  }
+
+.main-blog-para {
+  display: flex;
+  flex-direction: row;
+}
+
+.intro-para {
+  padding: 2%;
+}
+
+p {
+  font-family: sans-serif;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 1%;
+  padding-left: 1%;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+}
+
+.dogbox {
+  width: 15%;
+  height: 30%;
+  border: solid 1px black;
+  margin: 1%;
+  font-size: 70%;
+}
+
+.dogname {
+  color: DarkCyan;
+}
+
+.dogbutton {
+  width: 100%;
+  color: white;
+  background-color: chartreuse;
+}
+
+.moredogs {
+  background-color: pink;
+  color: DarkCyan;
+  font-family: sans-serif;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 70%;
+}
+
+.pinkbutton {
+  margin: 0 20%;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+footer {
+  border: 2px solid grey;
+  background-color: grey;
+  width: 100%;
+  padding: 5%;
+  text-align: center;
+}
