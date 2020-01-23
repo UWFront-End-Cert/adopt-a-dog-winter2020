@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+}
+h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
+}
+p {
+  font-family: 'Raleway', sans-serif;
+}
+button  {
+  font-family: 'Raleway', sans-serif;
+}
+
+.logo {
+  max-width: 400px;
+  display: inline;
+  padding-left: 50px;
+  padding-bottom: 0px;
+  margin: 0 0;
+}
+
+h1 {
+  color: #4CAF50;
+  font-style: italic;
+  padding-left: 50px;
+  overflow: auto;
+  clear: both;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.header-cart {
+  max-width: 50px;
+}
+
+.total {
+  color: white;
+}
+
+nav {
+  background-color: lightgrey;
+ padding: 15px 0 15px 0;
+ margin:  0 0;
+}
+
+ul > li {
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 40px;
+}
+
+.first-nav {
+  padding-left: 0px;
+}
+
+.flex-box {
+  display: flex;
+  max-width: 1200px;
+  flex: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-box > article {
+  border: lightgrey solid 1px;
+}
+
+article < h3, h4, p {
+  margin-left: 10px;
+}
+
+.dog-card {
+  max-width: 200px;
+  margin: 20px 20px;
+}
+
+
+article img {
+  max-width: 200px;
+}
+
+footer {
+  background-color: lightblue;
+}
+
+footer > p {
+  text-align: center;
+}
