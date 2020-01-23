@@ -5,7 +5,6 @@ button, input, select {
   font-family: inherit;
   font-size: 100%;
 }
-<<<<<<< HEAD
 header {
   background-image: url(../images/header-image.jpg);
   background-size: cover;
@@ -36,8 +35,8 @@ body {
   color: white;
 }
 .checkout {
-  padding: .5rem;
-  width: 65%;
+  padding: .5rem 1rem;
+  width: 100%;
   color: white;
   border: none;
   background-color: rgb(116, 171, 42);
@@ -58,7 +57,7 @@ body {
 }
 .top-nav {
   background-color: rgb(231, 231, 231);
-  /*padding: .5rem 0rem .5rem 12rem;*/
+  padding: .5rem 0rem .5rem 12rem;
 }
 .top-nav a {
   text-decoration: none;
@@ -89,6 +88,15 @@ ul {
 .footer-logo {
   width: 25%;
 }
+h2 {
+  padding: 1rem 0rem;
+}
+
+/*main {
+  margin: 0 auto;
+  max-width: 75%;
+}*/
+
 .first-main-content {
   display: flex;
   align-items: center;
@@ -124,6 +132,38 @@ ul {
 .all-dogs {
   padding: 2rem 0rem 0rem 12rem;
 }
+.blog-main {
+  max-width: 75%;
+  margin: 0 auto;
+}
+.blog-post {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5rem;
+}
+.blog-img {
+  padding-right: 2.5rem;
+  max-width: 35%;
+}
+.checkout-main {
+  margin: 0 auto;
+  max-width: 75%;
+}
+.checkout-content {
+  display: flex;
+  flex-direction: column;
+}
+.dogs-adopted {
+  display: flex;
+  flex-direction: row;
+}
+.adopt-cost {
+  display: flex;
+  flex-direction: row;
+}
+.adopt-img {
+  width: 20%;
+}
 
 /*testing different width techniques*/
 
@@ -138,7 +178,7 @@ nav > ul {
   max-width: 20%;
   min-width: 20%;
   border: 2px solid rgb(242, 242, 242);
-  margin: 1.25rem 1.25rem;
+  margin: /*1.25rem 1.25rem;*/ 0rem 1.25rem 2rem 0rem;
 }
 .dog-img-test {
   max-width: 100%;

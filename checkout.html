@@ -20,7 +20,9 @@
             <img class="cart" src="images/cart-icon.svg" alt="cart icon">
             <p class="cost">$1234.56</p>
           </div>
+          <a href="checkout.html">
           <button type="button" name="button" class="checkout">Checkout</button>
+          </a>
         </div>
       </div>
       <nav class="top-nav">
@@ -32,70 +34,88 @@
       </nav>
     </header>
     <main>
-      <h2>Checkout</h2>
-      <form action="" method="POST">
-        <label for="name">
-          Name
-          <input type="text" name="name" id="name">
-        </label>
-        <label for="email">
-          Email Address
-          <input type="email" name="email" id="email">
-        </label>
-        <label for="address">
-          Street Address
-          <input type="text" name="address" id="address">
-        </label>
-        <label for="city">
-          City
-          <input type="text" name="city" id="city">
-        </label>
-        <label for="state">
-          State
-          <select name="state" id="state">
-            <option value="">-</option>
-            <option value="alaska">Alaska</option>
-            <option value="oregon">Oregon</option>
-            <option value="washington">Washington</option>
-          </select>
-        </label>
-        <label for="zipcode">
-          Zip Code
-          <input type="number" name="zipcode" id="zipcode">
-        </label>
-        <label for="yes">
-          First Time Adopter?
-          <input type="radio" name="adopter" value="yes" id="yes">
-          Yes
-        </label>
-        <label for="no">
-          <input type="radio" name="adopter" value="no" id="no">
-          No
-        </label>
-        <label for="pickup">
-          Pickup Location
-          <select name="pickup" id="pickup">
-            <option value="">-</option>
-            <option value="alaska">Alaska</option>
-            <option value="oregon">Oregon</option>
-            <option value="washington">Washington</option>
-          </select>
-        </label>
-      </form>
-      <section>
-        <h3>Dogs Adopted</h3>
-        <img src="images/lucas-checkout.jpg" alt="a black dog looking up at the camera">
-        <h4>Lucas</h4>
-        <p>Cost to Adopt: $123.45</p>
-        <img src="images/duffy-checkout.jpg" alt="a white and brown pitbull">
-        <h4>Duffy</h4>
-        <p>Cost to Adopt: $123.45</p>
-      </section>
-      <section>
-        <h3>Total Adoption Cost</h3>
-        <p>$1234.56</p>
-        <input type="submit" value="Submit" name="submit">
-      </section>
+      <div class="checkout-main">
+        <h2>Checkout</h2>
+        <form action="" method="POST">
+          <div class="checkout-content">
+            <label for="name">
+              Name
+              <input type="text" name="name" id="name">
+            </label>
+            <label for="email">
+              Email Address
+              <input type="email" name="email" id="email">
+            </label>
+            <label for="address">
+              Street Address
+              <input type="text" name="address" id="address">
+            </label>
+            <label for="city">
+              City
+              <input type="text" name="city" id="city">
+            </label>
+            <label for="state">
+              State
+              <select name="state" id="state">
+                <option value="">-</option>
+                <option value="alaska">Alaska</option>
+                <option value="oregon">Oregon</option>
+                <option value="washington">Washington</option>
+              </select>
+            </label>
+            <label for="zipcode">
+              Zip Code
+              <input type="number" name="zipcode" id="zipcode">
+            </label>
+            <label for="yes">
+              First Time Adopter?
+              <input type="radio" name="adopter" value="yes" id="yes">
+              Yes
+            </label>
+            <label for="no">
+              <input type="radio" name="adopter" value="no" id="no">
+              No
+            </label>
+            <label for="pickup">
+              Pickup Location
+              <select name="pickup" id="pickup">
+                <option value="">-</option>
+                <option value="alaska">Alaska</option>
+                <option value="oregon">Oregon</option>
+                <option value="washington">Washington</option>
+              </select>
+            </label>
+          </div>
+        </form>
+        <section>
+          <h3>Dogs Adopted</h3>
+          <div class="dogs-adopted">
+            <div>
+              <div class="adopt-cost">
+                <img class="adopt-img" src="images/lucas-checkout.jpg" alt="a black dog looking up at the camera">
+                <div>
+                  <h4>Lucas</h4>
+                  <p>Cost to Adopt: $123.45</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="adopt-cost">
+                <img class="adopt-img" src="images/duffy-checkout.jpg" alt="a white and brown pitbull">
+                <div>
+                  <h4>Duffy</h4>
+                  <p>Cost to Adopt: $123.45</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h3>Total Adoption Cost</h3>
+          <p>$1234.56</p>
+          <input type="submit" value="Submit" name="submit">
+        </section>
+      </div>
     </main>
     <footer>
       <img class="footer-logo" src="images/adoptadog-logo.svg" alt="Adoptadog logo">
