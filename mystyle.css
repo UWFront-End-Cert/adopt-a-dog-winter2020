@@ -8,6 +8,21 @@ body {
   margin: 0;
 }
 
+.logo{
+   width:30%;
+   height:20%;
+}
+.slogan{
+  position: relative;
+  color: #45a049;
+  top: 200px;
+  left: 80px;
+  text-align: left;
+}
+a{
+  color: blue;
+}
+
 /* Style the header */
 .header {
   max-width:100%;
@@ -18,6 +33,7 @@ body {
   text-align: center;
   background: #04296e;
   color: white;
+  padding-bottom: 30px;
 }
 .footer {
   max-width:100%;
@@ -49,17 +65,22 @@ w3-display-container{position:relative}
 /* Style the top navigation bar */
 .navbar {
   overflow: hidden;
-  background-color: #333;
+  background-color: #f2f2f2;
 }
 
 /* Style the navigation bar links */
 .navbar a {
   float: left;
   display: block;
-  color: white;
+  color: #260785;
   text-align: center;
-  padding: 14px 20px;
+  padding: 14px 10px;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:first-child {
+  margin-left: 300px;
 }
 
 /* Right-aligned link */
@@ -95,9 +116,9 @@ w3-display-container{position:relative}
 
 /* Float four columns side by side */
 .column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
+  /* float: left;
+  width: 30%;
+  padding: 200 10px; */
 }
 
 /* Create two unequal columns that sits next to each other */
@@ -113,6 +134,11 @@ w3-display-container{position:relative}
   flex: 70%;
   background-color: white;
   padding: 20px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 /* Fake image, just for this example */
@@ -173,5 +199,53 @@ text-align:center;
 cursor:pointer;
 white-space:nowrap;
 margin-left: 60%;
+}
+/* .icon{
+  margin-left: 100px;
+
+} */
+
+.flex-container{
+display:flex;
+flex-wrap:nowrap;
+align-items:flex-start;
+align-content:flex-start;
+margin: 20px;
+justify-content: space-around;
+}
+
+.flex-container > div {
+  padding-right: 40px;
+}
+
+.flex-listItem > div a {
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:white;
+  background-color:#45a049;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+  margin-left: 20%;
+  width: 50%;
+}
+
+.flex-listItem{
+display:flex;
+flex-wrap:nowrap;
+align-content: stretch;
+margin: 20px;
+width: 100%;
+
+}
+.flex-listItem > div {
+  padding-right: 40px;
+}
+.main > h2{
+  margin-left: 20px;
 }
 </style>
