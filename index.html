@@ -4,40 +4,28 @@
         <title>Home Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width-device-width; initial-scale=1.0;">
-        <style>
-            
-            <link rel="stylesheet"
-                href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap"> 
-            
-            *       { box-sizing: border-box; }
-            body    { margin: 0 auto; max-width: 100%; }    
-            img     { width: 100%; }
-            h1, h2, h3, h4 { font-family: 'Open Sans', sans-serif; }
-            p       { font-family: 'Raleway', sans-serif; }
-            button  { font-family: 'Raleway', sans-serif; }
-        
-        </style>
-    
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap">
     </head>
     <body>
         <header style="background-image: url('images/header-image.jpg')">
-            <section>
-                <!--Logo here-->
-                <img src="images/adoptadog-logo.svg" alt="Adoptadog">
-                <h1>Seattle's premiere dog adoption agency</h1>
-            </section>
-            <section>
-                <!--Cart here-->
-                <img src="cart-icon.svg" alt="Your Cart">
-                <p>$1234.56</p>
-            </section>
-            <button>
-                Checkout
-            </button>
+                <section>
+                    <img class="logo" src="images/adoptadog-logo.svg" alt="Adoptadog">
+                    <h1>Seattle's premiere dog adoption agency</h1>
+                </section>
+                <section>
+                    <!--Cart here-->
+                    <img class="header-cart" src="images/cart-icon.svg" alt="Your Cart">
+                    <p class="total">$1234.56</p>
+                    <button class="checkout">
+                    Checkout
+                    </button>
+                </section>
         </header>
         <nav>
             <ul>
-                <li> <a href="images/index.html">Home</a> </li>
+                <li class="first-nav"> <a href="images/index.html">Home</a> </li>
                 <li> <p>/</p> </li>
                 <li> <a href="images/dog-list.html">Dogs</a> </li>
                 <li> <p>/</p> </li>
@@ -46,14 +34,14 @@
         </nav>
         <main>
             <section>
-                <img src="images/home-intro.jpg" alt="Happy Dog"> 
+                <img src="images/home-intro.jpg" alt="Happy Dog">
                 <h2> Adopt A Dog </h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             </section>
             <section>
                 <div class="flex-box">
-                    <article>
-                        <img src="images/murphy-card.jpg" alt="Murphy"> 
+                    <article class="dog-card">
+                        <img src="images/murphy-card.jpg" alt="Murphy">
                         <h3>Murphy</h3>
                         <h4>Cost To Adopt:</h4>
                         <p>$123.45</p>
@@ -62,8 +50,8 @@
                             Adopt
                         </button>
                     </article>
-                    <article>
-                        <img src="images/poppy-card.jpg" alt="Poppy"> 
+                    <article class="dog-card">
+                        <img src="images/poppy-card.jpg" alt="Poppy">
                         <h3>Poppy</h3>
                         <h4>Cost To Adopt:</h4>
                         <p>$123.45</p>
@@ -72,8 +60,8 @@
                             Adopt
                         </button>
                     </article>
-                    <article>
-                        <img src="images/jack-card.jpg" alt="Jack"> 
+                    <article class="dog-card">
+                        <img src="images/jack-card.jpg" alt="Jack">
                         <h3>Jack</h3>
                         <h4>Cost To Adopt:</h4>
                         <p>$123.45</p>
@@ -82,8 +70,8 @@
                             Adopt
                         </button>
                     </article>
-                    <article>
-                        <img src="images/duffy-card.jpg" alt="Duffy"> 
+                    <article class="dog-card">
+                        <img src="images/duffy-card.jpg" alt="Duffy">
                         <h3>Duffy</h3>
                         <h4>Cost To Adopt:</h4>
                         <p>$123.45</p>
@@ -92,8 +80,8 @@
                             Adopt
                         </button>
                     </article>
-                    <article>
-                        <img src="images/lucas-card.jpg" alt="Lucas"> 
+                    <article class="dog-card">
+                        <img src="images/lucas-card.jpg" alt="Lucas">
                         <h3>Lucas</h3>
                         <h4>Cost To Adopt:</h4>
                         <p>$123.45</p>
@@ -102,8 +90,8 @@
                             Adopt
                         </button>
                     </article>
-                    <article>
-                        <img src="images/jake-card.jpg" alt="Jake"> 
+                    <article class="dog-card">
+                        <img src="images/jake-card.jpg" alt="Jake">
                         <h3>Jake</h3>
                         <h4>Cost To Adopt:</h4>
                         <p>$123.45</p>
@@ -112,8 +100,8 @@
                             Adopt
                         </button>
                     </article>
-                    <article>
-                        <img src="images/angus-card.jpg" alt="Angus"> 
+                    <article class="dog-card">
+                        <img src="images/angus-card.jpg" alt="Angus">
                         <h3>Angus</h3>
                         <h4>Cost To Adopt:</h4>
                         <p>$123.45</p>
@@ -122,8 +110,8 @@
                             Adopt
                         </button>
                     </article>
-                    <article>
-                        <img src="images/violet-card.jpg" alt="Violet"> 
+                    <article class="dog-card">
+                        <img src="images/violet-card.jpg" alt="Violet">
                         <h3>Violet</h3>
                         <h4>Cost To Adopt:</h4>
                         <p>$123.45</p>
@@ -140,8 +128,7 @@
         </main>
         <footer>
             <section>
-                <!--Logo here-->
-                <img src="images/adoptadog-logo.svg" alt="Adoptadog">
+                <img class="logo" src="images/adoptadog-logo.svg" alt="Adoptadog">
             </section>
             <section>
                 <p>
