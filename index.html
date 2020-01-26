@@ -7,33 +7,37 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
   </head>
   <body>
-    <div class ="header">
-      <img src="images/adoptadog-logo.svg" class="logo" alt="Dog sitting next to AdoptaDog text">
-      <p>Seattle's premiere dog adoption agency</p>
-      <img src="images/cart-icon.svg" class="cart" alt="shopping cart">
-      <a href="checkout.html"><button class=checkout-button>checkout</button></a>
+    <div class="header-container">
+      <div class="header-logo">
+        <img src="images/adoptadog-logo.svg" alt="Dog sitting next to AdoptaDog text">
+        <p>Seattle's premiere dog adoption agency</p>
+      </div
+      <div class="cart-container">
+        <img src="images/cart-icon.svg" class="cart-icon" alt="shopping cart">
+        <a href="checkout.html"><button class="checkout-button">checkout</button></a>
+      </div>
     </div>
-    <nav>
+    <div class="nav">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="dogs.html">Dogs</a></li>
         <li><a href="blog.html">Blog</a></li>
       </ul>
-    </nav>
-    </header>
-    <section>
-      <img src="images/home-intro.jpg" alt="Man hugging his smiling golden retriever">
+    </div>
+    </div>
+    <div class="adopt-section">
+      <img src="images/home-intro.jpg" class="section-image" alt="Man hugging his smiling golden retriever">
       <h1>Adopt a Dog</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
         incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
         anim id est laborum.
-      </p>
-    </section>
-    <main>
-      <div class="container">
+        </p>
+    </div>
+    <div class="main-container">
+      <div class="dog-box">
         <img src="images/murphy-card.jpg" alt="">
         <h2>Murphy</h2>
         <h3>Cost to Adopt: $123.45</h3>
@@ -44,7 +48,7 @@
         </p>
         <button type="button" name="button">Adopt</button>
       </div>
-      <div class="container">
+      <div class="dog-box">
         <img src="images/poppy-card.jpg" alt="">
         <h2>Poppy</h2>
         <h3>Cost to Adopt: $123.45</h3>
@@ -55,7 +59,7 @@
         </p>
         <button type="button" name="button">Adopt</button>
       </div>
-      <div class="container">
+      <div class="dog-box">
         <img src="images/jack-card.jpg" alt="">
         <h2>Jack</h2>
         <h3>Cost to Adopt: $123.45</h3>
@@ -66,7 +70,7 @@
         </p>
         <button type="button" name="button">Adopt</button>
       </div>
-      <div class="container">
+      <div class="dog-box">
         <img src="images/duffy-card.jpg" alt="">
         <h2>Duffy</h2>
         <h3>Cost to Adopt: $123.45</h3>
@@ -77,7 +81,7 @@
         </p>
         <button type="button" name="button">Adopt</button>
       </div>
-      <div class="container">
+      <div class="dog-box">
         <img src="images/lucas-card.jpg" alt="">
         <h2>Lucas</h2>
         <h3>Cost to Adopt: $123.45</h3>
@@ -88,7 +92,7 @@
         </p>
         <button type="button" name="button">Adopt</button>
       </div>
-      <div class="container">
+      <div class="dog-box">
         <img src="images/jake-card.jpg" alt="">
         <h2>Jake</h2>
         <h3>Cost to Adopt: $123.45</h3>
@@ -99,7 +103,7 @@
         </p>
         <button type="button" name="button">Adopt</button>
       </div>
-      <div class="container">
+      <div class="dog-box">
         <img src="images/angus-card.jpg" alt="">
         <h2>Angus</h2>
         <h3>Cost to Adopt: $123.45</h3>
@@ -110,7 +114,7 @@
         </p>
         <button type="button" name="button">Adopt</button>
       </div>
-      <div class="container">
+      <div class="dog-box">
         <img src="images/violet-card.jpg" alt="">
         <h2>Violet</h2>
         <h3>Cost to Adopt: $123.45</h3>
@@ -122,8 +126,8 @@
         <button type="button" name="button">Adopt</button>
       </div>
       <button type="button" name="button">See More Dogs</button>
-    </main>
-    <footer>
+    </div>
+    <div class="footer">
       <img src="images/adoptadog-logo.svg" class="footer-image" alt="Dog sitting next to AdoptaDog text">
       <p>
         dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -138,6 +142,6 @@
         </ul>
       </nav>
       <p>@2018 AdoptaDog LLC | Seattle, WA</p>
-    </footer>
+    </div>
   </body>
 </html>
