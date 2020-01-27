@@ -109,25 +109,35 @@ body {
    position: relative;
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: flex-start;
    flex-wrap: wrap;
    height: auto;
    margin-top: 10%;
-   margin-left: 10%;
-   margin-right: 10%;
+   margin-left: 8%;
+   margin-right: 8%;
    margin-bottom: 10%;
 
  }
 
  .dog-box {
+   background-image: url("images/murphy-card.jpg");
    display: flex;
+   align-items: flex-start;
    width: 250px;
    height: 250px;
    min-width: 200px;
-   margin: 12px 12px;
+   min-height: 200px;
+   margin: 10px 10px;
    border: 1px solid green;
-   padding: 1rem;
 
+ }
+
+ .dog-box img {
+
+ }
+
+ .dog-box h2 {
+   color: white;
  }
 
 
