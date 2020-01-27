@@ -30,6 +30,8 @@ header {
   background-color: #0F0C0C;
   border: solid .1rem;
   width: 85%;
+  min-width: 320px;
+  max-width: 1200px;
   height: 25rem;
 }
 .logo-container {
@@ -71,6 +73,8 @@ h1 {
   background-color: #d3d3d3;
   top: 0;
   width: 85%;
+  min-width: 320px;
+  max-width: 1200px;
 }
 .nav {
   float: left;
@@ -91,6 +95,7 @@ h1 {
 section {
   margin-bottom: 8rem;
   min-width: 320px;
+  max-width: 1200px;
 }
 .intro-image {
   margin-top: 1rem;
