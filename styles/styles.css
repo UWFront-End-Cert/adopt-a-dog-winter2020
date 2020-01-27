@@ -1,5 +1,10 @@
 * {box-sizing: border-box;}
 
+button, input, select, textarea {
+  font-family; inherit;
+  font-size: 100%;
+}
+
 .skip-hidden {
   position: absolute;
   top: -10000px;
@@ -195,4 +200,68 @@ footer {
   font-size: .8rem;
   line-height: 1.3rem;
   margin-right: 14.5rem;
+}
+.checkout-headline {
+  font-family: 'Eczar', serif;
+  font-size: 1.7rem;
+  color: #003366;
+}
+.contact-body {
+  width: 60%;
+}
+label {
+  font-family: 'Eczar', serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #003366;
+}
+input[type=text], select {
+  display: block;
+  width: 70%;
+  padding: .5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+input[type=email] {
+  display: block;
+  width: 70%;
+  padding: .5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+input[type=radio] {
+  padding: 3rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+.yes-no {
+  font-family: 'Assistant', Arial, sans-serif;
+  font-size: 1rem;
+  color: black;
+}
+input[type=submit] {
+  padding: .3rem;
+  margin-top: 1rem;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  background-color: #32CD32;
+  width: 13rem;
+  height: 2rem;
+  border-color: #32CD32;
+}
+.form-paragraph {
+  font-family: 'Eczar', serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #003366;
+  margin-bottom: .1rem;
+}
+.pickup {
+  margin-top: 1rem;
+}
+.city-state-zip {
+  display: flex;
+  flex-direction: row;
 }

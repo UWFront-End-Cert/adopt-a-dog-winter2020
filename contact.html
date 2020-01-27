@@ -24,69 +24,105 @@
     </header>
     <nav>
       <ul class="navigation">
-        <li id="tab1" class="nav"><a href="index.html">Home</a></li>
+        <li class="nav"><a href="index.html">Home</a></li>
         <li class="nav"><a href="dogs.html">Dogs</a></li>
         <li class="nav"><a href="blog.html">Blog</a></li>
         <li class="nav"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <section>
-      <h3>Checkout</h3>
-         <form name="adoptDogs" method="GET">
-             <label>Name
-               <input type="text" name="customerName">
-             </label>
-             <label>Email Address
-               <input type="email" name="customerEmail">
-             </label>
-             <label>Street Address
-               <input type="text" name="customerAddress">
-             </label>
-           <label>City
-             <input type="text" name="customerCity">
-           </label>
-           <label>State
-             <select name="state">
-               <option value="washington">Washington</option>
-               <option value="oregon">Oregon</option>
-               <option value="california">California</option>
-               <option value="texas">Texas</option>
-               <option value="newYork">New York</option>
-             </select>
-           </label>
-           <label>Zip Code
-             <input type="text" name="zipCode">
-           </label>
-           <p>First Time Adopter?</p>
-           <label>Yes
-             <input type="radio" name="firstTime" value="yes">
-           </label>
-           <label>No
-              <input type="radio" name="firstTime" value="no">
-           </label>
-           <label>Pickup Location
-             <select name="cityLocation">
-                <option value="downtownSeattle">Downtown Seattle</option>
-                <option value="capitolHill">Capitol Hill</option>
-                <option value="uDistrict">University District</option>
-                <option value="queenAnne">Queen Anne</option>
-                <option value="fremont">Fremont</option>
-                <option value="shoreline">Shoreline</option>
-                <option value="ballard">Ballard</option>
-                <option value="bellevue">Bellevue</option>
-                <option value="kirkland">Kirkland</option>
-                <option value="redmond">Redmond</option>
-                <option value="mercerIsland">Mercer Island</option>
-              </select>
-           </label>
-           <p>Dogs Adopted</p>
-             <img src="images/lucas-card.jpg" alt="black rottweiler eager to find a new owner" height="55">
-             <p><strong>Cost to Adopt:</strong> $123.45</p>
-             <img src="images/duffy-card.jpg" alt="white-faced beagle ready looking solemnly at the camera" height="55">
-             <p><strong>Cost to Adopt:</strong> $123.45</p>
-           <p>Total Adoption Cost</p>
-           <p>$1234.56</p>
-           <input type="submit" value="Submit Order">
+    <section class="contact-body">
+      <h3 class="checkout-headline">Checkout</h3>
+        <form name="adoptDogs" method="GET">
+          <label>Name
+            <input type="text" name="customerName">
+          </label>
+          <label>Email Address
+            <input type="email" name="customerEmail">
+          </label>
+          <label>Street Address
+            <input type="text" name="customerAddress">
+          </label>
+          <div class="city-state-zip">
+            <div>
+              <label>City
+                <input type="text" name="customerCity">
+              </label>
+            </div>
+            <div>
+              <label>State
+                <select name="state">
+                  <option value="selectOne">Select One</option>
+                  <option value="washington">Washington</option>
+                  <option value="oregon">Oregon</option>
+                  <option value="california">California</option>
+                  <option value="nevada">Nevada</option>
+                  <option value="iowa">Iowa</option>
+                  <option value="montana">Montana</option>
+                  <option value="illinois">Illinois</option>
+                  <option value="wisconsin">Wisconsin</option>
+                  <option value="texas">Texas</option>
+                  <option value="michigan">Michegan</option>
+                  <option value="philadelphia">Philadelphia</option>
+                  <option value="newYork">New York</option>
+                  <option value="massachusetts">Massachusetts</option>
+                  <option value="dc">Washington, D.C.</option>
+                  <option value="georgia">Georgia</option>
+                  <option value="southCarolina">South Carolina</option>
+                  <option value="northCarolina">North Carolina</option>
+                  <option value="florida">Florida</option>
+                </select>
+              </label>
+            </div>
+            <div>
+            <label>Zip Code
+              <input type="text" name="customerZipCode">
+            </label>
+            </div>
+          </div>
+
+          <p class="form-paragraph">First Time Adopter?</p>
+            <div>
+              <label class="yes-no">Yes
+                <input type="radio" name="firstTime" value="yes">
+              </label>
+              <label class="yes-no">No
+                <input type="radio" name="firstTime" value="no">
+              </label>
+            </div>
+            <div class="pickup">
+              <label>Pickup Location
+                <select name="cityLocation">
+                  <option value="downtownSeattle">Downtown Seattle</option>
+                  <option value="capHill">Capitol Hill</option>
+                  <option value="uDistrict">University District</option>
+                  <option value="queenAnee">Queen Anne</option>
+                  <option value="fremont">Fremont</option>
+                  <option value="shoreline">Shoreline</option>
+                  <option value="ballard">Ballard</option>
+                  <option value="bellevue">Bellevue</option>
+                  <option value="kirkland">Kirkland</option>
+                  <option value="redmond">Redmond</option>
+                  <option value="mercerIsland">Mercer Island</option>
+                </select>
+              </label>
+            </div>
+
+          <p class="form-paragraph">Dogs Adopted</p>
+          <div>
+            <label>
+              <input type="image" src="images/lucas-card.jpg" alt="black rottweiler eager to find a new owner" height="55">
+            </label>
+            <label>
+              <input type="image" src="images/duffy-card.jpg" alt="white-faced beagle looking solemnly at the camera" height="55">
+            </label>
+          </div>
+
+          <p class="form-paragraph">Total Adoption Cost</p>
+
+          <label class="submit-order">
+            <input type="submit" value="Submit Order">
+          </label>
+
        </form>
      </section>
      <footer>
