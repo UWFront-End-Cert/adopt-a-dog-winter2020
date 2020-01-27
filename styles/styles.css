@@ -1,7 +1,7 @@
 * {box-sizing: border-box;}
 
 button, input, select, textarea {
-  font-family; inherit;
+  font-family: inherit;
   font-size: 100%;
 }
 .skip-hidden {
@@ -254,7 +254,6 @@ input[type=submit] {
   font-size: 1rem;
   background-color: #32CD32;
   width: 13rem;
-  min-width:
   height: 2rem;
   border-color: #32CD32;
 }
