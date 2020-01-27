@@ -159,14 +159,51 @@ body {
  }
 
 
-footer {
+.footer-container {
   background-color: #003C63;
   width: 100%;
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.footer-image {
-  max-width: 30%;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+
+.footer-content p {
+  width: 500px;
+  color: white;
+}
+
+.footer-logo {
+  width: 300px;
+  height: 300px;
+
+}
+
+.footer-nav ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  color: white;
   padding: 1rem;
-  height: 10%;
+
+
+}
+
+.footer-nav p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+
 }
