@@ -21,6 +21,14 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
   padding: 4rem 5rem 6rem 5rem;
 }
+.checkout-button-content-container > a {
+  /* border: dashed red; */
+  padding: .5rem 2rem;
+  background-color: #95be66;
+  color: white;
+  font-weight: bold;
+  font-size: .85rem;
+}
 .checkout-button-content-container,
 .cart-content-container {
   display: flex;
@@ -103,14 +111,17 @@ main p {
   font-weight: 300;
   line-height: 150%;
 }
-main input[name="See More Dogs"] {
-  display: block;
-  margin: 0 auto 3rem auto;
+.see-more-dogs-container {
+  text-align: center;
+  margin: 3rem;
+}
+.see-more-dogs-container > a {
   font-weight: 800;
   padding: 1% 3%;
   border-style: none;
   border-radius: 2px;
   color: #224971;
+  background-color: #e9e9e9;
 }
 .dog-cards {
   padding-top: 2rem;
@@ -152,7 +163,7 @@ article input {
   display: block;
   margin: 1rem auto;
 }
-header input,
+/* header input, */
 .dog-cards input {
   width: 100%;
   color: white;
@@ -171,7 +182,7 @@ header input {
 footer {
   background-color: #224971;
   color: white;
-  margin: auto;
+  margin: 2rem auto auto auto;
   overflow: auto;
   display: flex;
   justify-content: center;
