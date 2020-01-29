@@ -128,7 +128,7 @@ main p {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 3rem;
-  clear: both;
+  clear: both; # need to use b/c of float on index.html
 }
 .card {
   border: 1px solid #e7e7e7;
