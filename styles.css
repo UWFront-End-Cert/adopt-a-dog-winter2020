@@ -6,6 +6,7 @@ body {
 /* Header */
 header {
   background-image: url(images/header-image.jpg);
+  padding: 20px;
 }
 
 header img {
@@ -21,9 +22,33 @@ header p {
   font-weight: bold;
 }
 
-.checkout-page-link {
+.header-container {
+  display: flex;
+}
+
+.header-box1 {
+  flex: 1;
+}
+
+.header-box2 {
+  flex: 1;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+
+#checkout-icon {
   color: white;
-  float: right;
+  font-size: 1rem;
+}
+
+.checkout-page-link a {
+  color: white;
+  border: solid green;
+  background-color: green;
+  text-decoration: none;
+  padding: 4px;
+  margin-top: 8px;
 }
 
 .menu-bar {
@@ -31,11 +56,11 @@ header p {
   padding: 1px;
 }
 
-li {
+.menu-bar li {
   display: inline;
 }
 
-a {
+.menu-bar a {
   color: darkblue;
   text-decoration: none;
   font-weight: bold;
@@ -43,6 +68,12 @@ a {
 
 .homepage-article {
   display: flex;
+}
+
+.homepage-article h3 {
+  color: darkblue;
+  font-weight: bold;
+  font-size: 1.8rem;
 }
 
 .ha-left {
@@ -72,11 +103,25 @@ a {
 .dog-box {
   flex: 1 0 21%;
   margin: 1rem;
+  border: 1px solid lightgrey;
 }
 
 .dog-box img {
   width: 100%;
   min-width: 200px;
+}
+
+.dog-box-detail {
+  padding: 10px;
+}
+
+.dog-box-detail button {
+  background-color: green;
+  font-weight: bold;
+  font-size: 0.875rem;
+  color: white;
+  width: 100%;
+  padding: 10px;
 }
 
 p .homepage-box-wrapper {
@@ -88,11 +133,23 @@ h4 {
   font-weight: bold;
 }
 
+.see-more-dogs button {
+  background-color: lightgrey;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: darkblue;
+  padding: 10px;
+  display: block;
+  width: 200px;
+  margin: auto;
+}
+
 footer {
   background-color: #003366;
   color: white;
   font-size: 0.9rem;
   text-align: center;
+  margin-top: 40px;
 }
 
 footer img {
