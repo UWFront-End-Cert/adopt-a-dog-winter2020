@@ -67,6 +67,12 @@ flex:1;
 .dog-card-img{
   width: 100%;
 }
+.sidebar
+{
+  float: right;
+  width: 70%;
+  padding-left: 20px;
+}
 .footer-container{
   display: flex;
   flex-direction: column;
