@@ -27,28 +27,33 @@
         </ul>
       </nav>
          <form method="POST">
-           <label> Name:
-             <input type="text" name="applicantName">
-           </label>
-           <label> Address:
-             <input type="text" name="applicantAddress">
-           </label>
-           <label> City:
-             <input type="city" name="applicantCity">
-           </label>
-           <label> State:
-             <select name="state"
-               <option value="Washington">Washington</option>
-               <option value="Oregon">Oregon</option>
-               <option value="Idaho">Idaho</option>
-               <option value="California">California</option>
-               <option value="Nevada">Nevada</option>
-               <option value="BC">British Columbia</option>
-             </select>
+           <div>
+             <label> Name:
+               <input type="text" name="applicantName">
+             </label>
+          </div>
+          <div>
+             <label> Address:
+                <input type="text" name="applicantAddress">
+             </label>
+          </div>
+             <label> City:
+               <input type="city" name="applicantCity">
+             </label>
+             <label> State:
+               <select name="state">
+                 <option value="Washington">Washington</option>
+                 <option value="Oregon">Oregon</option>
+                <option value="Idaho">Idaho</option>
+                <option value="California">California</option>
+                <option value="Nevada">Nevada</option>
+                <option value="BC">British Columbia</option>
+              </select>
            </label>
            <label> Zipcode:
              <input type="zipcode" name="applicantZipcode">
            </label>
+        <div>
            <label> City:
              <input type="city" name="applicantCity">
            </label>
@@ -60,18 +65,34 @@
                <label>No
                  <input type="radio" name="firsttime" value="no">
                </label>
-         </fieldset>
+           </fieldset>
+        </div>
+        <div>
+          <label>Pick up location:
+            <select name="location">
+              <option vale="">Please choose you'll be</option>
+              <option value="front">In our front lot</option>
+              <option value="nextto">Next to the Value Village</option>
+              <option value="home">Home: Please deliver via Pet Courier</option>
+            </select>
+          </label>
+      </div>
          <h4>Dogs Adopted</h4>
-         <img src="lucas-checkout.jpg" width="100" alt="German Shepard">
+         <section class="adopted">
+      <div>
+         <img src="images/lucas-checkout.jpg" width="100" alt="German Shepard">
          <h5>Lucas</h5>
            <P>Adoption cost $195</p>
-         <img src="duffy-checkout.jpg" width="100" alt="Pitbull">
+      </div>
+      <div>
+         <img src="images/duffy-checkout.jpg" width="100" alt="Pitbull">
          <h5>Duffy</h5>
            <P>Adoption cost $195</p>
-
+     </div>
+   </section>
         <h4>Total Adoption Cost</h4>
           <h5>$390</h5>
-         <input type="submit" value="Submit">
+         <input type="submit" value="Submit" class="submitbutton">
           </form>
           <footer>
             <img src="images/adoptadog-logo.svg" width="500" alt="white dog silhoutte">
