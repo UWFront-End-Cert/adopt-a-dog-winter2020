@@ -19,11 +19,14 @@ header > div {
   background-image: url('../images/header-image.jpg');
   display: grid;
   padding-left: 5rem;
-  padding-right: 5rem;
+  padding-right: 6rem;
   padding-top: 2rem;
   padding-bottom: 6rem;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 36% 1fr 25%;
+  grid-template-columns: 36% 1fr 30%;
+}
+header > div * {
+  margin: 0;
 }
 header img[src="images/adoptadog-logo.svg"] {
   max-width:100%;
@@ -35,6 +38,8 @@ header img[src="images/cart-icon.svg"] {
 header .cart-icon-money {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
+  align-items: baseline;
 }
 header p {
   color: white;
@@ -58,6 +63,7 @@ header>div button {
   color: white;
   width: 7rem;
   height: 1.5rem;
+  justify-self: flex-end;
 }
 /* header style end */
 /* nav style start */
@@ -278,18 +284,42 @@ footer p {
   margin-top: 0.4rem;
   height: 2rem;
 }
-.checkout-form-page form input:nth-child(2), .checkout-form-page input:nth-child(4), .checkout-form-page input:nth-child(6) {
+.checkout-form-page form >input:nth-child(2), .checkout-form-page #email, .checkout-form-page #street {
   width: 70%;
 }
 .checkout-form-page select[id="location"] {
   width: 25%;
 }
-.checkout-form-page form label:nth-child(7)::before {
+/* .checkout-form-page form label:nth-child(7)::before {
   content: '\a';
   white-space: pre;
-}
+} */
 .checkout-form-page form label:first-child, .checkout-form-page label:nth-child(3), .checkout-form-page label:nth-child(5), .checkout-form-page label:nth-child(13) {
   display: block;
+}
+.checkout-form-tiles {
+  border: 2px solid #EBEBEB;
+  display: inline-block;
+  padding-right: 2rem;
+  margin: 0;
+}
+.checkout-form-page form>div:nth-child(7) {
+  width: 30%;
+}
+.checkout-form-page form>div:nth-child(8) {
+  width: 20%;
+}
+.checkout-form-page form>div:nth-child(9) {
+  width: calc(20% + 2rem);
+}
+.checkout-form-page input[id="city"] {
+  width: 100%;
+}
+.checkout-form-page select[id="state"] {
+  width: 100%;
+}
+.checkout-form-page input[id="zip"] {
+  width: 100%;
 }
 .checkout-form-page >div:nth-child(4) {
   display: flex;
@@ -320,6 +350,7 @@ footer p {
   font-weight: 100;
   font-size: 1rem;
   padding-right: 2rem;
+
 }
 .checkout-form-page input[type="radio"] {
   margin: 0;   /* override but useless */
