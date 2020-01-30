@@ -31,7 +31,7 @@ header p {
 }
 
 .header-box2 {
-  flex: 1;
+  /* flex: 1; */
   text-align: right;
   display: flex;
   flex-direction: column;
