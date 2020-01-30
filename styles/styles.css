@@ -258,3 +258,6 @@ h2 {
 label, span {
   line-height: 2rem;
 }
+main {
+  max-width: 1440px;
+}
