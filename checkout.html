@@ -22,9 +22,8 @@
           </div>
           <a href="checkout.html" class="checkout-link">
           <div class="checkout">
-            <p>Checkout</p>
+          <p>Checkout</p>
           </div></a>
-          </div>
         </div>
       </div>
       <nav class="top-nav">
@@ -40,53 +39,45 @@
       <div class="checkout-main">
         <form action="#" method="POST">
           <div class="checkout-content">
-            <label for="name">
-              Name
-              <input type="text" name="name" id="name">
-            </label>
-            <label for="email">
-              Email Address
-              <input type="email" name="email" id="email">
-            </label>
-            <label for="address">
-              Street Address
-              <input type="text" name="address" id="address">
-            </label>
-            <label for="city">
-              City
-              <input type="text" name="city" id="city">
-            </label>
-            <label for="state">
-              State
-              <select name="state" id="state">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email">
+            <label for="address">Street Address</label>
+            <input type="text" name="address" id="address">
+            <div class="city-state-zip">
+              <div>
+                <label for="city" class="city">City</label>
+                <input class="city-input" type="text" name="city" id="city">
+              </div>
+              <div>
+                <label for="state" class="state">State</label>
+                  <select class="state-select" name="state" id="state">
+                    <option value="">-</option>
+                    <option value="alaska">Alaska</option>
+                    <option value="oregon">Oregon</option>
+                    <option value="washington">Washington</option>
+                  </select>
+              </div>
+              <div>
+                <label for="zipcode" class="zip">Zip Code</label>
+                <input class="zip-input" type="number" name="zipcode" id="zipcode">
+              </div>
+            </div>
+            <span>First Time Adopter?</span>
+            <div class="radio-input">
+              <label class="no-label" for="no">No</label>
+                <input class="no-input" type="radio" name="adopter" value="no" id="no">
+              <label class="yes-label" for="yes">Yes</label>
+                <input class="yes-input" type="radio" name="adopter" value="yes" id="yes">
+            </div>
+            <label for="pickup">Pickup Location</label>
+              <select class="pickup-select" name="pickup" id="pickup">
                 <option value="">-</option>
                 <option value="alaska">Alaska</option>
                 <option value="oregon">Oregon</option>
                 <option value="washington">Washington</option>
               </select>
-            </label>
-            <label for="zipcode">
-              Zip Code
-              <input type="number" name="zipcode" id="zipcode">
-            </label>
-            <label for="yes">
-              First Time Adopter?
-              <input type="radio" name="adopter" value="yes" id="yes">
-              Yes
-            </label>
-            <label for="no">
-              <input type="radio" name="adopter" value="no" id="no">
-              No
-            </label>
-            <label for="pickup">
-              Pickup Location
-              <select name="pickup" id="pickup">
-                <option value="">-</option>
-                <option value="alaska">Alaska</option>
-                <option value="oregon">Oregon</option>
-                <option value="washington">Washington</option>
-              </select>
-            </label>
           </div>
         </form>
         <section>

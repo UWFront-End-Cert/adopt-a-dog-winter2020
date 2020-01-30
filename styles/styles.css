@@ -124,8 +124,20 @@ h2 {
 }
 .more-dogs {
   margin: 0 auto;
-  /*display: block;
-  margin-bottom: 5rem;*/
+  width: 10rem;
+  text-align: center;
+  padding: .01rem;
+  margin-bottom: 3rem;
+  background-color: rgb(230, 230, 230);
+  color: rgb(13, 45, 78);
+  font-weight: bold;
+  border-radius: .1rem;
+}
+.more-dogs-link {
+  text-decoration: none;
+}
+.more-dogs-link:visited {
+  color: rgb(13, 45, 78);
 }
 .adopt {
   margin: 0 auto;
@@ -137,6 +149,7 @@ h2 {
   color: white;
   border: none;
   background-color: rgb(116, 171, 42);
+  border-radius: .1rem;
 }
 .card-padding {
   padding: 0rem .75rem 1rem .75rem;
@@ -181,33 +194,67 @@ h2 {
   color: white;
   border: none;
   background-color: rgb(116, 171, 42);
+  width: 20%;
 }
 .adopt-img {
   max-width: 20%;
   align-self: center;
 }
-
-/*testing different width techniques on dogs page*/
-
-nav > ul {
-  max-width: 75%;
-}
-/*.dogs-main {
-  margin: 0 auto;
-  padding-left: 12rem;
-  padding-right: 12rem;
-  max-width: calc(100% - 5*/
-}
-/*.dog-card-test {
-  width: 25%;
-  margin: 1.25rem 1.25rem;
-  border: 2px solid rgb(242, 242, 242);*/
-}
-/*.dog-img-test {
-  width: 100%;*/
-}
-/*.flexbox-test {
+.radio-input {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}*/
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+.city, .state, .zip {
+  display: block;
+}
+.state-select {
+  width: 85%;
+  background-color: white;
+  border: 1px solid rgb(223, 223, 223);
+}
+.pickup-select {
+  width: 25%;
+  background-color: white;
+  border: 1px solid rgb(223, 223, 223);
+}
+.zip-input {
+  width: 100%;
+}
+.city-input {
+  width: 90%;
+}
+.state-select, .zip-input, .city-input {
+  margin-bottom: 1.5rem;
+}
+.city-state-zip {
+  display: flex;
+  flex-direction: row;
+}
+input {
+  width: 60%;
+  padding: .5rem 0rem;
+  margin-bottom: 1.5rem;
+}
+select {
+  width: 25%;
+}
+.no-input, .yes-input {
+  width: 3%;
+}
+form {
+  font-size: 1.25rem;
+}
+h2 {
+  font-size: 2rem;
+}
+.no-label, .yes-label {
+  font-size: 1rem;
+}
+.yes-label {
+  padding-right: 2rem;
+}
+label, span {
+  line-height: 2rem;
+}
