@@ -20,6 +20,8 @@ footer {
 body {
   margin: auto;
   font-size: 16px;
+}
+main {
   max-width: 1440px;
 }
 .logo {
@@ -100,7 +102,8 @@ h2 {
   padding: 1rem 0rem 1rem 12rem;
 }
 .dogs-main {
-  width: 100%;
+  max-width: 100%;
+  min-width: 320px;
   display: flex;
   align-items: center;
   padding: 2rem 12rem 3rem;
@@ -116,8 +119,8 @@ h2 {
   padding: 0rem 9.625rem 2rem;
 }
 .dog-card {
-  min-width: 20%;
-  width: 20%;
+  min-width: 180px;
+  max-width: 20%;
   border: 2px solid rgb(242, 242, 242);
   margin: 1.25rem 1.25rem;
 }
