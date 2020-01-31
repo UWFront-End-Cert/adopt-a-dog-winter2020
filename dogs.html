@@ -6,124 +6,178 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="mystyle.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
 
-<header class="header">
-<h3 class="slogan">Seattle's premiere dog adoption agency </h3>
-<img class="logo" src="./images/adoptadog-logo.svg" alt="Logo">
-<!-- <i class="fa fa-shopping-cart icon" style="font-size:48px;color:red"></i> -->
-<a href="./forms.html" class="button">Checkout</a>
-</header>
+  <div class="jumbotron bgColor ">
+    <div class="container bgColor">
+      <img class="logo" src="./images/adoptadog-logo.svg" alt="Logo">
+      <h3 class="slogan">Seattle's premiere dog adoption agency </h3>
+      <!-- <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p> -->
+      <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
+    </div>
+  </div>
 
-<nav class="navbar">
-<a href="index.html">Home</a>
-<a href="./dogs.html">Dogs</a>
-<a href="blogs.html">Blog</a>
+<nav class="marginTop navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="justifyContent container">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <a class="navbar-brand" href="./dogs.html">Dogs</a>
+    <a class="navbar-brand" href="blogs.html">Blog</a>
+  </div>
 </nav>
 
-<main class="main">
-  <h2>Here are all our Dogs</h2>
-  <div class="flex-listItem">
-    <div class="column">
-      <div class="Blog2">
-        <img src="./images/blog-2.jpg" alt="Multiple Dogs">
-      </div>
-      <div class="Blog2-Text">
-        <h3>Poppy</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45 <p>
-        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-        <a href="#">Checkout</a>
-      </div>
-    </div>
-
-    <div class="column">
-        <div class="Blog3">
-          <img src="./images/blog-3.jpg" alt="Teaching Dogs">
-        </div>
-        <div class="Blog2-Text">
-          <h3>Jack</h3>
-          <p><strong>Cost to Adopt:</strong> $123.45 <p>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-          <a href="#">Checkout</a>
-        </div>
-    </div>
-
-    <div class="column">
-      <div class="Blog2">
-        <img src="./images/blog-2.jpg" alt="Multiple Dogs">
-      </div>
-      <div class="Blog2-Text">
-        <h3>Murphy</h3>
-        <p><strong>Cost to Adopt:</strong> $123.45 <p>
-        <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-        <a href="#">Checkout</a>
-      </div>
-    </div>
-
-    <div class="column">
-        <div class="Blog3">
-          <img src="./images/blog-3.jpg" alt="Teaching Dogs">
-        </div>
-        <div class="Blog2-Text">
-          <h3>Duffy</h3>
-          <p><strong>Cost to Adopt:</strong> $123.45 <p>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-          <a href="#">Checkout</a>
-        </div>
-    </div>
-
-    </div>
-
-    <div class="flex-listItem">
-      <div class="column">
-        <div class="Blog2">
-          <img src="./images/blog-2.jpg" alt="Multiple Dogs">
-        </div>
-        <div class="Blog2-Text">
-          <h3>Lucas</h3>
-          <p><strong>Cost to Adopt:</strong> $123.45 <p>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-          <a href="#">Checkout</a>
-        </div>
-      </div>
-
-      <div class="column">
-          <div class="Blog3">
-            <img src="./images/blog-3.jpg" alt="Teaching Dogs">
-          </div>
-          <div class="Blog2-Text">
-            <h3>Jake</h3>
+<main role="main">
+  <div class="album py-5 bg-light">
+  <div class="container">
+    <h2>Here are all our Dogss</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="./images/blog-1.jpg" alt="Multiple Dogs">
+          <div class="card-body">
+            <h3>Poppy</h3>
             <p><strong>Cost to Adopt:</strong> $123.45 <p>
-            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-            <a href="#">Checkout</a>
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced </p>
+            <div class="d-flex">
+              <div class="btn-group align-self-center mx-auto">
+                <button type="button" class="btn btn-success">Adopt</button>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
-
-      <div class="column">
-        <div class="Blog2">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
           <img src="./images/blog-2.jpg" alt="Multiple Dogs">
+          <div class="card-body">
+            <h3>Poppy</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45 <p>
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced </p>
+            <div class="d-flex ">
+              <div class="btn-group align-self-center mx-auto">
+                <button type="button" class="btn btn-success">Adopt</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="Blog2-Text">
-          <h3>Angus</h3>
-          <p><strong>Cost to Adopt:</strong> $123.45 <p>
-          <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-          <a href="#">Checkout</a>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="./images/blog-3.jpg" alt="Multiple Dogs">
+          <div class="card-body">
+            <h3>Poppy</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45 <p>
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced </p>
+            <div class="d-flex ">
+              <div class="btn-group align-self-center mx-auto">
+                <button type="button" class="btn btn-success">Adopt</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div class="column">
-          <div class="Blog3">
-            <img src="./images/blog-3.jpg" alt="Teaching Dogs">
-          </div>
-          <div class="Blog2-Text">
-            <h3>Violet</h3>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="./images/blog-2.jpg" alt="Multiple Dogs">
+          <div class="card-body">
+            <h3>Poppy</h3>
             <p><strong>Cost to Adopt:</strong> $123.45 <p>
-            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
-            <a href="#">Checkout</a>
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced </p>
+            <div class="d-flex ">
+              <div class="btn-group align-self-center mx-auto">
+                <button type="button" class="btn btn-success">Adopt</button>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="./images/blog-1.jpg" alt="Multiple Dogs">
+          <div class="card-body">
+            <h3>Poppy</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45 <p>
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced </p>
+            <div class="d-flex ">
+              <div class="btn-group align-self-center mx-auto">
+                <button type="button" class="btn btn-success">Adopt</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="./images/blog-3.jpg" alt="Multiple Dogs">
+          <div class="card-body">
+            <h3>Poppy</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45 <p>
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced </p>
+            <div class="d-flex ">
+              <div class="btn-group align-self-center mx-auto">
+                <button type="button" class="btn btn-success">Adopt</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="./images/blog-2.jpg" alt="Multiple Dogs">
+          <div class="card-body">
+            <h3>Poppy</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45 <p>
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced </p>
+            <div class="d-flex ">
+              <div class="btn-group align-self-center mx-auto">
+                <button type="button" class="btn btn-success">Adopt</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="./images/blog-1.jpg" alt="Multiple Dogs">
+          <div class="card-body">
+            <h3>Poppy</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45 <p>
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced </p>
+            <div class="d-flex ">
+              <div class="btn-group align-self-center mx-auto">
+                <button type="button" class="btn btn-success">Adopt</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <img src="./images/blog-3.jpg" alt="Teaching Dogs">
+          <div class="card-body">
+            <h3>Poppy</h3>
+            <p><strong>Cost to Adopt:</strong> $123.45 <p>
+            <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced </p>
+            <div class="d-flex ">
+              <div class="btn-group align-self-center mx-auto">
+                <button type="button" class="btn btn-success">Adopt</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
 </main>
 
 <footer class="footer">
