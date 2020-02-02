@@ -9,14 +9,14 @@
 </head>
 
 <body>
-  <header class="flex-container">
-    <div class="float-left">
+  <header class="hero-image">
+    <div>
       <img src="images/adoptadog-logo.svg" alt="Adopt A Dog logo">
       <h1>Seattle's Premiere Dog Adoption Agency</h1>
     </div>
     <div class="cart white">
       <img class="small" src="images/cart-icon.svg" alt="shopping cart icon">  $123.45
-      <form><input type="submit" class="checkout" formaction="checkout.html" value="Checkout"></form>
+      <button class="checkout" formaction="checkout.html">Checkout</button>
     </div>
   </header>
 
@@ -37,39 +37,39 @@
   <section class="flex-container margin-top">
 
     <div class="dog-card">
-      <img class="dog" src="images/angus-card.jpg" alt="boxer">
+      <img class="dog" src="images/angus-card.jpg" onclick="Angus()" alt="boxer">
       <h3 class="card">Angus</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.</p>
-      <form><input type="submit" class="dog-button" formaction="checkout.html" value="Adopt"></form>
+      <form><input type="submit" class="dog-button" onclick="dogTotal()" value="Adopt"></form>
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/duffy-card.jpg" alt="boxer">
+      <img class="dog" src="images/duffy-card.jpg" onclick="Duffy()" alt="pitbull">
       <h3 class="card">Duffy</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.</p>
-      <form><input type="submit" class="dog-button" formaction="checkout.html" value="Adopt"></form>
+      <form><input type="submit" class="dog-button" onclick="dogTotal()" value="Adopt"></form>
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/jack-card.jpg" alt="beagle white and tan">
+      <img class="dog" src="images/jack-card.jpg" onclick="Jack()" alt="beagle white and tan">
       <h3 class="card">Jack</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.</p>
-      <form><input type="submit" class="dog-button" formaction="checkout.html" value="Adopt"></form>
+      <form><input type="submit" class="dog-button" onclick="dogTotal()" value="Adopt"></form>
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/jake-card.jpg" alt="yellow lab">
+      <img class="dog" src="images/jake-card.jpg" onclick="Jake()" alt="yellow lab">
       <h3 class="card">Jake</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.</p>
-      <form><input type="submit" class="dog-button" formaction="checkout.html" value="Adopt"></form>
+      <form><input type="submit" class="dog-button" onclick="dogTotal()" value="Adopt"></form>
     </div>
 
   </section>
@@ -77,39 +77,39 @@
   <section class="flex-container margin-top">
 
     <div class="dog-card">
-      <img class="dog" src="images/lucas-card.jpg" alt="black german shephard mix">
+      <img class="dog" src="images/lucas-card.jpg" onclick="Lucas()" alt="black german shephard mix">
       <h3 class="card">Lucas</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.</p>
-      <form><input type="submit" class="dog-button" formaction="checkout.html" value="Adopt"></form>
+      <form><input type="submit" class="dog-button" onclick="dogTotal()" value="Adopt"></form>
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/luna-card.jpg" alt="yellow lab">
+      <img class="dog" src="images/luna-card.jpg" onclick="Luna()" alt="yellow lab">
       <h3 class="card">Luna</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.</p>
-      <form><input type="submit" class="dog-button" formaction="checkout.html" value="Adopt"></form>
+      <form><input type="submit" class="dog-button" onclick="dogTotal()" value="Adopt"></form>
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/maximus-card.jpg" alt="black and silver schnauzer">
+      <img class="dog" src="images/maximus-card.jpg" onclick="Maximus()" alt="black and silver schnauzer">
       <h3 class="card">Maximus</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.</p>
-      <form><input type="submit" class="dog-button" formaction="checkout.html" value="Adopt"></form>
+      <form><input type="submit" class="dog-button" onclick="dogTotal()" value="Adopt"></form>
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/murphy-card.jpg" alt="tan boxer">
+      <img class="dog" src="images/murphy-card.jpg" onclick="Murphy()" alt="tan boxer">
       <h3 class="card">Murphy</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.</p>
-      <form><input type="submit" class="dog-button" formaction="checkout.html" value="Adopt"></form>
+      <form><input type="submit" class="dog-button" onclick="dogTotal()" value="Adopt"></form>
     </div>
 
   </section>
@@ -117,39 +117,39 @@
   <section class="flex-container margin-top">
 
     <div class="dog-card">
-      <img class="dog" src="images/piper-card.jpg" alt="chocolate retriever mix">
+      <img class="dog" src="images/piper-card.jpg" onclick="Piper()" alt="chocolate retriever mix">
       <h3 class="card">Piper</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.</p>
-      <form><input type="submit" class="dog-button" formaction="checkout.html" value="Adopt"></form>
+      <form><input type="submit" class="dog-button" onclick="dogTotal()" value="Adopt"></form>
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/poppy-card.jpg" alt="silver shitzu">
+      <img class="dog" src="images/poppy-card.jpg" onclick="Poppy()" alt="silver shitzu">
       <h3 class="card">Poppy</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.</p>
-      <form><input type="submit" class="dog-button" formaction="checkout.html" value="Adopt"></form>
+      <form><input type="submit" class="dog-button" onclick="dogTotal()" value="Adopt"></form>
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/stella-card.jpg" alt="golden tan chihuahua">
+      <img class="dog" src="images/stella-card.jpg" onclick="Stella()" alt="golden tan chihuahua">
       <h3 class="card">Stella</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.</p>
-      <form><input type="submit" class="dog-button" formaction="checkout.html" value="Adopt"></form>
+      <form><input type="submit" class="dog-button" onclick="dogTotal()" value="Adopt"></form>
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/violet-card.jpg" alt="baby chocolate lab">
+      <img class="dog" src="images/violet-card.jpg" onclick="Violet()" alt="baby chocolate lab">
       <h3 class="card">Violet</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.</p>
-      <form><input type="submit" class="dog-button" formaction="checkout.html" value="Adopt"></form>
+      <form><input type="submit" class="dog-button" onclick="dogTotal()" value="Adopt"></form>
     </div>
 
   </section>
@@ -166,6 +166,8 @@
     </ul>
     <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
   </footer>
+
+  <script src="./script.js" charset="utf-8"></script>
 
 </body>
 
