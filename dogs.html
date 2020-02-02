@@ -21,10 +21,8 @@
             <p>$1234.56</p>
           </div>
           <div class="checkout-button-content-container">
-            <!-- <input type="button" name="Checkout" value="Checkout"> -->
             <a href="checkout.html">Checkout</a>
           </div>
-          <!-- <input type="submit" name="Checkout" value="Checkout"> -->
         </div>
         </div>
       </header>
@@ -40,7 +38,7 @@
         <h1>Here are all of our Dogs!</h1>
         <div class="dog-cards">
         <section class="card">
-          <img src="images/murphy-card.jpg" alt="Murphy, dog">
+          <img onclick="displayDogInfo('Murphy', 'Unknown', '$123.45')" src="images/murphy-card.jpg" alt="Murphy, dog">
           <article class="">
             <h2>Murphy</h2>
             <div class="cost-to-adopt-container">
@@ -48,11 +46,11 @@
               <p>$123.45</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="submit" name="Adopt" value="Adopt">
+            <input onclick="addToTotal()" type="submit" name="Adopt" value="Adopt">
           </article>
         </section>
         <section class="card">
-          <img src="images/poppy-card.jpg" alt="Poppy, dog">
+          <img onclick="displayDogInfo('Poppy', 'Unknown', '$123.45')" src="images/poppy-card.jpg" alt="Poppy, dog">
           <article class="">
             <h2>Poppy</h2>
             <div class="cost-to-adopt-container">
@@ -60,11 +58,11 @@
               <p>$123.45</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="submit" name="Adopt" value="Adopt">
+            <input onclick="addToTotal()" type="submit" name="Adopt" value="Adopt">
           </article>
         </section>
         <section class="card">
-          <img src="images/jack-card.jpg" alt="Jack, dog">
+          <img onclick="displayDogInfo('Jack', 'Basset Hound', '$123.45')" src="images/jack-card.jpg" alt="Jack, dog">
           <article class="">
             <h2>Jack</h2>
             <div class="cost-to-adopt-container">
@@ -72,11 +70,11 @@
               <p>$123.45</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="submit" name="Adopt" value="Adopt">
+            <input onclick="addToTotal()" type="submit" name="Adopt" value="Adopt">
           </article>
         </section>
         <section class="card">
-          <img src="images/duffy-card.jpg" alt="Duffy, dog">
+          <img onclick="displayDogInfo('Duffy', 'Unknown', '$123.45')" src="images/duffy-card.jpg" alt="Duffy, dog">
           <article class="">
             <h2>Duffy</h2>
             <div class="cost-to-adopt-container">
@@ -84,11 +82,11 @@
               <p>$123.45</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="submit" name="Adopt" value="Adopt">
+            <input onclick="addToTotal()" type="submit" name="Adopt" value="Adopt">
           </article>
         </section>
         <section class="card">
-          <img src="images/lucas-card.jpg" alt="Lucas, dog">
+          <img onclick="displayDogInfo('Lucas', 'Unknown', '$123.45')" src="images/lucas-card.jpg" alt="Lucas, dog">
           <article class="">
             <h2>Lucas</h2>
             <div class="cost-to-adopt-container">
@@ -96,11 +94,11 @@
               <p>$123.45</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="submit" name="Adopt" value="Adopt">
+            <input onclick="addToTotal()" type="submit" name="Adopt" value="Adopt">
           </article>
         </section>
         <section class="card">
-          <img src="images/jake-card.jpg" alt="Jake, dog">
+          <img onclick="displayDogInfo('Jake', 'Unknown', '$123.45')" src="images/jake-card.jpg" alt="Jake, dog">
           <article class="">
             <h2>Jake</h2>
             <div class="cost-to-adopt-container">
@@ -108,11 +106,11 @@
               <p>$123.45</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="submit" name="Adopt" value="Adopt">
+            <input onclick="addToTotal()" type="submit" name="Adopt" value="Adopt">
           </article>
         </section>
         <section class="card">
-          <img src="images/angus-card.jpg" alt="Angus, dog">
+          <img onclick="displayDogInfo('Angus', 'Unknown', '$123.45')" src="images/angus-card.jpg" alt="Angus, dog">
           <article class="">
             <h2>Angus</h2>
             <div class="cost-to-adopt-container">
@@ -120,11 +118,11 @@
               <p>$123.45</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="submit" name="Adopt" value="Adopt">
+            <input onclick="addToTotal()" type="submit" name="Adopt" value="Adopt">
           </article>
         </section>
         <section class="card">
-          <img src="images/violet-card.jpg" alt="Violet, dog">
+          <img onclick="displayDogInfo('Violet', 'Unknown', '$123.45')" src="images/violet-card.jpg" alt="Violet, dog">
           <article class="">
             <h2>Violet</h2>
             <div class="cost-to-adopt-container">
@@ -132,11 +130,11 @@
               <p>$123.45</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="submit" name="Adopt" value="Adopt">
+            <input onclick="addToTotal()" type="submit" name="Adopt" value="Adopt">
           </article>
         </section>
         <section class="card">
-          <img src="images/piper-card.jpg" alt="Piper, dog">
+          <img onclick="displayDogInfo('Piper', 'Unknown', '$123.45')" src="images/piper-card.jpg" alt="Piper, dog">
           <article class="">
             <h2>Piper</h2>
             <div class="cost-to-adopt-container">
@@ -144,11 +142,11 @@
               <p>$123.45</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="submit" name="Adopt" value="Adopt">
+            <input onclick="addToTotal()" type="submit" name="Adopt" value="Adopt">
           </article>
         </section>
         <section class="card">
-          <img src="images/maximus-card.jpg" alt="Maximus, dog">
+          <img onclick="displayDogInfo('Maximus', 'Unknown', '$123.45')" src="images/maximus-card.jpg" alt="Maximus, dog">
           <article class="">
             <h2>Maximus</h2>
             <div class="cost-to-adopt-container">
@@ -156,11 +154,11 @@
               <p>$123.45</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="submit" name="Adopt" value="Adopt">
+            <input onclick="addToTotal()"type="submit" name="Adopt" value="Adopt">
           </article>
         </section>
         <section class="card">
-          <img src="images/luna-card.jpg" alt="Luna, dog">
+          <img onclick="displayDogInfo('Luna', 'Unknown', '$123.45')" src="images/luna-card.jpg" alt="Luna, dog">
           <article class="">
             <h2>Luna</h2>
             <div class="cost-to-adopt-container">
@@ -168,11 +166,11 @@
               <p>$123.45</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="submit" name="Adopt" value="Adopt">
+            <input onclick="addToTotal()" type="submit" name="Adopt" value="Adopt">
           </article>
         </section>
         <section class="card">
-          <img src="images/stella-card.jpg" alt="Stella, dog">
+          <img onclick="displayDogInfo('Stella', 'Chihuahua', '$123.45')" src="images/stella-card.jpg" alt="Stella, dog">
           <article class="">
             <h2>Stella</h2>
             <div class="cost-to-adopt-container">
@@ -180,7 +178,7 @@
               <p>$123.45</p>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <input type="submit" name="Adopt" value="Adopt">
+            <input onclick="addToTotal()" type="submit" name="Adopt" value="Adopt">
           </article>
         </section>
       </div>
@@ -198,12 +196,10 @@
             <li><a href="blog.html">Blog</a></li>
           </ul>
         </nav>
-        <!-- <div class="copyright-content-container"> -->
-          <!-- <i class="far fa-copyright"></i> -->
           <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
-        <!-- </div> -->
       </div>
     </footer>
-
+    <script src="functions/dog-info.js" charset="UTF-8"></script>
+    <script src="functions/calc-totals.js" charset="UTF-8"></script>
   </body>
 </html>
