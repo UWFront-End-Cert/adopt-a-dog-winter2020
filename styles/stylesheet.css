@@ -1,15 +1,23 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --green: #95be66;
+  --blue: #224971;
+  --grey: #e9e9e9;
+  --lightgrey: #e7e7e7;
+  --headerfont: 'Gelasio';
+  --textfont: 'Open Sans';
+}
 
 /* header */
 a {
   text-decoration: none;
-  font-family: 'Open Sans';
+  font-family: var(--textfont);
 }
 h1, h2, h3 {
-  color: #224971;
-  font-family: 'Gelasio';
+  color: var(--blue);
+  font-family: var(--headerfont);
 }
 header {
   width: 100%;
@@ -24,7 +32,7 @@ header {
 .checkout-button-content-container > a {
   /* border: dashed red; */
   padding: .5rem 2rem;
-  background-color: #95be66;
+  background-color: var(--green);
   color: white;
   font-weight: bold;
   font-size: .85rem;
@@ -47,7 +55,7 @@ header {
 }
 header + nav {
   width: 100%;
-  background-color: #e9e9e9;
+  background-color: var(--grey);
 }
 nav > ul {
   margin: 0;
@@ -64,8 +72,8 @@ nav ul li {
   padding-right: .7rem;
 }
 header + nav a {
-  color: #224971;
-  font-family: 'Gelasio';
+  color: var(--blue);
+  font-family: var(--headerfont);
   font-weight: bold;
 }
 li:nth-child(-n+2)::after {
@@ -78,10 +86,10 @@ li:nth-child(-n+2)::after {
   width: 100%;
 }
 .logo-content-container > p {
-  color: #95be66;
+  color: var(--green);
   margin: 0;
   display: block;
-  font-family: 'Gelasio';
+  font-family: var(--headerfont);
   font-style: italic;
   font-weight: 500;
   font-size: 1.5rem;
@@ -100,7 +108,7 @@ li:nth-child(-n+2)::after {
 
 /* home + dog */
 main p {
-  font-family: "Open Sans";
+  font-family: var(--textfont);
 }
 .intro img {
   float: left;
@@ -120,8 +128,8 @@ main p {
   padding: 1% 3%;
   border-style: none;
   border-radius: 2px;
-  color: #224971;
-  background-color: #e9e9e9;
+  color: var(--blue);
+  background-color: var(--grey);
 }
 .dog-cards {
   padding-top: 2rem;
@@ -131,7 +139,7 @@ main p {
   clear: both;  /*need to use b/c of float on index.html*/
 }
 .card {
-  border: 1px solid #e7e7e7;
+  border: 1px solid var(--lightgrey);
   border-radius: 5px;
 }
 .card img {
@@ -168,7 +176,7 @@ article input {
   width: 100%;
   color: white;
   font-weight: bold;
-  background-color: #95be66;
+  background-color: var(--green);
   padding: 5%;
   border-style:none;
   border-radius: 2px;
@@ -180,7 +188,7 @@ header input {
 
 /* footer */
 footer {
-  background-color: #224971;
+  background-color: var(--blue);
   color: white;
   margin: 2rem auto auto auto;
   overflow: auto;
@@ -189,7 +197,7 @@ footer {
 }
 footer p,
 footer a {
-  font-family: 'Open Sans';
+  font-family: var(--textfont);
   font-size: .8rem;
 }
 footer nav a {
@@ -243,8 +251,8 @@ form select {
 }
 form label,
 .form-first-time p {
-  color: #224971;
-  font-family: 'Gelasio';
+  color: var(--blue);
+  font-family: var(--headerfont);
   font-weight: 800;
 }
 form > input,
@@ -255,7 +263,7 @@ form > select {
 .total-cost + input {
   color: white;
   font-weight: bold;
-  background-color: #95be66;
+  background-color: var(--green);
   padding: 1% 5%;
   border-style:none;
   border-radius: 2px;
