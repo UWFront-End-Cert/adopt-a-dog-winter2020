@@ -6,6 +6,16 @@
 
 body {
   background-color: white;
+  font-family: 'Karla', sans-serif;
+}
+
+h1 {
+  color: #2B547E;
+}
+
+h2 {
+  color: #2B547E;
+
 }
 
 .header-container {
@@ -36,6 +46,8 @@ body {
   width: 100%;
 }
 
+
+
 .cart-container {
   display: flex;
 
@@ -64,19 +76,19 @@ body {
 
 
 .nav {
-  position: relative;
-  background-color: grey;
+  background-color: #D3D3D3;
   width: 100%;
   height: 3rem;
+
 }
 
   .nav ul li  {
    list-style: none;
-   display: inline-block;
+   display: inline;
    margin-left: 5%;
-   float: left;
+   margin-top: 5%;
    color: white;
-   padding: 1rem;
+   padding: 2rem;
 
 
  }
@@ -130,10 +142,8 @@ body {
    align-items: flex-start;
    flex-wrap: wrap;
    height: auto;
-   margin-top: 5%;
-   margin-left: 8%;
-   margin-right: 8%;
-   margin-bottom: 5%;
+   margin: 5% 8%;
+
 
  }
 
@@ -156,7 +166,40 @@ body {
 
  .dog-box h2 {
    color: white;
+   display: flex;
+   justify-content: center;
  }
+
+ .blog-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   margin-left: 8%;
+   margin-right: 8%;
+   margin-top: 5%;
+   position: relative;
+
+
+ }
+
+ .blog {
+
+   display: flex;
+   width: 100%;
+   justify-content: flex-start;
+   flex-wrap: wrap;
+   position: relative;
+   padding: 2rem;
+
+ }
+
+.blog p {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
 
 
 .footer-container {
@@ -184,8 +227,8 @@ body {
 }
 
 .footer-logo {
-  width: 300px;
-  height: 300px;
+  width: 10rem;
+  height: 10rem;
 
 }
 
