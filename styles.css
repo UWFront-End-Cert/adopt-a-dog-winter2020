@@ -89,6 +89,7 @@ h2 {
    margin-top: 5%;
    color: white;
    padding: 2rem;
+   padding-top: 3rem;
 
 
  }
@@ -173,7 +174,7 @@ h2 {
  .blog-container {
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: flex-start;
    align-items: flex-start;
    flex-wrap: wrap;
    margin-left: 8%;
@@ -185,21 +186,57 @@ h2 {
  }
 
  .blog {
-
    display: flex;
+   flex-wrap: wrap;
    width: 100%;
    justify-content: flex-start;
-   flex-wrap: wrap;
+   align-items: flex-start;
    position: relative;
    padding: 2rem;
 
  }
 
 .blog p {
+  padding-left: 2rem;
   display: flex;
   flex-wrap: wrap;
-  width: 60%;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 40%;
+
+
 }
+
+.blog h2 {
+  padding-left: 2rem;
+}
+
+.checkout-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 5% 8%;
+  position: relative;
+}
+
+.form-box {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+  position: relative;
+  padding: 2rem;
+
+}
+
+label {
+  color: #2B547E;
+  font-family: 'Karla', sans-serif;
+  size: 300px;
+
+}
+
 
 
 .footer-container {

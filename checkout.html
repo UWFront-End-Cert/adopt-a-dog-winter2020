@@ -24,31 +24,33 @@
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </div>
-    <section>
+    <div class="checkout-container">
       <h1>Checkout</h1>
 
-      <form method="post">
-
-        <label for="name">
-          Name: <br>
-          <input type="text" name="name" id="name">
-        </label>
-
+      <div class="form-box">
+        <form method="post">
+          <label for="name">
+            Name: <br>
+            <input type="text" name="name" id="name">
+          </label>
+      </div>
+      <div class="form-box">
         <label for="email">
           Email Address: <br>
           <input type="email" name="email" id="email">
         </label>
-
+      </div>
+      <div class="form-box">
         <label for="street">
           Street Address: <br>
           <input type="text" name="street" id="street">
         </label>
-
+      </div>
+      <div class="form-box">
         <label for="city">
-          City: <br>
+          City:
           <input type="text" name="city" id="city">
         </label>
-
         <p>State:</p> <br>
         <select name="state" id="state">
           <option value="Alabama">Alabama</option>
@@ -56,30 +58,47 @@
           <option value="Arizona">Arizona</option>
           <option value="Arkansas">Arkansas</option>
         </select> <br>
-
         <label for="zipcode">
           Zip Code: <br>
           <input type="text" name="zipcode" id="zipcode">
         </label>
-          First Time Adopter?
-          <label for="yes"> yes
-          <input type="radio" name="dom-hand" value="yes" id="yes">
-          </label>
-          <label for="no"> no
-          <input type="radio" name="dom-hand" value="no" id="no">
+      </div>
+      <div class="form-box">
+      </label>
+        First Time Adopter?
+        <label for="yes"> yes
+        <input type="radio" name="dom-hand" value="yes" id="yes">
         </label>
+        <label for="no"> no
+        <input type="radio" name="dom-hand" value="no" id="no">
+      </label>
+      </div>
+      <div class="form-box">
+        <p>Pickup Location:</p> <br>
+        <select name="region" id="region">
+        <option value="univeristy-district">University District</option>
+        <option value="queen-anne">Queen Anne</option>
+        <option value="captiol-hill">Captiol Hill</option>
+        <option value="tukwila">Tukwila</option>
+        <option value="university-district" selected>University District</option>
+        </select>
+      </form>
+      </div>
+      <div class="form-box">
+        <h2>Dogs adopted</h2>
+          <h3>Lucas</h3>
+          <p>cost to adopt: $2345</p>
+          <h3>Freddy</h3>
+          <p>cost to adopt: $2345</p>
+      </div>
+      <div class="form-box">
+        <h2>Total Adoption Cost: $XXXX<h2>
+      </div>
+      <div class="form-box">
+        <button type="button" name="button">Submit</button>
+      </div>
 
-          <p>Pickup Location:</p> <br>
-          <select name="region" id="region">
-          <option value="univeristy-district">University District</option>
-          <option value="queen-anne">Queen Anne</option>
-          <option value="captiol-hill">Captiol Hill</option>
-          <option value="tukwila">Tukwila</option>
-          <option value="university-district" selected>University District</option>
-          </select> <br>
-          <button type="button" name="button">Submit</button>
-        </form>
-      </section>
+      </div>
       <div class="footer-container">
         <div class="footer-content">
           <img src="images/adoptadog-logo.svg" class="footer-logo" alt="Dog sitting next to AdoptaDog text">
