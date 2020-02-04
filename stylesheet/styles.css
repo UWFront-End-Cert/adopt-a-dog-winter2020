@@ -2,113 +2,261 @@
   box-sizing: border-box;
 }
 body {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
+  margin: 0px;
+  padding: 0px;
 }
+/* Header */
 header {
   background-color: black;
   color: white;
-  padding-bottom: 1rem;
+  background-image: url('https://boone824.github.io/adopt-a-dog-winter2020/images/header-image.jpg');
 }
-img {
-  width: 100%;
-}
-p {
-  padding: 1rem;
-}
-h1 {
-  text-align: center;
-}
-footer {
-  clear: both;
-  text-align: center;
-  background-color: #093c60;
-  color: white;
-}
-.home-intro {
-  width: 25%;
-  float: left;
-}
-.intro-content {
-  width: 75%;
-  float: right;
-}
-.style-nav ul{
-  list-style-type: none;
-  padding: 2rem;
-}
- .style-nav ul li a {
-   text-decoration: none;
-   color: grey;
-   text-align: center;
-   display: block;
-   text-transform: uppercase;
-   padding: 1rem;
-   font-size: 1rem;
-   float: left;
-   margin-bottom: 2rem;
- }
-.style-nav ul li a:hover {
-  color: red;
-}
-.button {
-  border: 2px white solid;
-  padding: 8px 30px;
-  background-color: blue;
-  color: white;
-  text-decoration: none;
+#brand-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%
 
 }
-.button:hover {
-  background-color: grey;
+#checkout-btn {
+  background-color: green;
+  padding: 5px 20px;
+  color: white;
+  margin-right: 2em;
+  width: 120px;
+  height: 25px;
 }
-.adopt-more-button {
+#checkout-btn:hover {
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: red;
+  border: 1px red solid;
+
+}
+#brand-logo {
+  margin-top: 2em;
+  margin-left: 4em;
+}
+#brand-checkout p {
+  text-align: right;
+  margin-right: 2em;
+  margin-top: 2em;
+}
+ul {
+  margin: 0;
+  padding: 0;
+
+}
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  line-height: 2em;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+nav li {
+  list-style: none;
+  float: left;
+  display: inline;
+  padding: 0px 20px;
+}
+nav {
+  font-size: 1rem;
+  background-color: #e7e7e7;
+  height: 3rem;
+  margin-top: 12rem;
+}
+nav ul, {
+  margin: 0 auto;
+  width: 70em;
+
+}
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+/* Content Container */
+#content-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin: 1em 0;
+  padding: 0 .5em;
+
+}
+.content p {
+  padding-left: 2em;
+  size: 2em;
+}
+.content h1 {
+  size: 4em;
+  padding-left: 1em;
+}
+
+.content-photo {
+  width: 20%;
+  margin-left: 2%;
+}
+.content-text {
+  width: 50%;
+  margin-left: 2%;
+}
+/* Adopt Container */
+#adopt-container {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+.adopt-item-1 {
+  width: 23%;
+  border: 2px grey solid;
+  margin-bottom: 2%;
+  padding: 1em;
+}
+.adopt-item-1 > img {
+  width: 100%;
+  cursor: pointer;
   border: 2px white solid;
-  padding: 8px 30px;
-  background-color: blue;
+}
+.adopt-item-1 > img:hover {
+  border: 2px green solid;
+}
+.adopt-item-1 > h1 {
+  color: blue;
+}
+.adopt-btn > .button {
+  border: 2px white solid;
+  padding: 2% 20%;
+  background-color: green;
   color: white;
   text-decoration: none;
+  text-align: center;
+  font-size: 1rem;
+  width: 100%;
 }
-.adopt-more-button:hover {
-  background-color: grey;
-  border: 2px black solid;
-  color: black;
+.adopt-btn > .button:hover {
+  border: 2px red solid;
+  background-color: black;
+  transition: all 0.5s ease;
+  color: red;
+  cursor: pointer;
+
 }
+/* Adopt More btn */
 .adopt-more {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   padding: 8px 30px;
   color: white;
   text-decoration: none;
   text-align: center;
 }
-.col {
-  margin-top: 1rem;
-  text-align: center;
-  margin-bottom: 1rem;
-
-}
-.row {
-  clear: both;
-  margin: 0 auto;
-  max-width: 70rem;
-
-
-}
-.adopt{
-  text-align: center;
-  background-color: #dedede;
-  padding-bottom: 1rem;
-}
-.checkout-button {
-  background-color: green;
-  padding: 2px 30px;
+.adopt-more #more-btn {
+  background-color: grey;
   color: white;
+  width: 160px;
+  padding: 2px 20px;
+  height: 35px;
+  font-size: .8em;
+}
+.adopt-more #more-btn:hover {
+  background-color: green;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  border: 2px red solid;
+  color: red;
+}
+/* Footer */
+footer {
+  text-align: center;
+  height: 300px;
+  background-color: blue;
+}
+.ft-container {
+  margin: 0 auto;
+  width: 40em;
+  color: white;
+}
+.ft-nav {
+  color: white;
+  font-size: 1em;
+}
+.ft-nav li {
+  list-style: none;
+  display: inline;
+  padding: 0px 10px;
   text-decoration: none;
 }
-.checkout {
-  text-align: right;
-  margin-right: 5%;
+.ft-nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
+  line-height: 2em;
+}
+@media screen and (max-width:1024px) {
+  #content-container, #adopt-container,
+  header, .content text, .ft-nav {
+    width: 100%;
+  }
+  .adopt-item-1 {
+    width: 100%;
+    border: 2px grey solid;
+    margin-bottom: 2%;
+    padding: 1em;
+  }
+  #content-container, #adopt-container {
+    flex-direction: column;
+}
+@media screen and (max-width:411px) {
+  #content-container, #adopt-container,
+  header, .content text, .ft-nav {
+    width: 100%;
+  }
+
+  .adopt-item-1 {
+    width: 100%;
+    border: 2px grey solid;
+    margin-bottom: 2%;
+    padding: 1em;
+  }
+  #content-container, #adopt-container {
+    flex-direction: column;
+  }
+  main {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 5px;
+  }
+  /* Footer */
+  footer {
+    text-align: center;
+    height: 300px;
+    background-color: blue;
+  }
+  .ft-container {
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+  }
+  .ft-nav {
+    color: white;
+    font-size: 1em;
+  }
+  .ft-nav li {
+    list-style: none;
+    display: inline;
+    padding: 0px 10px;
+    text-decoration: none;
+  }
+  .ft-nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    line-height: 2em;
+  }
+
 }
