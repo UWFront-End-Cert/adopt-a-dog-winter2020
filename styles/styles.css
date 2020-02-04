@@ -45,6 +45,7 @@ h1 {
 .cart-price {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap-reverse;
   color: white;
   margin-left: 33rem;
   margin-top: 3rem;
@@ -107,15 +108,19 @@ h2 {
 }
 .introduction {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-bottom: 1rem;
 }
 .intro-body h2 {
   font-size: 2rem;
+  margin-left: 1rem;
 }
 .intro-body p {
   font-family: 'Assistant', Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.7rem;
+  margin-left: 1rem;
+  margin-right:
 }
 .homepage-dogs img {
   height: 33.3%;

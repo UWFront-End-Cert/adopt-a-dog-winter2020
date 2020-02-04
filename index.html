@@ -7,6 +7,7 @@
      <link href="https://fonts.googleapis.com/css?family=Assistant&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="styles/styles.css">
+     <script src="script/script.js" meta charset="utf-8" defer></script>
   </head>
   <body>
       <p><a href="#skip-navigation" class="skip-hidden">Skip navigation links</a></p>
@@ -16,9 +17,9 @@
           <h1>Seattle's premiere dog adoption agency</h1>
         </div>
         <div class="cart-price">
-          <div class="cart">
-            <img src="images/cart-icon.svg" height="21" alt="icon of white cart">
-          </div>
+          <span class="cart">
+            <img src="images/cart-icon.svg" height="21" alt="icon of white cart" id="cart">
+          </span>
             <button class="checkout">Checkout</button>
         </div>
     </header>
@@ -48,83 +49,83 @@
       </div>
       <div class="homepage-dogs">
         <div>
-          <img src="images/murphy-card.jpg" alt="a regal- and wise-looking dog looking askance">
+          <img onclick="murphy()" src="images/murphy-card.jpg" alt="a regal- and wise-looking dog looking askance">
           <div class="dog-description">
             <h3>Murphy</h3>
             <h4>Cost to adopt: $123.45</h4>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
             suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adopt">Adopt</button>
+            <button class="adopt" onclick="murphyAdded()">Adopt</button>
           </div>
         </div>
         <div>
-          <img src="images/poppy-card.jpg" alt="adorable scottish terrier pup with happy smile">
+          <img onclick="poppy()" src="images/poppy-card.jpg" alt="adorable scottish terrier pup with happy smile">
           <div class="dog-description">
             <h3>Poppy</h3>
             <h4>Cost to adopt: $123.45</h4>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
             suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adopt">Adopt</button>
+            <button class="adopt" onclick="poppyAdded()">Adopt</button>
           </div>
         </div>
         <div>
-          <img src="images/jack-card.jpg" alt="brown and white mix beagle looking up off to the side">
+          <img onclick="jack()" src="images/jack-card.jpg" alt="brown and white mix beagle looking up off to the side">
           <div class="dog-description">
             <h3>Jack</h3>
             <h4>Cost to adopt: $123.45</h4>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
             suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adopt">Adopt</button>
+            <button class="adopt" onclick="jackAdded()">Adopt</button>
           </div>
         </div>
         <div>
-          <img src="images/duffy-card.jpg" alt="white-faced beagle ready looking solemnly at the camera">
+          <img onclick="duffy()" src="images/duffy-card.jpg" alt="white-faced beagle ready looking solemnly at the camera">
           <div class="dog-description">
             <h3>Duffy</h3>
             <h4>Cost to adopt: $123.45</h4>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
             suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adopt">Adopt</button>
+            <button class="adopt" onclick="duffyAdded()">Adopt</button>
           </div>
         </div>
         <div>
-          <img src="images/lucas-card.jpg" alt="black rottweiler eager to find a new owner">
+          <img onclick="lucas()" src="images/lucas-card.jpg" alt="black rottweiler eager to find a new owner">
           <div class="dog-description">
             <h3>Lucas</h3>
             <h4>Cost to adopt: $123.45</h4>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
             suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adopt">Adopt</button>
+            <button class="adopt" onclick="lucasAdded()">Adopt</button>
           </div>
         </div>
         <div>
-          <img src="images/jake-card.jpg" alt="golden labrador looking off to the side at a beach">
+          <img onclick='jake()' src="images/jake-card.jpg" alt="golden labrador looking off to the side at a beach">
           <div class="dog-description">
             <h3>Jake</h3>
             <h4>Cost to adopt: $123.45</h4>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
             suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adopt">Adopt</button>
+            <button class="adopt" onclick="jakeAdded()">Adopt</button>
           </div>
         </div>
         <div>
-          <img src="images/angus-card.jpg" alt="brown bulldog with evil black eyes with a wicked smile">
+          <img onclick="angus()" src="images/angus-card.jpg" alt="brown bulldog with evil black eyes with a wicked smile">
           <div class="dog-description">
             <h3>Angus</h3>
             <h4>Cost to adopt: $123.45</h4>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
             suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adopt">Adopt</button>
+            <button class="adopt" onclick="angusAdded()">Adopt</button>
           </div>
         </div>
         <div>
-          <img src="images/violet-card.jpg" alt="adorable dark-brown labrador">
+          <img onclick="violet()" src="images/violet-card.jpg" alt="adorable dark-brown labrador">
           <div class="dog-description">
             <h3>Violet</h3>
             <h4>Cost to adopt: $123.45</h4>
             <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
             suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <button class="adopt">Adopt</button>
+            <button class="adopt" onclick="violetAdded">Adopt</button>
           </div>
         </div>
       </div>
