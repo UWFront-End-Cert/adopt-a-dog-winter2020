@@ -112,6 +112,7 @@ header p {
 
 .dog-box img {
   width: 100%;
+  cursor: pointer;
 }
 
 .dog-box-detail {
