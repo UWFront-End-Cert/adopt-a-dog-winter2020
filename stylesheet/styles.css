@@ -110,6 +110,7 @@ main {
   flex-flow: wrap;
   justify-content: space-between;
   width: 100%;
+  margin: 1em 0;
 }
 .adopt-item-1 {
   width: 23%;
@@ -145,6 +146,19 @@ main {
   color: red;
   cursor: pointer;
 
+}
+/* Blog Container */
+#blog-container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+  flex-direction: column;
+}
+.blog-image {
+  width: 25%;
+}
+.blog-text {
+  width: 70%;
 }
 /* Adopt More btn */
 .adopt-more {

@@ -3,28 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
     <title>Adoptadog</title>
     <link rel="stylesheet" type="text/css" href="stylesheet/styles.css">
+    <script src="js/file.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
-      <img src="adoptadog-logo.svg" alt="Adoptadog Logo">
-        <div class="checkout">
-            <p>$123.05</p>
-            <a href="checkout.html" class="checkout-button">Checkout</a>
+      <div id="brand-container">
+        <div id="brand-logo">
+          <img src="images/adoptadog-logo.png" height="150px" alt="Adoptadog Logo">
         </div>
-      <nav class="style-nav">
-        <ul>
-          <li class="links"><a href="index.html">Home</a></li>
-          <li class="links"><a href="dogs.html">Dogs</a></li>
-          <li class="links"><a href="blog.html">Blog</a></li>
+        <div id="brand-checkout">
+          <p>$123.05</p>
+          <button id="checkout-btn" type="button" name="button">Checkout</button>
+        </div>
+      </div>
+      <nav>
+        <ul class="navigation-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dogs.html">Dogs</a></li>
+          <li><a href="blog.html">Blog</a></li>
         </ul>
       </nav>
     </header>
     <main>
-        <div class="row">
-          <div class="col">
+        <div class="blog-container 1">
+          <div class="blog-image">
             <img src="images/blog-1.jpg" alt="Picture of dog on a cliff">
+          </div>
+          <div class="bog-text">
             <h2>Traveling With Your Dog</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -38,54 +46,24 @@
               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <img src="images/blog-2.jpg" alt="Picture of dog on a cliff">
-            <h2>Traveling With Your Dog</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
-          </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <img src="images/blog-3.jpg" alt="Picture of dog on a cliff">
-            <h2>Traveling With Your Dog</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla</p>
-          </div>
-        </div>
+      
     </main>
     <footer>
-      <div class="foot-content">
-        <img src="adoptadog-logo.svg" alt="adoptadog logo">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <nav>
-          <ul>
-            <li>Home</li>
-            <li>Dogs</li>
-            <li>Blog</li>
+      <div class="ft-container">
+        <img src="images/adoptadog-logo.png" height="100px" alt="Adoptadog Logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+          mollit anim id est laborum.</p>
+          <div class="ft-nav">
+          <ul class="navigation-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
-        </nav>
-        <p>©2020 Adoptadog, LLC | Seattle, WA. </p>
+          </div>
+          <p>©2020 Adoptadog, LLC | Seattle, WA.</p>
       </div>
-
     </footer>
   </body>
 </html>
