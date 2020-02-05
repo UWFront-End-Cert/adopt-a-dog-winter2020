@@ -28,10 +28,10 @@ header > div {
 header > div * {
   margin: 0;
 }
-header img[src="images/adoptadog-logo.svg"] {
-  max-width:100%;
+header img[alt="a white dog logo image for header"] {
+
 }
-header img[src="images/cart-icon.svg"] {
+header img[alt="a white color cart icon in the header"] {
   width: 35px;
   padding-right: 0.4rem;
 }
@@ -88,7 +88,7 @@ footer {
   padding: 2.5rem;
 }
 footer ul {
-  display: table;
+
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
@@ -224,7 +224,7 @@ footer p {
   color:  #103E67;
   font-size: 1.2rem;
   margin: 0;
-  padding: 1rem 0 1rem 0;
+  padding: 1rem 0;
 }
 .blog-page p {
   color: black;
