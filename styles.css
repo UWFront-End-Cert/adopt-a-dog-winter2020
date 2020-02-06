@@ -148,12 +148,18 @@ h2 {
 
  }
 
+ .main-container h1 {
+   width: 100%;
+   padding: 2rem;
+
+ }
+
  .dog-box {
-   background-image: url("images/murphy-card.jpg");
    display: flex;
    align-items: flex-start;
+   flex-wrap: wrap;
    width: 250px;
-   height: 250px;
+   height: 400px;
    min-width: 200px;
    min-height: 200px;
    margin: 10px 10px;
@@ -161,15 +167,55 @@ h2 {
 
  }
 
- .dog-box img {
-
- }
-
- .dog-box h2 {
-   color: white;
+ .dog-box-img {
    display: flex;
-   justify-content: center;
+   flex-wrap: wrap;
+   width: 250px;
+
  }
+
+ .dog-box-name {
+   display: flex;
+   flex-wrap: wrap;
+
+
+ }
+
+ .dog-box-cost {
+   display: flex;
+   flex-wrap: wrap;
+   color: gray;
+   display: flex;
+
+
+ }
+
+ .dog-box-cost {
+   display: flex;
+   flex-wrap: wrap;
+
+
+ }
+
+ .dog-box-info {
+   display: flex;
+   flex-wrap: wrap;
+
+
+ }
+
+ .dog-box.button {
+   display: flex;
+   flex-wrap: wrap;
+   width: 200px;
+   align-content: center;
+
+ }
+
+ .see-dog-button button {
+   width: 200px;
+ }
+
 
  .blog-container {
    display: flex;
