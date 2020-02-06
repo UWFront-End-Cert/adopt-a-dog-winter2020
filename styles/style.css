@@ -2,6 +2,7 @@ body {
     box-sizing: border-box;
     background-color: #DCDCDC;
 }
+
 .header {
     background-image: url("../images/header-image.jpg");
     background-color: #003C63;
@@ -12,61 +13,67 @@ body {
     flex-direction: row;
     justify-content: space-between;
   }
+
 .caption {
     display: block;
     color: #42aa04;
     font-style: italic;
     line-height: 10%;
 }
+
 .checkout {
     color: #FFFFFF;
     background-color: #42aa04 ;
 }
+
 .header-box-1 {
-    text-align: center;
     margin: 2rem 2rem 6rem 4rem;
 }
+
 .header-box-2  {
-    display: block; 
     margin: 2rem 6rem 10rem 20rem;
-    align-items: center;
 }
+
 .header-box-2 i {
     color: #FFFFFF;
-    flex-direction: row-reverse;
-    line-height: 1rem;
 }
+
 .adopt {
     background-color: #42aa04;
     color: #FFFFFF;
     height: 3rem;
 }
+
 .main-menu {
     display: flex;
     flex-direction: row;
     margin-left: 3rem;
-    margin-right: 30rem;
     font-family: sans-serif;
 }
+
 li a {
     text-decoration: none;
     color: #2e3236;
     font-size: 80%;
     font-weight: bold;
 }
+
 li {
     list-style: none; 
     padding: 1rem 1rem 1rem 1rem;
     position: relative;
   }
+
 li:before {
     content: " / ";
     position: absolute;
     right: 0;
 }
+
 li:last-child:before { 
     content: ''; 
 }
+
 .main-container {
     background-color: #FFFFFF;
     max-width: 100%;
@@ -75,26 +82,27 @@ li:last-child:before {
     align-items: center;
     padding-right: 10rem;
 }
+
 .main-container-blog {
     background-color: #FFFFFF;
     max-width: 100%;
     padding-right: 10rem;
 }
+
 .dogs-title {
-    text-align: left;
+    justify-content: flex-start;
 }
+
 .blog-title {
     text-align: left;
     padding-left: 6rem;
     padding-top: .25rem;
-   
 }
-.blog-image {
 
-}
 .blog-text {
     padding-left: 3rem;
 }
+
 .blog {
     display: grid;
     grid-template-columns: 34% 66%;
@@ -103,14 +111,15 @@ li:last-child:before {
     padding: 0 6rem 3rem 6rem;
 }
    
-
 .mission {
     padding: 2rem 6rem 2rem 6rem;
 }
+
 .mission img {
     float: left;
     padding-right: 2rem;
 }
+
 .dog-boxes {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
@@ -118,29 +127,36 @@ li:last-child:before {
     grid-gap: 3rem;
     padding: 0 6rem 0 6rem;
 }
+
 .dog-box {
     border: .05rem solid grey;
     max-width: 100%;
 }
+
 .dog-box-image {
    max-width: 100%;
 }
+
 .dog-box-info {
     padding: 0 1rem 1rem 1rem;
     line-height: 1rem;
 }
+
 .dog-box-info button {
     width: 100%;
     display: block;
 }
+
 .see-more-dogs {
     height: 3rem;
     width: 15rem;
     margin: 4rem 0 6rem 8rem;
 }
+
 .see-more-dogs>button {
     background-color: lightslategrey;
 }
+
 .footer {
     background-color: #003C63;
     align-items: center;
@@ -148,35 +164,42 @@ li:last-child:before {
     color: #FFFFFF;
     padding: 3rem 10rem 3rem 10rem;
 } 
+
 .footer-image {
     height: 100px;
     width: auto;
 }
+
 .footer h4 {
     line-height: 1rem;
 }
+
 .footer-nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
     font-family: sans-serif;
 }
+
 .footer-nav li a {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 80%;
     font-weight: bold;
 }
+
 .footer-nav li {
     list-style: none; 
     padding: 1rem 1rem 1rem 1rem;
     position: relative;
-  }
+}
+
 .footer-nav li:before{
     content: " / ";
     position: absolute;
     right: 0;
 }
+
 .footer-nav li:last-child:before { 
     content: ''; 
 }
