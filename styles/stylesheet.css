@@ -82,7 +82,7 @@ li:not(:nth-child(3))::after {
 .logo-content-container > img {
   margin: 0;
   display: block;
-  width: 100%;
+  /* width: 100%; */
 }
 .logo-content-container > p {
   color: var(--green);
@@ -91,7 +91,7 @@ li:not(:nth-child(3))::after {
   font-family: var(--headerfont);
   font-style: italic;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.5vw;
 }
 .cart-content-container > p {
   color: white;
