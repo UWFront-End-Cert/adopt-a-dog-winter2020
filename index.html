@@ -42,7 +42,7 @@
       </div>
     <div class="main-container">
       <div class="dog-box">
-        <img src="images/murphy-card.jpg" class="dog-box-img">
+        <img src="images/murphy-card.jpg" onclick="handleClick('Murphy', 'Poodle', '123.45')" class="dog-box-img">
         <h2 class="dog-box-name">Murphy</h2>
         <h3 class="dog-box-cost">Cost to adopt: $123.45</h3>
         <p class="dog-box-info">Lorem ipsum dolor sit amet, consectetur
@@ -50,11 +50,13 @@
           incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud
         </p>
-        <button onclick="" class="dog-box-button">Adopt</button>
+        <div class="dog-box-button" onclick="handleClick('Murphy')">
+          <button onclick ="handleCounter(123.45)">Adopt</button>
+        </div>
       </div>
 
       <div class="dog-box">
-        <img src="images/poppy-card.jpg" class="dog-box-img">
+        <img src="images/poppy-card.jpg" onclick="handleClick('Poppy', 'Golden Retriever', '123.45')" class="dog-box-img">
         <h2 class="dog-box-name">Poppy</h2>
         <h3 class="dog-box-cost">Cost to adopt: $123.45</h3>
         <p class="dog-box-info">Lorem ipsum dolor sit amet, consectetur
@@ -62,11 +64,12 @@
           incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud
         </p>
-        <button onclick="" class="dog-box-button">Adopt</button>
+        <div class="dog-box-button" onclick="handleClick('Poppy')">
+          <button onclick ="handleCounter(123.45)">Adopt</button>
+        </div>
       </div>
-
       <div class="dog-box">
-        <img src="images/jack-card.jpg" class="dog-box-img">
+        <img src="images/jack-card.jpg" onclick="handleClick('Jack', 'Lab', '123.45')" class="dog-box-img">
         <h2 class="dog-box-name">Jack</h2>
         <h3 class="dog-box-cost">Cost to adopt: $123.45</h3>
         <p class="dog-box-info">Lorem ipsum dolor sit amet, consectetur
@@ -74,11 +77,12 @@
           incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud
         </p>
-        <button onclick="" class="dog-box-button">Adopt</button>
+        <div class="dog-box-button" onclick="handleClick('Poppy')">
+          <button onclick ="handleCounter(123.45)">Adopt</button>
+        </div>
       </div>
-
       <div class="dog-box">
-        <img src="images/duffy-card.jpg" class="dog-box-img">
+        <img src="images/duffy-card.jpg" onclick="handleClick('Duffy', 'Husky', '123.45')" class="dog-box-img">
         <h2 class="dog-box-name">Duffy</h2>
         <h3 class="dog-box-cost">Cost to adopt: $123.45</h3>
         <p class="dog-box-info">Lorem ipsum dolor sit amet, consectetur
@@ -86,10 +90,12 @@
           incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud
         </p>
-        <button onclick="" class="dog-box-button">Adopt</button>
+        <div class="dog-box-button" onclick="handleClick('Poppy')">
+          <button onclick ="handleCounter(123.45)">Adopt</button>
+        </div>
       </div>
       <div class="dog-box">
-        <img src="images/lucas-card.jpg" class="dog-box-img">
+        <img src="images/lucas-card.jpg" onclick="handleClick('Lucas', 'German Shepard', '123.45')" class="dog-box-img">
         <h2 class="dog-box-name">Lucas</h2>
         <h3 class="dog-box-cost">Cost to adopt: $123.45</h3>
         <p class="dog-box-info">Lorem ipsum dolor sit amet, consectetur
@@ -97,10 +103,12 @@
           incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud
         </p>
-        <button onclick="" class="dog-box-button">Adopt</button>
+        <div class="dog-box-button" onclick="handleClick('Poppy')">
+          <button onclick ="handleCounter(123.45)">Adopt</button>
+        </div>
       </div>
       <div class="dog-box">
-        <img onclick="displayDogInfo('Jack', Basset Hount', '$123.45')" src="images/jake-card.jpg" class="dog-box-img">
+        <img src="images/jake-card.jpg" onclick="handleClick('Jake', 'Basset Hound', '123.45')" class="dog-box-img">
         <h2 class="dog-box-name">Jake</h2>
         <h3 class="dog-box-cost">Cost to adopt: $123.45</h3>
         <p class="dog-box-info">Lorem ipsum dolor sit amet, consectetur
@@ -108,21 +116,27 @@
           incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud
         </p>
-        <input onclick="addToTotal()" type="submit" name="Adopt" value="Adopt" class="dog-box-adopt">
+        <div class="dog-box-button" onclick="handleClick('Poppy')">
+          <button onclick ="handleCounter(123.45)">Adopt</button>
+        </div>
       </div>
       <div class="dog-box">
-        <img src="images/angus-card.jpg" class="dog-box-img">
+        <img src="images/angus-card.jpg" onclick="handleClick('Angus', 'Basset Hount', '123.45')" class="dog-box-img">
         <h2 class="dog-box-name">Angus</h2>
         <h3 class="dog-box-cost">Cost to adopt: $123.45</h3>
-        <p class="dog-box-info">Lorem ipsum dolor sit amet, consectetur
+        <p class="dog-box-info">
+          Lorem ipsum dolor sit amet, consectetur
           adipisicing elit, sed do eiusmod tempor
           incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud
         </p>
-        <button onclick="" class="dog-box-button">Adopt</button>
+        <div class="dog-box-button" onclick="handleClick('Angus')">
+          <button onclick ="handleCounter(123.45)">Adopt</button>
+        </div>
       </div>
+
       <div class="dog-box">
-        <img src="images/violet-card.jpg" class="dog-box-img">
+        <img src="images/violet-card.jpg" onclick="handleClick('Violet', 'Alaskan Malamut', '123.45')" class="dog-box-img">
         <h2 class="dog-box-name">Violet</h2>
         <h3 class="dog-box-cost">Cost to adopt: $123.45</h3>
         <p class="dog-box-info">Lorem ipsum dolor sit amet, consectetur
@@ -130,7 +144,9 @@
           incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud
         </p>
-        <button onclick="" class="dog-box-button">Adopt</button>
+        <div class="dog-box-button" onclick="handleClick('Angus')">
+          <button onclick ="handleCounter(123.45)">Adopt</button>
+        </div>
       </div>
     </div>
     <div class="see-dogs-button">
