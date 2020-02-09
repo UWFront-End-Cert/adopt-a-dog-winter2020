@@ -24,9 +24,11 @@ function addToTotal () {
 */
 //JS
 
+let totalCost = 0;
 let counter = 0;
 
-function handleCounter() {
+function handleCounter(cost) {
+  totalCost = Number(cost) + totalCost;
   counter++;
-  alert(counter);
+  alert(`You have selected ${counter} dog(s) to adopt. Your total price is $${totalCost}`);
 }
