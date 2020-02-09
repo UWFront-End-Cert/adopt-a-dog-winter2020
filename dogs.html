@@ -31,13 +31,13 @@
   </nav>
 
   <section>
-    <h2 class="margin-top">Here are all of our Dogs!</h2>
+    <h2>Here are all of our Dogs!</h2>
   </section>
 
-  <section class="flex-container margin-top">
+  <section class="flex-container">
 
     <div class="dog-card">
-      <img class="dog" src="images/angus-card.jpg" onclick="Angus()" alt="boxer">
+      <img class="dog" src="images/angus-card.jpg" onclick="handleClick('Angus is a boxer and costs $123.45')" alt="boxer">
       <h3 class="card">Angus</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -46,7 +46,7 @@
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/duffy-card.jpg" onclick="Duffy()" alt="pitbull">
+      <img class="dog" src="images/duffy-card.jpg" onclick="handleClick('Duffy is a pitbull and costs $123.45')" alt="pitbull">
       <h3 class="card">Duffy</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -55,7 +55,7 @@
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/jack-card.jpg" onclick="Jack()" alt="beagle white and tan">
+      <img class="dog" src="images/jack-card.jpg" onclick="handleClick('Jack is a beagle and costs $123.45')" alt="beagle white and tan">
       <h3 class="card">Jack</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -64,7 +64,7 @@
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/jake-card.jpg" onclick="Jake()" alt="yellow lab">
+      <img class="dog" src="images/jake-card.jpg" onclick="handleClick('Jake is a yellow lab and costs $123.45')" alt="yellow lab">
       <h3 class="card">Jake</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -73,7 +73,7 @@
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/lucas-card.jpg" onclick="Lucas()" alt="black german shephard mix">
+      <img class="dog" src="images/lucas-card.jpg" onclick="handleClick('Lucas is a German shepherd and costs $123.45')" alt="black german shephard mix">
       <h3 class="card">Lucas</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -82,7 +82,7 @@
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/luna-card.jpg" onclick="Luna()" alt="yellow lab">
+      <img class="dog" src="images/luna-card.jpg" onclick="handleClick('Luna is a yellow lab and costs $123.45')" alt="yellow lab">
       <h3 class="card">Luna</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -91,7 +91,7 @@
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/maximus-card.jpg" onclick="Maximus()" alt="black and silver schnauzer">
+      <img class="dog" src="images/maximus-card.jpg" onclick="handleClick('Maximus is a schnauzer and costs $123.45')" alt="black and silver schnauzer">
       <h3 class="card">Maximus</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -100,7 +100,7 @@
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/murphy-card.jpg" onclick="Murphy()" alt="tan boxer">
+      <img class="dog" src="images/murphy-card.jpg" onclick="handleClick('Murphy is a boxer and costs $123.45')" alt="tan boxer">
       <h3 class="card">Murphy</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -109,7 +109,7 @@
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/piper-card.jpg" onclick="Piper()" alt="chocolate retriever mix">
+      <img class="dog" src="images/piper-card.jpg" onclick="handleClick('Piper is a chocolate retriever and costs $123.45')" alt="chocolate retriever mix">
       <h3 class="card">Piper</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -118,7 +118,7 @@
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/poppy-card.jpg" onclick="Poppy()" alt="silver shitzu">
+      <img class="dog" src="images/poppy-card.jpg" onclick="handleClick('Poppy is a shitzu and costs $123.45')" alt="silver shitzu">
       <h3 class="card">Poppy</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -127,7 +127,7 @@
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/stella-card.jpg" onclick="Stella()" alt="golden tan chihuahua">
+      <img class="dog" src="images/stella-card.jpg" onclick="handleClick('Stella is a chihuahua and costs $123.45')" alt="golden tan chihuahua">
       <h3 class="card">Stella</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
@@ -136,7 +136,7 @@
     </div>
 
     <div class="dog-card">
-      <img class="dog" src="images/violet-card.jpg" onclick="Violet()" alt="baby chocolate lab">
+      <img class="dog" src="images/violet-card.jpg" onclick="handleClick('Violet is a chocolate lab and costs $123.45')" alt="baby chocolate lab">
       <h3 class="card">Violet</h3>
       <h4>Cost to Adopt: $123.45</h4>
       <p class="card">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
