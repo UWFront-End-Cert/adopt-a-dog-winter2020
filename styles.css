@@ -64,7 +64,19 @@ ul > li {
   max-width: 1200px;
   flex: auto;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.header-flex-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-flex-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .flex-box > article {
@@ -79,7 +91,6 @@ article < h3, h4, p {
   max-width: 200px;
   margin: 20px 20px;
 }
-
 
 article img {
   max-width: 200px;
