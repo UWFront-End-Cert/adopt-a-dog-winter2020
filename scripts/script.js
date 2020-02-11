@@ -1,10 +1,10 @@
-/*dog pictures - alerts dog info*/
+//click dog pictures - alerts dog info
 
 function dogInfo(nameFees) {
   alert(nameFees);
 }
 
-/*adopt button - alerts total cost*/
+// click adopt button - alerts total cost
 
 let totalCost = 0;
 
