@@ -10,15 +10,15 @@ flex-wrap: wrap;
   display: inline;
   font-size: 1.2rem;
 }
+li:after {
+    content: ' \002F';
+}
 .logo-bar {
   background-color: #093C60;
 }
-.image-bar img{
-  height: 200px;
-  flex:2;
-}
+
 .logo-bar img{
-  height: 200px;
+  width: 600px;
   flex:1;
 }
 .main-container{
@@ -83,7 +83,8 @@ flex:1;
   background-color: #81B640;
 }
 .btn-adopt{
-  margin-left: 45px;
+  margin: 0 auto;
+    display: block;
 }
 .btn-see-more{
   background-color: #EAEAEA;
