@@ -2,20 +2,27 @@
   box-sizing: border-box;
   margin: auto;
 }
+
 main {
-  padding: 0.5rem 9.5rem 4rem 9.5rem;
+  width: 75%;
+  padding-bottom: 3rem;
+  padding-top: 2rem;
 }
+
 img {
   max-width: 100%;
 }
+
 ul {
   list-style: none;
 }
+
 a:link {
   text-decoration: none;
 }
+
 /* header style start */
-header > div {
+.header-upper {
   background-image: url('../images/header-image.jpg');
   display: grid;
   padding-left: 5rem;
@@ -25,37 +32,42 @@ header > div {
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 36% 1fr 30%;
 }
-header > div * {
+
+.header-upper * {
   margin: 0;
 }
-header img[alt="a white dog logo image for header"] {
 
-}
-header img[alt="a white color cart icon in the header"] {
+.cart-icon-money img {
   width: 35px;
   padding-right: 0.4rem;
 }
+
 header .cart-icon-money {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: baseline;
 }
+
 header p {
   color: white;
   font-size: 0.8rem;
 }
-header>div div:first-child {
+
+.header-upper div:first-child {
   grid-area: 1 / 1 / 5 / 2;
 }
+
 header div h1 {
   color: #81B741;
   font-size: 1.2rem;
 }
-header>div div:nth-child(2) {
+
+.header-upper div:nth-child(2) {
   grid-area: 1 / 3 / 2 / 4;
 }
-header>div button {
+
+.header-upper button {
   grid-area: 2 / 3 / 3 / 4;
   background-color: #81B741;
   border: none;
@@ -69,14 +81,17 @@ header>div button {
 /* nav style start */
 header nav {
   background-color: #EBEBEB;
-  padding-left: 9.5rem;
 }
+
 header nav ul li {
   display: inline-flex;
 }
+
 header nav ul {
+  width: 75%;
   padding: 0;
 }
+
 header nav ul li:not(:last-child)::after {
   content: '/';
   padding: 0.9rem;
@@ -87,8 +102,8 @@ footer {
   background-color: #037EAA;
   padding: 2.5rem;
 }
-footer ul {
 
+footer ul {
   text-align: center;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
@@ -99,27 +114,127 @@ footer img {
   display: block;
   padding-bottom: 1.2rem;
 }
+
 footer ul li {
   display: inline-flex;
 }
+
 footer ul li a {
   color: white;
 }
+
 footer ul li:not(:last-child)::after {
   content: '/';
   color: white;
   padding: 0.5rem;
 }
+
 footer p {
   color: white;
   text-align: center;
 }
 /* footer style end */
+/* home page style start */
+.home-page {
+  display: flex;
+  flex-direction: row;
+}
+
+.home-left-container {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.home-blog-preview {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 1.5rem 0 1.5rem 0;
+}
+
+.home-blog-preview img {
+  max-width: 95%;
+}
+
+.home-page >div:first-child h2 {
+  color: #103E67;
+  padding-bottom: 0.8rem;
+}
+
+.home-container-dog-card {
+  margin: 0;
+  padding: 0 0 2rem 0;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(9rem,1fr));
+  grid-gap: 1.5rem 1.5rem;
+}
+
+.home-page button:nth-child(3) {
+  padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+  color: #103E67;
+  border: none;
+  border-radius: 2px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.home-page aside {
+  width: 140%;
+  padding: 0 0 0 2rem;
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+.home-aside-blog-tiles img {
+  height: 250px;
+  object-fit: cover;
+  padding-top: 2rem;
+  align-items: center;
+}
+
+.home-page aside h1 {
+  color:  #103E67;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.home-aside-blog-tiles-text h2 {
+  color:  #103E67;
+  font-size: 0.8rem;
+  margin: 0;
+  padding: 1rem 0 0 0;
+}
+
+.home-aside-blog-tiles-text  p {
+  font-size: 0.8rem;
+  padding: 0.5rem 0;
+}
+
+/* home page style end */
+/* dogs page style start */
+.dogs-card-container4all {
+  padding:0;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(9rem,1fr));
+  grid-gap: 2.5rem 2.5rem;
+}
+
+.dogs-page h1 {
+  color: #103E67;
+  text-align: left;
+  padding: 1.5rem 0 1.6rem 0;
+  font-size: 1.7rem;
+}
+/* dogs page style end */
+
 /* dog-card style start */
 .container-dog-card {
   border: 2px solid #EBEBEB;
   padding-bottom: 0.7rem;
 }
+
 .button-dog-card {
   background-color: #81B741;
   color: white;
@@ -130,124 +245,71 @@ footer p {
   padding: 0.4rem 3rem 0.4rem 3rem;
   display: flex;
 }
+
 .name-dog-card {
   padding: 0.3rem 5% 0.3rem 5%;
   color: #103E67;
   font-size: 0.95rem;
 }
+
 .description-dog-card {
   padding: 0.3rem 5% 0.6rem 5%;
 }
+
 .label-cost-dog-card, .description-dog-card, .number-cost-dog-card {
   font-size: 0.7rem;
   color: black;
   font-family: sans-serif;
 }
+
 .label-cost-dog-card {
   font-weight: bold;
   display: inline;
   padding: 0.3rem 0 0.3rem 5%;
 }
+
 .number-cost-dog-card{
   display: inline;
 }
 /* dog-card style end */
-/* home page style start */
-.home-page {
+/* blog page style start */
+.blog-page {
   display: flex;
   flex-direction: column;
 }
-.home-page div:first-child {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  padding: 1.5rem 0 1.5rem 0;
-}
-.home-page >div:first-child h2 {
-  color: #103E67;
-  padding-bottom: 0.8rem;
-}
 
-.home-page div:first-child img {
-  padding-right: 2.5rem;
-}
-.home-page >div:nth-child(2) {
-  padding: 0 0 2rem 0;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 2.5rem 2.5rem;
-}
-.home-page button:nth-child(3) {
-  padding: 0.6rem 2.5rem 0.6rem 2.5rem;
-  color: #103E67;
-  border: none;
-  border-radius: 2px;
-  font-size: 0.8rem;
-  font-weight: bold;
-}
-/* home page style end */
-/* dogs page style start */
-.dogs-card-container4all {
-  padding:0;
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 2.5rem 2.5rem;
-}
-.dogs-page h1 {
-  color: #103E67;
-  text-align: left;
-  padding: 1.5rem 0 1.6rem 0;
-  font-size: 1.7rem;
-}
-/* dogs page style end */
-
-/* blog page style start */
-.blog-page {
-  padding: 0.5rem 9.5rem 5rem 9.5rem;
-  display: grid;
-  grid-template-rows: 10% 1fr 1fr 1fr;
-  grid-template-columns: 33% 67%;
-  grid-row-gap: 1rem;
-}
-.blog-page img {
-  padding: 1rem 2rem 1rem 0;
-}
 .blog-page h1 {
-  grid-area: 1 / 1 / 2 / 2;    /* a good way to align it left*/
   color:  #103E67;
   font-size: 1.5rem;
   margin: 0;
   padding: 1.3rem 0 0 0;
 }
-.blog-page h2 {
+
+.blog-tiles h2 {
   color:  #103E67;
   font-size: 1.2rem;
   margin: 0;
   padding: 1rem 0;
 }
-.blog-page p {
+
+.blog-tiles p {
   color: black;
   font-size: 0.83rem;
   padding-bottom: 1rem;
 }
-.blog-page img:nth-child(2) {
-  grid-area: 2 / 1 / 3 / 2;
+
+.blog-tiles {
+  display: flex;
+  flex-direction: row;
 }
-.blog-page div:nth-child(3) {
-  grid-area: 2 / 2 / 3 / 3;
+
+.blog-tiles img {
+  display: inline;
+  padding: 1rem 2rem 1rem 0;
 }
-.blog-page img:nth-child(4) {
-  grid-area: 3 / 1 / 4 / 2;
-}
-.blog-page div:nth-child(5) {
-  grid-area: 3 / 2 / 4 / 3;
-}
-.blog-page img:nth-child(6) {
-  grid-area: 4 / 1 / 5 / 2;
-}
-.blog-page div:nth-child(7) {
-  grid-area: 4 / 2 / 5 / 3;
+
+.blog-tiles-text {
+  display: inline;
 }
 /* blog page style end */
 /* checkoout form page style start */
@@ -256,37 +318,47 @@ footer p {
   font-weight: bold;
   font-size: 1.1rem;
 }
+
 .checkout-form-page h1 {
   font-size: 1.5rem;
   padding: 1.5rem 0 2.2rem 0;
 }
+
 .checkout-form-page label[for="location"] {
   padding-top: 1.5rem;
 }
+
 .checkout-form-page >p:nth-child(3) {   /* <p>Dogs Adopted</p> */
   padding: 0.5rem 0 1rem 0;
 }
+
 .checkout-dog-name+p {  /* Adjacent Sibling:directly follows */
   font-weight: bold;
 }
+
 .checkout-dog-name~p { /* General Sibling:all follows */
   display: inline;
   font-size: 0.8rem;
 }
+
 .checkout-form-page >p:nth-child(5) {   /* <p>Total Adoption Cost</p> */
   padding: 2rem 0 0.5rem 0;
 }
+
 .checkout-form-page >p:nth-child(6) {   /* <p>$1234.56</p> */
   padding: 0 0 1.5rem 0;
 }
+
 .checkout-form-page input, .checkout-form-page select {
   margin-bottom: 1.5rem;
   margin-top: 0.4rem;
   height: 2rem;
 }
+
 .checkout-form-page form >input:nth-child(2), .checkout-form-page #email, .checkout-form-page #street {
   width: 70%;
 }
+
 .checkout-form-page select[id="location"] {
   width: 25%;
 }
@@ -297,44 +369,55 @@ footer p {
 .checkout-form-page form label:first-child, .checkout-form-page label:nth-child(3), .checkout-form-page label:nth-child(5), .checkout-form-page label:nth-child(13) {
   display: block;
 }
+
 .checkout-form-tiles {
   border: 2px solid #EBEBEB;
   display: inline-block;
   padding-right: 2rem;
   margin: 0;
 }
+
 .checkout-form-page form>div:nth-child(7) {
   width: 30%;
 }
+
 .checkout-form-page form>div:nth-child(8) {
   width: 20%;
 }
+
 .checkout-form-page form>div:nth-child(9) {
   width: calc(20% + 2rem);
 }
+
 .checkout-form-page input[id="city"] {
   width: 100%;
 }
+
 .checkout-form-page select[id="state"] {
   width: 100%;
 }
+
 .checkout-form-page input[id="zip"] {
   width: 100%;
 }
+
 .checkout-form-page >div:nth-child(4) {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
+
 .checkout-form-page img[src="images/lucas-checkout.jpg"], .checkout-form-page img[src="images/duffy-checkout.jpg"] {
   max-width: 70px;
   margin: 0;
 }
+
 .checkout-form-page >div:nth-child(4) div:nth-child(even) {
   margin: 0;
   padding-left: 1rem;
   padding-right: 3rem;
 }
+
 .checkout-form-page button {
   color: white;
   font-weight: bolder;
@@ -345,14 +428,73 @@ footer p {
   width: 23%;
   height: 2.1rem;
 }
+
 .checkout-form-page .checkout-radio {
   color: black;   /* override  */
   font-weight: 100;
   font-size: 1rem;
   padding-right: 2rem;
-
 }
+
 .checkout-form-page input[type="radio"] {
   margin: 0;   /* override but useless */
 }
 /* checkout form style end */
+
+@media screen and (max-width: 1024px)  {
+  .home-page aside, .disappear4small-size  {
+    display: none;
+  }
+  .home-left-container a:not(button) {
+    padding: 1rem 0;
+  }
+  .header-upper {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-upper-left img {
+    max-width: 20rem;
+  }
+  .header-upper button {
+    align-self: flex-end;
+  }
+  .cart-icon-money {
+    padding: 1rem 0;
+  }
+  .blog-tiles {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 536px) {
+  .container-dog-card img {
+    height: 225px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width:650px) {
+  .header-upper-left h1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  .disappear4big-size {
+     display: none;
+  }
+  .home-blog-preview {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
+  .home-blog-preview img {
+    margin: 0;
+    height: 300px;
+    object-fit: cover;
+  }
+  .home-blog-preview h2 {
+    padding-top: 1.5rem;
+  }
+}
