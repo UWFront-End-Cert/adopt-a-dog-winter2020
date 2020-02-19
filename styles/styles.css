@@ -26,10 +26,6 @@ body {
   font-size: 16px;
 }
 
-main {
-  max-width: 1440px;
-}
-
 .logo {
   padding: 3rem 0rem 0rem 6rem;
   width: 100%;
@@ -79,7 +75,7 @@ main {
 .top-nav {
   background-color: rgb(231, 231, 231);
   width: 100%;
-  padding: .5rem 0rem .5rem 12rem;
+  padding: .5rem 0rem .5rem 14.5rem;
 }
 
 .top-nav a {
@@ -120,34 +116,56 @@ ul {
 }
 
 h2 {
-  padding: 1rem 0rem;
+  margin: 0;
 }
 
 .h2-padding {
-  padding: 1rem 0rem 1rem 12rem;
+  padding: 2rem 0rem 1rem 12rem;
 }
 
 .dogs-main {
   width: 100%;
-  min-width: 320px;
+  /* min-width: 320px; */
   display: flex;
-  align-items: center;
-  padding: 2rem 12rem 3rem;
+  flex-direction: column;
+  /* align-items: center; */
+  /* padding: 2rem 12rem 3rem; */
+  padding-right: 3rem;
 }
 
 .first-main-image {
-  padding-right: 2.5rem;
-  width: 40%;
+  /* padding-right: 2.5rem; */
+  width: 100%;
 }
 
 .home-dogs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0rem 9.625rem 2rem;
+  width: 100%;
+  padding-right: 3rem;
+  /* padding: 0rem 9.625rem 2rem; */
 }
 
 .dog-card {
+  max-width: calc(180px - 1rem);
+  /* width: calc(33.33% - 1rem); */
+  border: 2px solid rgb(242, 242, 242);
+  margin: 0 .5rem 2rem;
+}
+
+.dogs-dogs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 10rem;
+}
+
+.dog-card-b {
+  /* max-width: calc(180px - 1rem);
+  border: 2px solid rgb(242, 242, 242);
+  margin: 0 .5rem 2rem; */
   min-width: 180px;
   max-width: 20%;
   border: 2px solid rgb(242, 242, 242);
@@ -210,6 +228,7 @@ h2 {
   width: 100%;
   min-width: 320px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   padding-bottom: 5rem;
 }
@@ -314,7 +333,7 @@ form {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .no-label, .yes-label {
@@ -327,4 +346,156 @@ h2 {
 
 label, span {
   line-height: 2rem;
+}
+
+.index-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: 2rem 12rem;
+}
+
+.adopt-a-dog {
+  width: 75%;
+}
+
+.from-our-blog {
+  width: 25%;
+}
+
+.small-blog-img {
+  width: 100%;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* tablet */
+@media screen and (max-width: 769px) {
+  .top-nav {
+    padding: .5rem 0;
+    text-align: center;
+  }
+
+  .index-main {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .dogs-adopted {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adopt-cost {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .adopt-img {
+    align-self: flex-start;
+  }
+
+  .checkout-main {
+    padding: 2rem;
+  }
+
+  .dog-card {
+    max-width: 45%;
+  }
+
+  .dogs-dogs {
+    padding: 0;
+  }
+
+  .dog-card-b {
+    max-width: 35%;
+  }
+
+  .blog-post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .blog-main {
+    padding: 2rem;
+  }
+
+  .blog-img {
+    padding-right: 0;
+    width: 65%;
+  }
+
+  .h2-padding {
+    padding: 2rem 0;
+    text-align: center;
+  }
+}
+
+/* phone */
+@media screen and (max-width: 576px) {
+  .top-nav {
+    padding: .5rem 0;
+    text-align: center;
+  }
+
+  .from-our-blog {
+    display: none;
+  }
+
+  .index-main {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .adopt-a-dog {
+    width: 100%;
+  }
+
+  .dogs-main {
+    padding: 0;
+  }
+
+  .dogs-dogs {
+    padding: 0;
+  }
+
+  .dog-card {
+    max-width: 50%;
+  }
+
+  .dog-card-b {
+    max-width: 50%;
+  }
+
+  .home-dogs {
+    padding: 0;
+  }
+
+  .h2-padding {
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  .blog-post {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  .blog-main {
+    padding: 1rem;
+  }
+
+  .blog-img {
+    padding-right: 0;
+    width: 65%;
+  }
 }
