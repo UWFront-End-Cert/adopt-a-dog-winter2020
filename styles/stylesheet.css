@@ -119,14 +119,14 @@ li:not(:nth-child(3))::after {
   margin: 2% 10%;
 }
 
-.landing-page.main-content-container {
-  margin: 2% 3% 2% 10%;
-  width: 70%;
-}
-
 /* home + dog */
 .landing-page-container {
   display: flex;
+  margin: 2% 10%;
+}
+.landing-page.main-content-container {
+  margin: 0 3% 0 0;
+  width: 70%;
 }
 
 main p {
@@ -179,7 +179,7 @@ main p {
 .landing-page-container .dog-cards {
   padding-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  grid-template-columns: repeat(3, minmax(10rem, 1fr));
   grid-gap: 3rem;
 }
 
@@ -227,7 +227,7 @@ article input {
 
 aside {
   width: 30%;
-  margin: 2% 10% 2% 3%;
+  margin: 0 0 0 3%;
 }
 
 aside img {
@@ -409,6 +409,12 @@ form > select {
 }
 
 /* Media queries */
+@media screen and (max-width: 1080px) {
+  .landing-page-container .dog-cards {
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+ }
+}
+
 @media screen and (max-width: 767px) {
   aside {
     display: none;
@@ -425,4 +431,6 @@ form > select {
     align-items: center;
   }
 }
+
+
 
