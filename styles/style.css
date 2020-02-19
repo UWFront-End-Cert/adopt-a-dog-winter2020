@@ -249,31 +249,29 @@ li:last-child:before {
 }
 
 /* for mobile */
-@media screen and (max-width: 767px) {
+@media only screen and (max-device-width: 767px) {
     .dog-boxes-grid {
         grid-template-columns: 1fr;
     }
     .main-menu {
         flex-direction: column;
     }
-
     li a {
-        border-bottom: 1px;
+        font-size: x-large;
     }
-
     .main-blog-preview {
         display: none;
     }
     li:before {
         content: "  ";
     }
-    .blog {
+    .blog-link {
         display: inline;
     }
 }
 
 /* for tablet */
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     .dog-boxes-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -283,7 +281,7 @@ li:last-child:before {
 }
 
 /* for larger than tablet */
-@media screen and (min-width: 1025px) {
+@media screen and (min-decvice-width: 1025px) {
     .dog-boxes-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
