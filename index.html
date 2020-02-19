@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+    <head>
     <meta charset="utf-8">
     <title>Adopt A Dog - Home</title>
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/49a0808614.js" crossorigin="anonymous"></script>
-  </head>
-  <body>
-      <header class="header">
+    </head>
+    <body>
+        <header class="header">
         <div class="header-box-1">
             <img src="./images/adoptadog-logo.svg" alt="sitting dog sillouette logo" class="header-logo">
             <span class="caption">Seattle's premiere dog adoption agency</span>
@@ -19,180 +19,211 @@
                 Checkout
             </button>
         </div>
-      </header>
-      <nav>
+        </header>
+        <nav>
         <ul class="main-menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="dogs.html">Dogs</a></li>
             <li><a href="blog.html">Blog</a></li>
         </ul>
-      </nav>
-      <section class="main-container">
-        <div class="mission">
-            <img src="./images/home-intro.jpg" alt="cute dog gets a hug from human">
-            <h2>Adopt A Dog</h2>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis 
-                corrupti labore perferendis nostrum officia necessitatibus, 
-                aliquam hic quae asperiores! Enim eaque adipisci autem, vero 
-                necessitatibus ex blanditiis quod qui exercitationem? Lorem 
-                ipsum dolor sit amet consectetur adipisicing elit. Quis 
-                corrupti labore perferendis nostrum officia necessitatibus, 
-                aliquam hic quae asperiores! Enim eaque adipisci autem, vero 
-                necessitatibus ex blanditiis quod qui exercitationem?</h3>
-        </div>
-        <div class="dog-boxes">
-            <div class="dog-box">
-                <button type="button" name="dog-info" onclick="murphy()">
-                    <img src="./images/murphy-card.jpg" alt="cute dog" class="dog-box-image">
-                    <script> function murphy() {
-                        alert("Hi! My name is Murphy and I'm an American Mutt breed. You can adopt me for $123.45");
-                    }
-                    </script>
-                </button>
-                <div class="dog-box-info">
-                    <h3>Murphy</h3>
-                    <h4>Cost to Adopt: $123.45</h4>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
-                    <button class="adopt" type="button" onclick="addToCart()">
-                        Adopt
-                    </button> 
-                </div>   
-            </div>
-            <div class="dog-box">
-                <button type="button" name="dog-info" onclick="poppy()">
-                    <img src="./images/poppy-card.jpg" alt="cute dog" class="dog-box-image">
-                    <script> function poppy() {
-                        alert("Hi! My name is Poppy and I'm a Yip Yip breed. You can adopt me for $123.45");
-                    }
-                    </script>
-                </button>
-                <div class="dog-box-info">
-                    <h3>Poppy</h3>
-                    <h4>Cost to Adopt: $123.45</h4>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
-                    <button class="adopt" type="button" onclick="addToCart()">
-                        Adopt
-                    </button>   
-                </div> 
-            </div>
-            <div class="dog-box">
-                <button type="button" name="dog-info" onclick="jack()">
-                    <img src="./images/jack-card.jpg" alt="cute dog" class="dog-box-image">
-                    <script> function jack() {
-                        alert("Hi! My name is Jack and I'm a Beagle. You can adopt me for $123.45");
-                    }
-                    </script>
-                </button>
-                <div class="dog-box-info">
-                    <h3>Jack</h3>
-                    <h4>Cost to Adopt: $123.45</h4>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
-                    <button class="adopt" type="button" onclick="addToCart()">
-                        Adopt
-                    </button> 
-                </div>   
-            </div>
-            <div class="dog-box">
-                <button type="button" name="dog-info" onclick="duffy()">
-                    <img src="./images/duffy-card.jpg" alt="cute dog" class="dog-box-image">
-                    <script> function duffy() {
-                        alert("Hi! My name is Duffy and I'm a Multi Mutt. You can adopt me for $123.45");
-                    }
-                    </script>
-                </button>
-                <div class="dog-box-info">
-                    <h3>Duffy</h3>
-                    <h4>Cost to Adopt: $123.45</h4>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
-                    <button class="adopt" type="button" onclick="addToCart()">
-                        Adopt
-                    </button>    
+        </nav>
+        <section class="main-container-index">
+            <div class="main-dogs">
+                <div class="mission">
+                    <img src="./images/home-intro.jpg" alt="cute dog gets a hug from human">
+                    <h2>Adopt A Dog</h2>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis 
+                        corrupti labore perferendis nostrum officia necessitatibus, 
+                        aliquam hic quae asperiores! Enim eaque adipisci autem, vero 
+                        necessitatibus ex blanditiis quod qui exercitationem? Lorem 
+                        ipsum dolor sit amet consectetur adipisicing elit. Quis 
+                        corrupti labore perferendis nostrum officia necessitatibus, 
+                        aliquam hic quae asperiores! Enim eaque adipisci autem, vero 
+                        necessitatibus ex blanditiis quod qui exercitationem?</h3>
+                </div>
+                <div class="dog-boxes-grid">
+                    <div class="dog-box">
+                        <button type="button" name="dog-info" onclick="murphy()">
+                            <img src="./images/murphy-card.jpg" alt="cute dog" class="dog-box-image">
+                            <script> function murphy() {
+                                alert("Hi! My name is Murphy and I'm an American Mutt breed. You can adopt me for $123.45");
+                            }
+                            </script>
+                        </button>
+                        <div class="dog-box-info">
+                            <h3>Murphy</h3>
+                            <h4>Cost to Adopt: $123.45</h4>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
+                            <button class="adopt" type="button" onclick="addToCart()">
+                                Adopt
+                            </button> 
+                        </div>   
+                    </div>
+                    <div class="dog-box">
+                        <button type="button" name="dog-info" onclick="poppy()">
+                            <img src="./images/poppy-card.jpg" alt="cute dog" class="dog-box-image">
+                            <script> function poppy() {
+                                alert("Hi! My name is Poppy and I'm a Yip Yip breed. You can adopt me for $123.45");
+                            }
+                            </script>
+                        </button>
+                        <div class="dog-box-info">
+                            <h3>Poppy</h3>
+                            <h4>Cost to Adopt: $123.45</h4>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
+                            <button class="adopt" type="button" onclick="addToCart()">
+                                Adopt
+                            </button>   
+                        </div> 
+                    </div>
+                    <div class="dog-box">
+                        <button type="button" name="dog-info" onclick="jack()">
+                            <img src="./images/jack-card.jpg" alt="cute dog" class="dog-box-image">
+                            <script> function jack() {
+                                alert("Hi! My name is Jack and I'm a Beagle. You can adopt me for $123.45");
+                            }
+                            </script>
+                        </button>
+                        <div class="dog-box-info">
+                            <h3>Jack</h3>
+                            <h4>Cost to Adopt: $123.45</h4>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
+                            <button class="adopt" type="button" onclick="addToCart()">
+                                Adopt
+                            </button> 
+                        </div>   
+                    </div>
+                    <div class="dog-box">
+                        <button type="button" name="dog-info" onclick="duffy()">
+                            <img src="./images/duffy-card.jpg" alt="cute dog" class="dog-box-image">
+                            <script> function duffy() {
+                                alert("Hi! My name is Duffy and I'm a Multi Mutt. You can adopt me for $123.45");
+                            }
+                            </script>
+                        </button>
+                        <div class="dog-box-info">
+                            <h3>Duffy</h3>
+                            <h4>Cost to Adopt: $123.45</h4>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
+                            <button class="adopt" type="button" onclick="addToCart()">
+                                Adopt
+                            </button>    
+                        </div>
+                    </div>
+                    <div class="dog-box">
+                        <button type="button" name="dog-info" onclick="lucas()">
+                            <img src="./images/lucas-card.jpg" alt="cute dog" class="dog-box-image">
+                            <script> function lucas() {
+                                alert("Hi! My name is Lucas and I'm a Lab Bloodhound blend. You can adopt me for $123.45");
+                            }
+                            </script>
+                        </button>
+                        <div class="dog-box-info">
+                            <h3>Lucas</h3>
+                            <h4>Cost to Adopt: $123.45</h4>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
+                            <button class="adopt" type="button" onclick="addToCart()">
+                                Adopt
+                            </button> 
+                        </div>   
+                    </div>
+                    <div class="dog-box">
+                        <button type="button" name="dog-info" onclick="jake()">
+                            <img src="./images/jake-card.jpg" alt="cute dog" class="dog-box-image">
+                            <script> function jake() {
+                                alert("Hi! My name is Jake and I'm a Golden Lab. You can adopt me for $123.45");
+                            }
+                            </script>
+                        </button>
+                        <div class="dog-box-info">
+                            <h3>Jake</h3>
+                            <h4>Cost to Adopt: $123.45</h4>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
+                            <button class="adopt" type="button" onclick="addToCart()">
+                                Adopt
+                            </button>    
+                        </div>
+                    </div>
+                    <div class="dog-box">
+                        <button type="button" name="dog-info" onclick="angus()">
+                            <img src="./images/angus-card.jpg" alt="cute dog" class="dog-box-image">
+                            <script> function angus() {
+                                alert("Hi! My name is Angus and I'm an English Bulldog. You can adopt me for $123.45");
+                            }
+                            </script>
+                        </button>
+                        <div class="dog-box-info">
+                            <h3>Angus</h3>
+                            <h4>Cost to Adopt: $123.45</h4>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
+                            <button class="adopt" type="button" onclick="addToCart()">
+                                Adopt
+                            </button> 
+                        </div>   
+                    </div>
+                    <div class="dog-box">
+                        <button type="button" name="dog-info" onclick="violet()">
+                            <img src="./images/violet-card.jpg" alt="cute dog" class="dog-box-image">
+                            <script> function violet() {
+                                alert("Hi! My name is Violet and I'm a Chocolate Lab. You can adopt me for $123.45");
+                            }
+                            </script>
+                        </button>
+                        <div class="dog-box-info">
+                            <h3>Violet</h3>
+                            <h4>Cost to Adopt: $123.45</h4>
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
+                            <button class="adopt" type="button" onclick="addToCart()">
+                                Adopt
+                            </button> 
+                        </div>   
+                    </div>
+                </div>
+                <div class="more-dogs">
+                    <button class="see-more-dogs" type="button">
+                        See More Dogs
+                    </button>
+                </div>
+                <div class="blog-link">
+                    <a href="blog.html">Dog Blog here >></a>
                 </div>
             </div>
-            <div class="dog-box">
-                <button type="button" name="dog-info" onclick="lucas()">
-                    <img src="./images/lucas-card.jpg" alt="cute dog" class="dog-box-image">
-                    <script> function lucas() {
-                        alert("Hi! My name is Lucas and I'm a Lab Bloodhound blend. You can adopt me for $123.45");
-                    }
-                    </script>
-                </button>
-                <div class="dog-box-info">
-                    <h3>Lucas</h3>
-                    <h4>Cost to Adopt: $123.45</h4>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
-                    <button class="adopt" type="button" onclick="addToCart()">
-                        Adopt
-                    </button> 
-                </div>   
-            </div>
-            <div class="dog-box">
-                <button type="button" name="dog-info" onclick="jake()">
-                    <img src="./images/jake-card.jpg" alt="cute dog" class="dog-box-image">
-                    <script> function jake() {
-                        alert("Hi! My name is Jake and I'm a Golden Lab. You can adopt me for $123.45");
-                    }
-                    </script>
-                </button>
-                <div class="dog-box-info">
-                    <h3>Jake</h3>
-                    <h4>Cost to Adopt: $123.45</h4>
-                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
-                    <button class="adopt" type="button" onclick="addToCart()">
-                        Adopt
-                    </button>    
+            <div class="main-blog-preview">
+                <div class="blog-preview-title">
+                    <h2>From Our Blog</h2>
                 </div>
-            </div>
-            <div class="dog-box">
-                <button type="button" name="dog-info" onclick="angus()">
-                    <img src="./images/angus-card.jpg" alt="cute dog" class="dog-box-image">
-                    <script> function angus() {
-                        alert("Hi! My name is Angus and I'm an English Bulldog. You can adopt me for $123.45");
-                    }
-                    </script>
-                </button>
-                <div class="dog-box-info">
-                    <h3>Angus</h3>
-                    <h4>Cost to Adopt: $123.45</h4>
+                <div class="blog-preview">
+                    <img src="./images/blog-preview1.jpg" class="blog-image" alt="dog and human enjoying a canyon view">
+                    <h3>Traveling With Your Dog</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
-                    <button class="adopt" type="button" onclick="addToCart()">
-                        Adopt
-                    </button> 
-                </div>   
-            </div>
-            <div class="dog-box">
-                <button type="button" name="dog-info" onclick="violet()">
-                    <img src="./images/violet-card.jpg" alt="cute dog" class="dog-box-image">
-                    <script> function violet() {
-                        alert("Hi! My name is Violet and I'm a Chocolate Lab. You can adopt me for $123.45");
-                    }
-                    </script>
-                </button>
-                <div class="dog-box-info">
-                    <h3>Violet</h3>
-                    <h4>Cost to Adopt: $123.45</h4>
+                        Molestias fugit inventore eveniet a perspiciatis!</h4>
+                    <a href="blog.html">Read More >></a>
+                </div>  
+                <div class="blog-preview">
+                    <img src="./images/blog-preview2.jpg" class="blog-image" alt="dogs on leashes on sidewalk">
+                    <h3>How To Walk Multiple Dogs</h3>
                     <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Molestias fugit inventore eveniet a perspiciatis! Distinctio.</h4>
-                    <button class="adopt" type="button" onclick="addToCart()">
-                        Adopt
-                    </button> 
-                </div>   
+                        Molestias fugit inventore eveniet a perspiciatis!</h4>
+                    <a href="blog.html">Read More >></a>
+                </div>
+                <div class="blog-preview">
+                    <img src="./images/blog-preview3.jpg" class="blog-image" alt="human throwing ball to dog sunset sillouette">
+                    <h3>Teach Your Dog To Fetch</h3>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Molestias fugit inventore eveniet a perspiciatis!</h4>
+                    <a href="blog.html">Read More >></a>
+                </div>      
             </div>
-        </div>
-        <div class="more-dogs">
-            <button class="see-more-dogs" type="button">
-                See More Dogs
-            </button>
-        </div>
-      </section>      
-      <footer class="footer">
+        </section>      
+        <footer class="footer">
         <img src="./images/adoptadog-logo.svg" alt="sitting dog sillouette logo" class="footer-image">
         <h4>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>
             esseque invenienihil imaximu scideru ptistiusam consequunt</h4>
@@ -204,7 +235,7 @@
             </ul>
         </nav>
         <h4>&#9400; 2018 Adoptadog, LLC | Seattle, WA</h4>
-      </footer>
-      <script src="./adoptadog-javascript.js" charset="utf-8"></script>
-  </body>
+        </footer>
+        <script src="./adoptadog-javascript.js" charset="utf-8"></script>
+    </body>
 </html>
