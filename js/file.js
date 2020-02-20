@@ -1,9 +1,4 @@
-function numberAdder() {
-  let input = prompt('Enter a Number');
-  let numberToAdd = 2;
-  let result = 0;
-
-  result = numberToAdd + Number(input);
-
-  alert(result);
+function dogInfo(murphy) {
+  alert('Hi my Name is Murphy');
+  alert('It Cost $123.45 to Adopt Me');
 }
