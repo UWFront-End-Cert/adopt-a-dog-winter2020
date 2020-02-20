@@ -23,15 +23,16 @@ a.skip-hidden:focus {
 header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background-image: url(header-image.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
   background-color: #0F0C0C;
   border: solid .1rem;
-  width: 85%;
+  width: 100%;
   min-width: 320px;
-  max-width: 1200px;
+  max-width: 1440px;
   height: 25rem;
 }
 .logo-container {
@@ -41,22 +42,22 @@ header {
 h1 {
   color: #32CD32;
   font-size: 1.5rem;
+  margin: 0;
 }
 .cart-price {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap-reverse;
   color: white;
-  margin-left: 33rem;
+  margin-right: 7rem;
   margin-top: 3rem;
 }
 .cart {
   margin: .7rem;
   align-self: flex-end;
 }
-.cart::after {
-  content: "$1234.56";
-  font-size: .8rem;
+.cart img {
+  height: 100%;
 }
 .cart-price button {
   padding: .3rem;
@@ -66,20 +67,24 @@ h1 {
   width: 7rem;
   border-color: #32CD32;
 }
+nav {
+  background-color: #d3d3d3;
+  max-width: 1440px;
+  min-width: 320px
+}
 .navigation {
   list-style-type: none;
-  margin: 0;
+  margin-top: 0rem;
+  margin-left: 10rem;
   padding: 0;
   overflow: hidden;
   background-color: #d3d3d3;
   top: 0;
-  width: 85%;
-  min-width: 320px;
-  max-width: 1200px;
+  width: 80%;
 }
 .nav {
   float: left;
-  border-right: .1rem solid #bbb;
+  border-left: .1rem solid #bbb;
   font-family: monospace;
   font-size: 1.5rem;
 }
@@ -93,87 +98,187 @@ h1 {
 .nav a:hover {
   background-color: #a9a9a9;
 }
+@media screen and (max-width: 600px) {
+  .nav {
+    float: none;
+    width: 100%;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+  }
+  .navigation {
+    margin-left: 0rem;
+    width: 100%;
+  }
+}
+#last-contact {
+  border-right: .1rem solid #bbb;
+}
+.section-and-aside-container {
+  display: flex;
+  flex-direction: row;
+  flex-flow: nowrap;
+  justify-content: flex-start;
+  min-width: 320px;
+  max-width: 1440px;
+}
 section {
+  /* margin: 0 auto */
+  margin-left: 10rem;
+  /* margin-right: 20rem; */
   margin-bottom: 8rem;
   min-width: 320px;
-  max-width: 1200px;
+  max-width: 1440px;
 }
 .intro-image {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  width: 100px;
 }
 h2 {
   font-family: 'Eczar', serif;
   font-size: 2rem;
   color: #003366;
 }
-.introduction {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 1rem;
-}
 .intro-body h2 {
+  font-weight: bolder;
   font-size: 2rem;
   margin-left: 1rem;
+  margin-top: 0rem;
 }
 .intro-body p {
   font-family: 'Assistant', Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.7rem;
   margin-left: 1rem;
-  margin-right:
+  margin-right: 10rem;
+  margin-bottom: 2rem;
+  margin-top: -2rem;
+  width: 70%;
 }
 .homepage-dogs img {
   height: 33.3%;
+  margin-bottom: 0rem;
 }
 .homepage-dogs .dog-description {
-  margin: 1rem;
-  width: 11rem;
+  margin: 0 auto;
+  width: 10rem;
   border-style: none;
 }
 .homepage-dogs div {
-  height: 23rem;
-  width: 12.9rem;
+  height: 22rem;
+  width: 12.3rem;
+  margin-left: 1rem;
   margin-bottom: 3rem;
-  border: .05rem solid #d3d3d3;
+  border: 1px solid #d3d3d3;
 }
 .homepage-dogs {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
+  margin-right: 0rem;
+  width: 75%;
+}
+@media screen and (min-width: 700px) {
+  .homepage-dogs {
+    width: 85%;
+  }
+}
+
+.homepage-dogs h3 {
+  font-family: 'Eczar', serif;
+  font-weight: bolder;
+  color: #003366;
+  margin: 0rem;
 }
 .homepage-dogs h4 {
   font-family: 'Assistant', Arial, sans-serif;
+  margin: 0rem;
 }
 .homepage-dogs p {
   font-family: 'Assistant', Arial, sans-serif;
   font-size: .8rem;
+  margin-bottom: 1rem;
 }
 .adopt {
   padding: .2rem;
   color: white;
   font-weight: bold;
   background-color: #32CD32;
-  width: 11rem;
+  width: 10rem;
   height: 1.5rem;
   border-color: #32CD32;
 }
 .more-dogs {
+  justify-content: center;
   padding: .7rem;
   left: 45%;
   display: flex;
-  justify-content: center;
-  width: 13rem;
+  text-align: center;
+  width: 30%;
   background-color: #d3d3d3;
   font-weight: bold;
   font-size: 1.6rem;
   color: #003366;
+}
+.more-dogs-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-right: 14rem; */
+}
+.dogs-page-section {
+  width: 80%;
+}
+#dogs-to-buy {
+  width: 75%;
+}
+#dogs-to-buy div {
+  margin-left: 3rem;
+}
+#dogs-to-buy .dog-description {
+  margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+  #dogs-to-buy {
+    width: 50%;
+  }
+}
+
+aside img {
+  width: 300px;
+}
+aside h2 {
+  font-weight: bolder;
+}
+aside h3 {
+  font-family: 'Eczar', serif;
+  font-weight: bolder;
+  color: #003366;
+  margin-top: .4rem;
+  margin-bottom: 0rem;
+}
+aside p {
+  margin-top: 0rem;
+  margin-right: 8rem;
+  font-family: 'Assistant', Arial, sans-serif;
+}
+aside div {
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 1020px) {
+  aside {
+    display: none;
+  }
 }
 footer {
   background-color: #003366;
   height: 45%;
   padding: 2rem;
   font-family: 'Assistant', Arial, sans-serif;
+  min-width: 320px;
+  max-width: 1440px;
 }
 .footer-info {
   color: white;
@@ -193,22 +298,31 @@ footer {
 .footer-info a:hover {
   text-decoration: underline;
 }
+.footer-image {
+  width: 20%;
+}
 .blog-body {
   display: inline-flex;
   flex-direction: row;
   margin-bottom: 4rem;
+  width: 90%;
+}
+.blog-body img {
+  height: 20%;
 }
 .blog-paragraph {
-  margin-left: 2.5rem;
-  margin-top: -1.1rem;
+  margin-left: 1rem;
+  margin-top: -1rem;
 }
 .blog-paragraph h3 {
   font-family: 'Eczar', serif;
   color: #003366;
+  font-weight: bolder;
+  font-size: 1.5rem;
 }
 .blog-paragraph p {
   font-family: 'Assistant', Arial, sans-serif;
-  font-size: .8rem;
+  font-size: 1rem;
   line-height: 1.3rem;
   margin-right: 14.5rem;
 }

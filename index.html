@@ -13,12 +13,12 @@
       <p><a href="#skip-navigation" class="skip-hidden">Skip navigation links</a></p>
     <header>
         <div class="logo-container">
-          <img src="images/adoptadog-logo.svg" height="100" alt="business logo with sideview of dog in white">
-          <h1>Seattle's premiere dog adoption agency</h1>
+          <img src="images/adoptadog-logo.svg" alt="business logo with sideview of dog in white">
+          <h1><em>Seattle's premiere dog adoption agency</em></h1>
         </div>
         <div class="cart-price">
           <span class="cart">
-            <img src="images/cart-icon.svg" height="21" alt="icon of white cart" id="cart">
+            <img src="images/cart-icon.svg" alt="icon of white cart">
           </span>
             <button class="checkout">Checkout</button>
         </div>
@@ -28,112 +28,123 @@
         <li class="nav"><a href="index.html">Home</a></li>
         <li class="nav"><a href="dogs.html">Dogs</a></li>
         <li class="nav"><a href="blog.html">Blog</a></li>
-        <li class="nav"><a href="contact.html">Contact</a></li>
+        <li class="nav" id="last-contact"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <section>
-      <div class="introduction">
-        <div class="intro-image">
-          <img src="images/home-intro.jpg" alt="a man giving his dog a hug while his dog faces the camera directly">
+    <div class="section-and-aside-container">
+      <section>
+        <div class="introduction">
+          <div class="intro-image">
+            <img src="images/home-intro.jpg" alt="a man giving his dog a hug while his dog faces the camera directly">
+          </div>
+          <div class="intro-body">
+            <h2 id="skip-navigation">Adopt A Dog</h2>
+            <p>Iduciendisite quo magnatem iuntum quid quaest ea am,tenderumet adis dolenem
+            quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa
+            doloreium hillupta autes ut alitatuscit om mossum haritatur arum qui officae
+            videbiti corporeium faccull oribus es quidignis ipietus explam sus am.</p>
+          </div>
         </div>
-        <div class="intro-body">
-          <h2 id="skip-navigation">Adopt A Dog</h2>
-          <p>Iduciendisite quo magnatem iuntum quid quaest ea am,tenderumet adis dolenem
-          quidustrum fuga. Faceaquae estioria derum recuptatur, cum volore, undipsa
-          doloreium hillupta autes ut alitatuscit ommossum haritatur arum qui officae
-          videbiti corporeium faccull oribus es quidignis ipietus explam sus am aut
-          amet ant fugiatum, utem non reptat ad magnienecto volorent fugia nonsedi
-          gendand itatquos as magnimpor aut molor autatia ad est officimus accae et
-          omnia cus, od qui ate.</p>
-        </div>
+
+        <div class="homepage-dogs">
+          <div>
+            <img onclick="dogInfo('Murphy', 'Boxer', '$50')" src="images/murphy-card.jpg" alt="a regal- and wise-looking dog looking askance">
+            <div class="dog-description">
+              <h3>Murphy</h3>
+              <h4>Cost to adopt: $50</h4>
+              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+              suntarum rendae pla endis re ea erum, qui doluptae</p>
+              <input type="button" value="Adopt" class="adopt" onclick="addValue(50)">
+            </div>
+          </div>
+
+          <div>
+            <img onclick="dogInfo('Poppy', 'Lhasa Apso', '$100')" src="images/poppy-card.jpg" alt="adorable scottish terrier pup with happy smile">
+            <div class="dog-description">
+              <h3>Poppy</h3>
+              <h4><strong>Cost to adopt:</strong> $100</h4>
+              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+              suntarum rendae pla endis re ea erum, qui doluptae</p>
+              <input type="button" value="Adopt" class="adopt" onclick="addValue(100)">
+            </div>
+          </div>
+
+          <div>
+            <img onclick="dogInfo('Jack', 'Beagle', '$150')" src="images/jack-card.jpg" alt="brown and white mix beagle looking up off to the side">
+            <div class="dog-description">
+              <h3>Jack</h3>
+              <h4><strong>Cost to adopt: $150</strong></h4>
+              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+              suntarum rendae pla endis re ea erum, qui doluptae</p>
+              <input type="button" value="Adopt" class="adopt" onclick="addValue(150)">
+            </div>
+          </div>
+
+          <div>
+            <img onclick="dogInfo('Duffy', 'Basenji', '$200')" src="images/duffy-card.jpg" alt="white-faced beagle ready looking solemnly at the camera">
+            <div class="dog-description">
+              <h3>Duffy</h3>
+              <h4><strong>Cost to adopt:</strong> $200</h4>
+              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+              suntarum rendae pla endis re ea erum, qui doluptae</p>
+              <input type="button" value="Adopt" class="adopt" onclick="addValue(200)">
+            </div>
+          </div>
+
+          <div>
+            <img onclick="dogInfo('Lucas', 'Rottweiler', '$250')" src="images/lucas-card.jpg" alt="black rottweiler eager to find a new owner">
+            <div class="dog-description">
+              <h3>Lucas</h3>
+              <h4><strong>Cost to adopt:</strong> $250</h4>
+              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+              suntarum rendae pla endis re ea erum, qui doluptae</p>
+              <input type="button" value="Adopt" class="adopt" onclick="addValue(250)">
+            </div>
+          </div>
+
+          <div>
+            <img onclick="dogInfo('Jake', 'Labrador', '$300')" src="images/jake-card.jpg" alt="golden labrador looking off to the side at a beach">
+            <div class="dog-description">
+              <h3>Jake</h3>
+              <h4>Cost to adopt: $300</h4>
+              <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
+              suntarum rendae pla endis re ea erum, qui doluptae</p>
+              <input type="button" value="Adopt" class="adopt" onclick="addValue(300)">
+            </div>
+          </div>
       </div>
-      <div class="homepage-dogs">
-        <div>
-          <img onclick="dogInfo('Murphy', 'Boxer', '$50')" src="images/murphy-card.jpg" alt="a regal- and wise-looking dog looking askance">
-          <div class="dog-description">
-            <h3>Murphy</h3>
-            <h4>Cost to adopt: $50</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
-            suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <input type="button" value="Adopt" class="adopt" onclick="addValue(50)">
-          </div>
-        </div>
-        <div>
-          <img onclick="dogInfo('Poppy', 'Lhasa Apso', '$100')" src="images/poppy-card.jpg" alt="adorable scottish terrier pup with happy smile">
-          <div class="dog-description">
-            <h3>Poppy</h3>
-            <h4>Cost to adopt: $100</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
-            suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <input type="button" value="Adopt" class="adopt" onclick="addValue(100)">
-          </div>
-        </div>
-        <div>
-          <img onclick="dogInfo('Jack', 'Beagle', '$150')" src="images/jack-card.jpg" alt="brown and white mix beagle looking up off to the side">
-          <div class="dog-description">
-            <h3>Jack</h3>
-            <h4>Cost to adopt: $150</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
-            suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <input type="button" value="Adopt" class="adopt" onclick="addValue(150)">
-          </div>
-        </div>
-        <div>
-          <img onclick="dogInfo('Duffy', 'Basenji', '$200')" src="images/duffy-card.jpg" alt="white-faced beagle ready looking solemnly at the camera">
-          <div class="dog-description">
-            <h3>Duffy</h3>
-            <h4>Cost to adopt: $200</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
-            suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <input type="button" value="Adopt" class="adopt" onclick="addValue(200)">
-          </div>
-        </div>
-        <div>
-          <img onclick="dogInfo('Lucas', 'Rottweiler', '$250')" src="images/lucas-card.jpg" alt="black rottweiler eager to find a new owner">
-          <div class="dog-description">
-            <h3>Lucas</h3>
-            <h4>Cost to adopt: $250</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
-            suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <input type="button" value="Adopt" class="adopt" onclick="addValue(250)">
-          </div>
-        </div>
-        <div>
-          <img onclick="dogInfo('Jake', 'Labrador', '$300')" src="images/jake-card.jpg" alt="golden labrador looking off to the side at a beach">
-          <div class="dog-description">
-            <h3>Jake</h3>
-            <h4>Cost to adopt: $300</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
-            suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <input type="button" value="Adopt" class="adopt" onclick="addValue(300)">
-          </div>
-        </div>
-        <div>
-          <img onclick="dogInfo('Angus', 'Pitbull', '$350')" src="images/angus-card.jpg" alt="brown bulldog with evil black eyes with a wicked smile">
-          <div class="dog-description">
-            <h3>Angus</h3>
-            <h4>Cost to adopt: $350</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
-            suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <input type="button" value="Adopt" class="adopt" onclick="addValue(350)">
-          </div>
-        </div>
-        <div>
-          <img onclick="dogInfo('Violet', 'Labrador', '$400')" src="images/violet-card.jpg" alt="adorable dark-brown labrador">
-          <div class="dog-description">
-            <h3>Violet</h3>
-            <h4>Cost to adopt: $400</h4>
-            <p>Corrum volorit iandae nimaxim cum restia volor reicid ut et etur
-            suntarum rendae pla endis re ea erum, qui doluptae</p>
-            <input type="button" value="Adopt" class="adopt" onclick="addValue(400)">
-          </div>
-        </div>
-      </div>
-      <a href="dogs.html" class="more-dogs">See More Dogs</a>
-   </section>
+      <div class="more-dogs-button">
+        <a href="dogs.html" class="more-dogs">See More Dogs</a>
+     </div>
+     </section>
+
+     <aside>
+       <h2>From Our Blog</h2>
+         <div class="sidebar-blog">
+           <img src="images/blog-1.jpeg" alt="person sitting at the edge of a canyon with a dog, looking at the view">
+           <h3>Traveling With Your Dog</h3>
+           <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+           <p><a href="blog.html">Read more >></a></p>
+         </div>
+
+         <div class="sidebar-blog">
+           <img src="images/blog-2.jpeg" alt="several dogs on a leash, waiting to follow their leader">
+           <h3>How to Walk Multiple Dogs</h3>
+           <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+           <p><a href="blog.html">Read more >></a></p>
+         </div>
+
+         <div class="sidebar-blog">
+           <img src="images/blog-3.jpeg" alt="silhouette of a girl playing catch with her dog against the backdrop of a reddish-orange sky">
+           <h3>Teach Your Dog How To Fetch!</h3>
+           <p>Iciustiam, et ad quiaes cum que excea sinciendi qui offic temquas doluptios dolupta tiandebis nem ut.</p>
+           <p><a href="blog.html">Read more >></a></p>
+         </div>
+     </aside>
+   </div>
    <footer>
      <div class="footer-info">
-        <img src="images/adoptadog-logo.svg" height="75" alt="business logo with sideview of dog in white">
+        <img src="images/adoptadog-logo.svg" class="footer-image" alt="business logo with sideview of dog in white">
         <p>Aborpos nisto inci tet aut que volupti beruptiberro to ex<br>esseque
         invenienihil imaximu scideru ptistiusam consequunt</p>
         <p><a href="index.html">Home</a> / <a href="dogs.html">Dogs</a> / <a href="contact.html">Contact</a></p>
