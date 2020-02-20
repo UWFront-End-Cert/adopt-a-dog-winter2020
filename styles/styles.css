@@ -24,6 +24,19 @@ footer {
 body {
   margin: auto;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-stretch: expanded;
+}
+
+.blog-post-font {
+  font-size: .9rem;
+  line-height: 1.25rem;
+}
+
+.main-font {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .logo {
@@ -34,6 +47,7 @@ body {
 
 .tagline {
   font-size: 1.55rem;
+  font-style: italic;
   margin-top: -1rem;
   padding: 0rem 0rem 10rem 6rem;
   color: rgb(116, 171, 42);
@@ -48,8 +62,12 @@ body {
   font-weight: bold;
   background-color: rgb(116, 171, 42);
   padding: .5px 30px;
-  border-radius: 1px;
+  border-radius: 2px;
   /* padding: .01rem 2rem; */
+}
+
+.button-p {
+  line-height: 0;
 }
 
 .checkout-link {
@@ -116,8 +134,14 @@ ul {
   width: 25%;
 }
 
-h2 {
+h1, h2, h3 {
   margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(13, 45, 78);
+}
+
+h3 {
+  font-size: 1rem;
 }
 
 .h2-padding {
@@ -135,7 +159,7 @@ h2 {
 }
 
 .first-main-image {
-  /* padding-right: 2.5rem; */
+  margin-bottom: 2rem;
   width: 100%;
 }
 
@@ -160,7 +184,34 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  padding: 2rem 10rem;
+  padding: 0 10rem 2rem;
+}
+
+.dog-info {
+  font-size: .75rem;
+  line-height: 1rem;
+}
+
+.cost-bold {
+  font-weight: bold;
+}
+
+.from-blog-h2 {
+  padding-bottom: 1.5rem;
+}
+
+.blog-preview {
+  padding-bottom: 3rem;
+}
+
+ .blog-preview-para {
+   font-size: .8rem;
+   line-height: 1.25rem;
+ }
+
+.read-more {
+  text-decoration: none;
+  color: rgb(40, 137, 172);
 }
 
 .dog-card-b {
@@ -175,18 +226,19 @@ h2 {
 
 .dog-img {
   width: 100%;
+  padding-bottom: .5rem;
 }
 
 .more-dogs {
   margin: 0 auto;
   width: 10rem;
   text-align: center;
-  padding: .01rem;
+  padding: 1px 1px;
   margin-bottom: 3rem;
   background-color: rgb(230, 230, 230);
   color: rgb(13, 45, 78);
   font-weight: bold;
-  border-radius: .1rem;
+  border-radius: 2px;
   display: block;
 }
 
@@ -208,7 +260,8 @@ h2 {
   color: white;
   border: none;
   background-color: rgb(116, 171, 42);
-  border-radius: .1rem;
+  border-radius: 2px;
+  cursor: pointer;
 }
 
 .card-padding {
@@ -222,7 +275,7 @@ h2 {
 .blog-main {
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 12rem 3rem;
+  padding: 1rem 12rem;
 }
 
 .blog-post {
@@ -242,7 +295,7 @@ h2 {
 .checkout-main {
   margin: 0 auto;
   width: 100%;
-  padding: 0rem 12rem 3rem;
+  padding: 1rem 12rem 3rem;
 }
 
 .checkout-content {
@@ -250,9 +303,20 @@ h2 {
   flex-direction: column;
 }
 
+.input-label {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: rgb(13, 45, 78);
+}
+
 .dogs-adopted {
   display: flex;
   flex-direction: row;
+}
+
+.dogs-adopted-padding {
+  padding: 2rem 0;
 }
 
 .adopt-cost {
@@ -261,12 +325,16 @@ h2 {
 }
 
 .submit {
+  display: inline-block;
   font-weight: bold;
-  padding: .5rem 3rem;
+  text-align: center;
+  padding: .5px 60px;
+  border-radius: 2px;
   color: white;
   border: none;
   background-color: rgb(116, 171, 42);
-  width: 20%;
+  cursor: pointer;
+  margin: 1rem 0;
 }
 
 .adopt-img {
@@ -366,6 +434,7 @@ label, span {
 
 .small-blog-img {
   width: 100%;
+  padding-bottom: 1rem;
 }
 
 main {
@@ -429,12 +498,8 @@ main {
 
   .blog-img {
     padding-right: 0;
+    margin-bottom: 2rem;
     width: 65%;
-  }
-
-  .h2-padding {
-    padding: 2rem 0;
-    text-align: center;
   }
 
 /* header */
@@ -526,12 +591,9 @@ main {
     padding-bottom: 2rem;
   }
 
-  .blog-main {
-    padding: 1rem;
-  }
-
   .blog-img {
     padding-right: 0;
+    margin-bottom: 2rem;
     width: 65%;
   }
 
