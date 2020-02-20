@@ -275,6 +275,8 @@ footer {
   nav a {
     font-size: 1.5rem;
     line-height: 4rem;
-
+  }
+  .blog-preview {
+    display: none;
   }
 }
