@@ -26,90 +26,121 @@
           <li><a href="dog-checkout-page4.html" class="topnav">Adopt</a></li>
         </ul>
       </nav>
-      <main>
-      <article class="main-blog-para">
+
+
+      <main class="main-container">
+      <article class="main-paragraph">
         <div>
-          <img src="images/home-intro.jpg" width="300" alt="a boy hugs a happy Golden Retriver">
+          <img src="images/home-intro.jpg" alt="a boy hugs a happy Golden Retriver">
         </div>
         <div class="intro-para">
           <h2> Adopt a dog </h2>
             <p>Puppy kitty ipsum dolor sit good dog foot stick canary. Teeth Mittens grooming vaccine walk swimming nest good boy furry tongue heel furry treats fish. Cage run fast kitten dinnertime ball run foot park fleas throw house train licks stick dinnertime window. Yawn litter fish yawn toy pet gate throw Buddy kitty wag tail ball groom crate ferret heel wet nose Rover toys pet supplies. Bird Food treats tongue lick teeth ferret litter box slobbery litter box crate bird small animals yawn small animals shake slobber gimme five toys polydactyl meow.
             </p>
         </div>
-      </article>
+
       <section>
         <div class="dogbox">
-            <img src="images/murphy-card.jpg" alt="a terrier" class="dogboxpix" onclick="alert('This is Murphy. He is a Terrier. He is high maintenance and high energy. His adoption fee is $123.00')">
+            <img src="images/murphy-card.jpg" alt="a terrier" class="dogboxpix" onclick="MurphyInfo()">
             <h4 class="dogname">Murphy</h4>
              <h5>cost to adopt $123.00</h5>
+             <p>(Plus a small adoption fee.)</p>
                <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Good Boy park lazy dog walk kibble Scooby snacks licks canary.
                </p>
-               <button type="button" onclick="totalAdder()" class="dogbutton">Adopt</button>
+               <button type="button" onclick="MurphyAdder()" class="dogbutton">Adopt</button>
          </div>
          <div class="dogbox">
-           <img src="images/poppy-card.jpg" width="150" alt="a small fluffy white mutt" class="dogboxpix" onclick="alert('This is Poppy. She is a white mix mutt. She is low maintenance and low energy. Her adoption fee is $135.00')">
+           <img src="images/poppy-card.jpg" width="150" alt="a small fluffy white mutt" class="dogboxpix" onclick="PoppyInfo()">
              <h4 class="dogname">Poppy</h4>
               <h5>cost to adopt $135.00 </h5>
+              <p>(Plus a small adoption fee.)</p>
                 <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Good Boy park lazy dog walk kibble Scooby snacks licks canary.
                 </p>
-                <button type="button" onclick="totalAdder()" class="dogbutton">Adopt</button>
+                <button type="button" onclick="poppyAdder()" class="dogbutton">Adopt</button>
           </div>
           <div class="dogbox">
-            <img src="images/jack-card.jpg" width="150" alt="a beagel" class="dogboxpix" onclick="alert('This is Jack. He is a Beagel. He is high maintenance and high energy. Her adoption fee is $193.00')">
+            <img src="images/jack-card.jpg" width="150" alt="a beagel" class="dogboxpix" onclick="JackInfo()">
               <h4 class="dogname">Jack</h4>
                <h5>cost to adopt $193.00</h5>
+                <p>(Plus a small adoption fee.)</p>
                  <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Good Boy park lazy dog walk kibble Scooby snacks licks canary.
                  </p>
-                 <button type="button" onclick="totalAdder()" class="dogbutton">Adopt</button>
+                 <button type="button" onclick="jackAdder()" class="dogbutton">Adopt</button>
            </div>
            <div class="dogbox">
-             <img src="images/duffy-card.jpg" width="150" alt="a Pitbull" class="dogboxpix" onclick="alert('This is Duffy. She is a Pitbull. She is high maintenance, but low energy. Her adoption fee is $123.00')">
+             <img src="images/duffy-card.jpg" width="150" alt="a Pitbull" class="dogboxpix" onclick="DuffyInfo()">
                <h4 class="dogname">Duffy</h4>
                 <h5>cost to adopt $123.00</h5>
+                 <p>(Plus a small adoption fee.)</p>
                   <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Good Boy park lazy dog walk kibble Scooby snacks licks canary.
                   </p>
-                  <button type="button" onclick="totalAdder()" class="dogbutton">Adopt</button>
+                  <button type="button" onclick="duffyAdder()" class="dogbutton">Adopt</button>
             </div>
           </section>
           <section>
             <div class="dogbox">
-              <img src="images/lucas-card.jpg" width="150" alt="a German Shepard" class="dogboxpix" onclick="alert('This is Lucas. He is a German Shepard. He is low maintenance, but high energy. His adoption fee is $233.00')">
+              <img src="images/lucas-card.jpg" width="150" alt="a German Shepard" class="dogboxpix" onclick="LucasInfo()">
                 <h4 class="dogname">Lucas</h4>
                  <h5>cost to adopt $233.00</h5>
+                  <p>(Plus a small adoption fee.)</p>
                    <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Good Boy park lazy dog walk kibble Scooby snacks licks canary.
                    </p>
-                   <button type="button" onclick="totalAdder()" class="dogbutton">Adopt</button>
+                   <button type="button" onclick="lucasAdder()" class="dogbutton">Adopt</button>
              </div>
              <div class="dogbox">
-               <img src="images/jake-card.jpg" width="150" alt="a Golden Labrador" class="dogboxpix" onclick="alert('This is Jake. He is a Golden Lab. He is low maintenance and low energy. His adoption fee is $195.00')">
+               <img src="images/jake-card.jpg" width="150" alt="a Golden Labrador" class="dogboxpix" onclick="JakeInfo()">
                  <h4 class="dogname">Jake</h4>
                   <h5>cost to adopt $195.00</h5>
+                   <p>(Plus a small adoption fee.)</p>
                     <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Good Boy park lazy dog walk kibble Scooby snacks licks canary.
                     </p>
-                    <button type="button" onclick="totalAdder()" class="dogbutton">Adopt</button>
+                    <button type="button" onclick="jakeAdder()" class="dogbutton">Adopt</button>
               </div>
               <div class="dogbox">
-                <img src="images/angus-card.jpg" width="150" alt="a Boxer Terrier" class="dogboxpix" onclick="alert('This is Angus. He is a Boxer Terrier. He is low maintenance, but high energy. His adoption fee is $245.00')">
+                <img src="images/angus-card.jpg" width="150" alt="a Boxer Terrier" class="dogboxpix" onclick="AngusInfo()">
                   <h4 class="dogname">Angus</h4>
                    <h5>cost to adopt $245.00</h5>
+                    <p>(Plus a small adoption fee.)</p>
                      <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Good Boy park lazy dog walk kibble Scooby snacks licks canary.
                      </p>
-                     <button type="button" onclick="totalAdder()" class="dogbutton">Adopt</button>
+                     <button type="button" onclick="angusAdder()" class="dogbutton">Adopt</button>
                </div>
                <div class="dogbox">
-                 <img src="images/violet-card.jpg" width="150" alt="a chocolate lab puppy" class="dogboxpix" onclick="alert('Violet: Chocolate Lab Puppy, 2 months old with all of her shots. She is low maintenance, but mid-range energy. She will cost $123.00 to adopt.')">
+                 <img src="images/violet-card.jpg" width="150" alt="a chocolate lab puppy" class="dogboxpix" onclick="VioletInfo()">
                    <h4 class="dogname">Violet</h4>
                     <h5>cost to adopt $123.00</h5>
+                     <p>(Plus a small adoption fee.)</p>
                       <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Good Boy park lazy dog walk kibble Scooby snacks licks canary.
                       </p>
-                      <button type="button" onclick="totalAdder()" class="dogbutton">Adopt</button>
+                      <button type="button" onclick="violetAdder()" class="dogbutton">Adopt</button>
                 </div>
               </section>
                 <div class="pinkbutton">
                   <h4><a href="show-dogs-page2.html" class="moredogs">See More Dogs</a>
                   </h4>
                </div>
+            </article>
+            <aside class="blog-preview">
+              <div>
+                <h2>What's New at Dogablog?</h2>
+              </div>
+              <div>
+                  <img src="images/blog-1.jpg" alt="a pet owner hugs his dog while both look at a grand desert vista" class="preview-image">
+                     <h4>The Best Ways to Keep Your Puppy Travel-happy</h4>
+                            <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. <a href="dog-blog-page3.html">Click here to read more.</a>
+                            </p>
+                </div>
+                <div>
+                   <img src="images/blog-2.jpg" width="500" alt="multiple dogs on a leash in the park" class="preview-image">
+                      <h4>How to Walk Mulitple Dogs</h4>
+                             <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike.<a href="dog-blog-page3.html"> Click here to read more.</a>
+                             </p>
+                  </div>
+               </aside>
            </main>
+
+
+
           <footer>
                 <img src="images/adoptadog-logo.svg" width="500" alt="white dog silhoutte">
                 <p>Play Dead sit nap lazy dog wet nose Tigger run fast fish lazy cat wagging hamster toy field yawn feathers ferret yawn aquarium.

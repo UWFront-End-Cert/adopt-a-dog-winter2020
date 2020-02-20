@@ -17,7 +17,9 @@ header {
   flex-flow: row;
 }
 
-main {
+.main-container {
+  display: flex;
+  flex-direction: row;
   margin-top: 0;
   margin-right: 10%;
   margin- bottom: 5%;
@@ -28,6 +30,10 @@ h3 {
   font-size: 20px;
   font-family: Gill sans, sans-serif;
   color: chartreuse;
+}
+
+h4 {
+  color: DarkCyan;
 }
 
 header {
@@ -77,13 +83,14 @@ h2 {
   color: DarkCyan;
   }
 
-.main-blog-para {
+.main-pararaph {
   display: flex;
   flex-direction: row;
 }
 
 .intro-para {
   padding: 2%;
+  width: 80%;
 }
 
 p {
@@ -137,6 +144,14 @@ section {
   margin: 0 20%;
 }
 
+.blog-preview {
+  font-size: 70%;
+  width: 40%;
+}
+
+.preview-image {
+  width: 80%;
+}
 
 input {
   box-sizing: border-box;
@@ -183,4 +198,42 @@ footer {
   width: 100%;
   padding: 5%;
   text-align: center;
+}
+
+
+@media screen and (max-width: 568px) {
+  section {
+    display: block;
+            }
+}
+
+@media screen and (max-width: 568px) {
+  .dogbox {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .blog-preview {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  h2 {
+    color: orange;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    display: flex;
+    flex-direction: row;
+      }
+}
+
+@media screen and (min-width: 768px) {
+  .dogbox {
+    width: 50%;
+      }
 }
