@@ -1,11 +1,9 @@
-.flex-container {
-  display: flex;
-  flex-direction: column;
+.grid-container {
+  display: grid;
+  grid-gap: 0.25rem;
 }
-.flex-container > div {
-  margin: 10px;
-  padding: 20px;
-  font-style: normal;
+.grid-aside {
+  float: right;
 }
 h1 {
   font-weight: bold;
@@ -17,7 +15,8 @@ h2 {
   font-style: italic;
 }
 .header {
-  margin: auto;
+  margin: none;
+  width: 100%;
 
 }
 .navbar > ul li {
@@ -41,9 +40,9 @@ h2 {
 }
 .navbar {
   background-color: lightgrey;
-  width: auto;
-  padding: 30px;
-  margin: 10px;
+  width: 100%;
+  height: 5rem;
+  margin-top:
 }
 .navbar1 ul li {
   list-style: none;
@@ -57,7 +56,8 @@ h2 {
 footer {
   text-align: center;
   color: white;
-  background-color: blue;
+  background-color: #3333cc;
+  width: 100%;
 }
 div.gallery {
   margin: 5px;
@@ -78,16 +78,19 @@ display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 }
+.dogs {
+  margin-left: 20%;
+  width: 60%;
+}
 .adoptadog {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
-  margin-right: 150px;
-  margin-left: 80px;
+  justify-content: space-around;
+  margin-left: 20%;
+  width: 60%;
 }
 #adopt {
   width: 10em;
   border: solid;
   background-color: green;
-
 }
