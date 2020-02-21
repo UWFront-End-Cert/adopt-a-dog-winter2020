@@ -411,3 +411,24 @@ label {
   padding: 1rem;
 
 }
+
+
+@media screen and (max-width: 575px) {
+  .master-container {
+    width: 100%;
+  }
+
+  .dog-box {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .dog-box-img {
+    width: 100%;
+
+  }
+
+}
