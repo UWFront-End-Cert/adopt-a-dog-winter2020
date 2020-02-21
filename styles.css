@@ -283,14 +283,14 @@ h1, h2 {
   }
 
 
-@media screen and (max-width: 768px) and (min-width: 576px) {
+@media screen and (max-width: 767px) {
     .blog-container-mainpage {
       display: none;
 
     }
 
-    .master-master-container {
-      display: none;
+    .master-container {
+      width: 100%;
     }
 
 }
