@@ -27,12 +27,12 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  background: conic-gradient(from 45deg, #00008B, #9932CC, #4B0082, #B22222, #FF4500, #FAFAD2);
   background-image: url(header-image.jpeg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
   background-color: #0F0C0C;
-  background: conic-gradient(from 45deg, #00008B, #9932CC, #4B0082, #B22222, #FF4500, #FAFAD2);
   border: solid .1rem;
   width: 100%;
   min-width: 320px;
