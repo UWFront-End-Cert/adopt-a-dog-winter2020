@@ -13,5 +13,5 @@ let total = 0;
 
 function addValue(num) {
   total += num;
-  alert(`$` + total);
+  alert(`Your total is $` + total + '.');
 }
