@@ -5,8 +5,10 @@ body {
 
 /* Header */
 header {
+  background: linear-gradient(to right, #33ccff, #ff99cc);
   background-image: url(images/header-image.jpg);
   padding: 20px;
+  background-size: cover;
 }
 
 header img {
