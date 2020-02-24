@@ -420,17 +420,49 @@ form > select {
   aside {
     display: none;
   }
+
   .landing-page.main-content-container {
     margin: 2% 10%;
     width: 100%;
   }
+
   .landing-page-container .dog-cards {
      grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
   }
+
   header + nav > ul {
     justify-content: center;
     align-items: center;
   }
+
+  .checkout-button-content-container > a {
+    padding: 0.4rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header-content-container {
+    display: flex;
+  }
+
+  .checkout-content-container {
+    display: none;
+  }
+
+  .logo-content-container {
+    margin: auto;
+  }
+
+  .logo-content-container > img {
+    width: 200px;
+  }
+  
+  .logo-content-container > p {
+    font-size: 1rem;
+  }
+
+  /* fix blog page */
 }
 
 
