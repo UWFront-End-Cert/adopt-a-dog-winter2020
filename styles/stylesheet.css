@@ -24,8 +24,9 @@ h1, h2, h3 {
 
 header {
   width: 100%;
+  background: linear-gradient(var(--blue), black);
   background-image: url("../images/header-image.jpg");
-  background-size:cover;
+  background-size: cover;
 }
 
 .header-content-container {
