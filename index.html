@@ -10,8 +10,8 @@
   </head>
   <body>
     <header>
-      <div>
-        <img src="images/adoptadog-logo.svg" width="500" alt="Adoptadog logo with white dog silhoutte">
+      <div class="dog-logo">
+        <img src="images/adoptadog-logo.svg" alt="Adoptadog logo with white dog silhoutte">
         <h3>Seattle's Premier Dog Adoption Agency</h3>
       </div>
       <div class="checkouticon">
@@ -31,7 +31,11 @@
       <main class="main-container">
       <article class="main-paragraph">
         <div>
-          <img src="images/home-intro.jpg" alt="a boy hugs a happy Golden Retriver">
+            <picture>
+               <source media="(min-width: 650px)" srcset="images/home-intro.jpg" alt="a boy hugs a happy Golden Retriver">
+               <source media="(min-width: 465px)" srcset="images/alt-intro.jpg" alt="pug in a blanket">
+               <img src="images/kid-hug.jpg" alt="a child hugs a husky" style="width:300px;">
+       </picture>
         </div>
         <div class="intro-para">
           <h2> Adopt a dog </h2>
@@ -39,7 +43,7 @@
             </p>
         </div>
 
-      <section>
+      <section class="dogbox-grid">
         <div class="dogbox">
             <img src="images/murphy-card.jpg" alt="a terrier" class="dogboxpix" onclick="MurphyInfo()">
             <h4 class="dogname">Murphy</h4>
@@ -76,8 +80,7 @@
                   </p>
                   <button type="button" onclick="duffyAdder()" class="dogbutton">Adopt</button>
             </div>
-          </section>
-          <section>
+
             <div class="dogbox">
               <img src="images/lucas-card.jpg" width="150" alt="a German Shepard" class="dogboxpix" onclick="LucasInfo()">
                 <h4 class="dogname">Lucas</h4>
@@ -114,35 +117,37 @@
                       </p>
                       <button type="button" onclick="violetAdder()" class="dogbutton">Adopt</button>
                 </div>
-              </section>
-                <div class="pinkbutton">
+
+            </section>
+               <div class="pinkbutton">
                   <h4><a href="show-dogs-page2.html" class="moredogs">See More Dogs</a>
                   </h4>
                </div>
-            </article>
+          </article>
+
             <aside class="blog-preview">
-              <div>
-                <h2>What's New at Dogablog?</h2>
-              </div>
-              <div>
-                  <img src="images/blog-1.jpg" alt="a pet owner hugs his dog while both look at a grand desert vista" class="preview-image">
+                  <h2>What's New at Dogablog?</h2>
+                   <img src="images/blog-1.jpg" alt="a pet owner hugs his dog while both look at a grand desert vista" class="preview-image">
                      <h4>The Best Ways to Keep Your Puppy Travel-happy</h4>
                             <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. <a href="dog-blog-page3.html">Click here to read more.</a>
                             </p>
-                </div>
-                <div>
-                   <img src="images/blog-2.jpg" width="500" alt="multiple dogs on a leash in the park" class="preview-image">
+                     <img src="images/blog-2.jpg" alt="multiple dogs on a leash in the park" class="preview-image">
                       <h4>How to Walk Mulitple Dogs</h4>
                              <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike.<a href="dog-blog-page3.html"> Click here to read more.</a>
                              </p>
-                  </div>
+                    <img src="images/blog-3.jpg" alt="A girl throws a ball for her sitting golden retriever" class="preview-image">
+                    <h4>Be Your Pet's Best Teacher, Best Friend</h4>
+                    <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike.<a href="dog-blog-page3.html"> Click here to read more.</a>
+                    </p>
                </aside>
            </main>
 
 
 
           <footer>
-                <img src="images/adoptadog-logo.svg" width="500" alt="white dog silhoutte">
+                <img alt="white dog silhoutte" src="images/adoptadog-logo.svg" class="dog-logo"
+                    srcset="images/adoptadog-logo.svg 600w,
+                            images/adoptadog-logo.svg 200w">
                 <p>Play Dead sit nap lazy dog wet nose Tigger run fast fish lazy cat wagging hamster toy field yawn feathers ferret yawn aquarium.
                 </p>
                 <ul class="nav-bar">

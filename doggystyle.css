@@ -1,21 +1,28 @@
 /*adoptadog stylesheet*/
+
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-
 header {
-  width: 100%
+  width: 100%;
   border: none;
-  margin: none;
-  background-color: DarkCyan;
+  margin: 0;
+  background: linear-gradient(to right, #007399 35%, #009933);
+  background-image: url('images/header-image.jpg');
+  background-position: center top;
+  background-size: cover;
   padding: 2%;
 }
 
 header {
   display: flex;
   flex-flow: row;
-}
+  }
+
+  .dog-logo {
+    width: 50%;
+  }
 
 .main-container {
   display: flex;
@@ -42,7 +49,7 @@ header {
 }
 
 .checkouticon {
-  margin: 2%;
+  margin-right: 20%;
 }
 
 .checkbutton {
@@ -86,12 +93,13 @@ h2 {
 .main-pararaph {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 
 .intro-para {
   padding: 2%;
   width: 80%;
-}
+  }
 
 p {
   font-family: sans-serif;
@@ -101,17 +109,19 @@ p {
   padding-left: 1%;
 }
 
-section {
-  display: flex;
-  flex-direction: row;
-}
 
 .dogbox {
-  width: 15%;
-  height: 30%;
+  width: 20%;
   border: solid 1px black;
   margin: 1%;
+  padding: 1%;
   font-size: 70%;
+    }
+
+.dogbox-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   }
 
 .dogname {
@@ -141,12 +151,12 @@ section {
 }
 
 .pinkbutton {
-  margin: 0 20%;
+  margin: 0 30%;
 }
 
 .blog-preview {
   font-size: 70%;
-  width: 40%;
+  width: 100%;
 }
 
 .preview-image {
@@ -201,39 +211,55 @@ footer {
 }
 
 
-@media screen and (max-width: 568px) {
-  section {
-    display: block;
-            }
-}
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width: 568px) {
+  .topnav{
+    font-size: 30px;
+  }
+
   .dogbox {
+    width: 33%;
+  }
+  aside {
     width: 100%;
+  }
+
+  .main-paragraph {
+    margin: 0;
   }
 }
 
 @media screen and (max-width: 600px){
+
+     header {
+       width: 600px;
+    }
+
+    nav {
+      width: 600px;
+    }
+
+    .topnav {
+      font-size: 20px;
+    }
+
+    .main-paragraph {
+      margin: 1px;
+    }
+
+    p {
+      font-size: 15px;
+    }
+
+  .dogbox {
+    width: 100%;
+    display: block;
+  }
   .blog-preview {
     display: none;
   }
-}
 
-@media screen and (min-width: 600px) {
-  h2 {
-    color: orange;
+  footer {
+    width: 600px;
   }
-}
-
-@media screen and (min-width: 768px) {
-  section {
-    display: flex;
-    flex-direction: row;
-      }
-}
-
-@media screen and (min-width: 768px) {
-  .dogbox {
-    width: 50%;
-      }
 }
