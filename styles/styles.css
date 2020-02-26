@@ -8,6 +8,7 @@ button, input, select {
 }
 
 header {
+  background: linear-gradient(45deg, black, green);
   background-image: url(../images/header-image.jpg);
   background-size: cover;
 }
@@ -289,7 +290,13 @@ h3 {
 
 .blog-img {
   padding-right: 2.5rem;
-  width: 35%;
+  min-width: 300px;
+  max-width: 500px;
+  width: 40%;
+}
+
+.blog-para {
+  min-width: 65%;
 }
 
 .checkout-main {
@@ -443,7 +450,7 @@ main {
 }
 
 /* tablet */
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .top-nav {
     padding: .5rem 0;
     text-align: center;
@@ -535,6 +542,10 @@ main {
   .cart-cost {
     display: flex;
     justify-content: center;
+  }
+
+  footer {
+    font-size: 0.8rem;
   }
 }
 
@@ -630,5 +641,9 @@ main {
   .cart-cost {
     display: flex;
     justify-content: center;
+  }
+
+  footer {
+    font-size: 0.8rem;
   }
 }
