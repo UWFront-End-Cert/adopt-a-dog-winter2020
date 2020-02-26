@@ -4,10 +4,9 @@ body {
 }
 
 .header {
+    background: linear-gradient(to right, #003C63, white);
     background-image: url("../images/header-image.jpg");
-    background-color: #003C63;
-    background-size: 100%;
-    height: 15rem;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: row;
@@ -90,7 +89,6 @@ li:last-child:before {
     background-color: #FFFFFF;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-auto-rows: auto;
 }
 
 .main-dogs {
@@ -142,7 +140,6 @@ li:last-child:before {
 }
 
 .mission img {
-    float: left;
     padding-right: 2rem;
 }
 
