@@ -462,7 +462,19 @@ form > select {
     font-size: 1rem;
   }
 
-  /* fix blog page */
+  .blog-preview-container img {
+    float: none;
+    width: 100%;
+  }
+  
+  .blog-preview-container {
+    clear: none;
+    overflow: none;
+  }
+
+  .blog-preview-container h2 {
+    margin-top: 1rem;
+  }
 }
 
 
