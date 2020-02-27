@@ -6,6 +6,44 @@ html {
   font-size: 16px;
 }
 
+@media screen and (max-width: 576px) and (min-width: 576px) {
+  .grid-container {
+    clear: both;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .columnTwo {
+    display: flex;
+    width: 100%;
+    float: none;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .grid-container {
+    clear: both;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: auto;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .columnTwo {
+    display: flex;
+    width: 100%;
+    float: none;
+    flex-wrap: wrap;
+  }
+}
+
 header {
   display: flex;
   height: 15rem;
@@ -56,6 +94,11 @@ section {
   padding-right: 2rem;
 }
 
+aside {
+  display: inline-block;
+  padding-right: 2rem;
+}
+
 footer {
   background-color: rgb(64, 64, 64);
   height: 20%;
@@ -68,6 +111,7 @@ footer {
   position: relative;
   text-align: center;
   z-index: -1;
+  clear: both;
 }
 
 button, input, textarea {
@@ -96,8 +140,26 @@ fieldset  input {
   width: 15%;
 }
 
+aside {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 input[type=button]:hover {
   background-color: #45a049;
+}
+
+.grid-container {
+  clear: both;
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 1rem;
+  grid-auto-rows: auto;
+  float: left;
 }
 
 .container {
@@ -157,11 +219,22 @@ input[type=button]:hover {
   cursor: pointer;
 }
 
+.columnOne {
+  width: 50%;
+  float: left;
+  flex-wrap: wrap;
+}
+
+.columnTwo {
+  width: 20%;
+  float: right;
+  flex-wrap: wrap;
+}
+
 .blog {
   margin-top: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   margin-right: 1rem;
-  float: left;
 }
 
 .margin-top {
@@ -228,6 +301,7 @@ a.done::before {
   align-items: center;
   width: 20%;
   font-size: 20px;
+  clear: both;
 }
 
 .logo {
