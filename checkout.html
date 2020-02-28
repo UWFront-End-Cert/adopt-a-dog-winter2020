@@ -3,77 +3,67 @@
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Adopt A Dog</title>
+      <title>Checkout</title>
       <link rel="stylesheet" href="stylesheet/style.css">
    </head>
    <body>
-      <header>
-         <div class="header-container">
-            <div class="logo-bar">
-               <img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
-            </div>
-            <div class="navigation-bar">
-               <nav>
-                  <ul>
-                     <li><a href="index.html">Home </a></li>
-                     <li> <a href="dogs.html">Dogs </a></li>
-                     <li><a href="blog.html">Blog </a></li>
-                  </ul>
-               </nav>
-            </div>
+      <header class="header-container">
+         <div class="adopt-dog-logo">
+            <img src="images/adoptadog-logo.svg" class="logo-bar-img" alt="Adopt a dog logo">
+            <p class="logo-bar-text">Seattle’s premiere dog adoption agency </p>
+         </div>
+         <div class="cart-icon"><img src="images/cart-icon.svg" class="cart-img" alt="">
+            <output name="adoption-cost" for="adoption-cost" class="adoption-cost">$1234.56</output>
+            <br>
+            <button type="button"  name="button" class="btn-checkout btn"> Checkout </button>
          </div>
       </header>
-
-      <div class="main-container checkout-container">
-      <form method="post" id="frm-checkout" action="" >
-<h2>Checkout</h2>
-         <label for="name" >Name</label><br>
+      <div class="checkout-container">
+         <form method="post" id="frm-checkout" action="" >
+            <h2>Checkout</h2>
+            <label for="name" >Name</label><br>
             <input type="text" id="name" name="" value=""><br>
-         <label for="emailaddress">Email Address</label><br>
+            <label for="emailaddress">Email Address</label><br>
             <input type="text" id="email" name="" value=""><br>
-
-         <label for="streetaddress">Street Address</label><br>
+            <label for="streetaddress">Street Address</label><br>
             <input type="text" id="street" name="" value=""><br>
-<div>
-        <label for="city">City</label><br>
-            <input type="text" id="city" name="" value=""><br>
-
-         <label for="state">State</label><br>
-            <input type="text" id="state" name="" value=""><br>
-
-         <label for="zipcode">Zip Code</label><br>
-            <input type="text" id="zip" name="" value=""><br>
-</div>
+            <div>
+               <label for="city">City</label><br>
+               <input type="text" id="city" name="" value=""><br>
+               <label for="state">State</label><br>
+               <input type="text" id="state" name="" value=""><br>
+               <label for="zipcode">Zip Code</label><br>
+               <input type="text" id="zip" name="" value=""><br>
+            </div>
             <label for="firsttimeadopter">First Time Adopter?</label><br>
-               <input type="radio" id="y" name="" value=""> Yes
-               <input type="radio" id="n" name="" value=""> No
-<br>
+            <input type="radio" id="y" name="" value=""> Yes
+            <input type="radio" id="n" name="" value=""> No
+            <br>
             <label for="name">Pickup Location</label><br>
-               <select class="" id="pl" name="">
-               </select><br>
-<button type="button" id="submit" name="button" class="btn"> Submit </button>
-      </form>
-</div>
-
-
+            <select class="" id="pl" name="">
+            </select><br>
+            <button type="button" id="submit" name="button" class="btn"> Submit </button>
+         </form>
+      </div>
       <footer>
          <div class="footer-container">
             <div class="footer-image-container">
                <img src="images/adoptadog-logo.svg" alt="Adopt A Dog Logo">
             </div>
             <div class="">
-              <p> Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
-              esseque invenienihil imaximu scideru ptistiusam consequunt</p>
+               <p> Aborpos nisto inci tet aut que volupti beruptiberro to ex <br>
+                  esseque invenienihil imaximu scideru ptistiusam consequunt
+               </p>
             </div>
             <div class="">
-              <ul>
-                 <li><a href="index.html">Home </a></li>
-                 <li> <a href="dogs.html">Dogs </a></li>
-                 <li><a href="blog.html">Blog </a></li>
-              </ul>
+               <ul>
+                  <li><a href="index.html">Home </a></li>
+                  <li> <a href="dogs.html">Dogs </a></li>
+                  <li><a href="blog.html">Blog </a></li>
+               </ul>
             </div>
             <div class="">
-              <p>  © 2018 Adoptadog, LLC | Seattle, WA </p>
+               <p>  © 2018 Adoptadog, LLC | Seattle, WA </p>
             </div>
          </div>
       </footer>
