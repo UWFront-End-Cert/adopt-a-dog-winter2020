@@ -133,6 +133,22 @@ div.desc {
   }
   .item5 {
     width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-evenly;
+  }
+  .item3 {
+    width: 150%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .grid-item {
+    width: 100%;
+  }
+  .item5 {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
   }
   .item3 {
     width: 150%;
