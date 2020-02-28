@@ -18,30 +18,26 @@ flex-wrap: nowrap;
 justify-content: space-around;
 align-items: baseline;
 }
-.navigation-bar{
-align-items: flex-start;
-}
+
 li{
  display: inline;
- font-size: 2rem;
+ font-size: 1.2rem;
  color: blue;
  font-weight: bold;
 }
 li:after {
    content: ' \002F';
 }
-
+li:last-child::after { display: none; }
 .dogs-main-section{
   width : 60%;
   float : left;
   height: 100%;
 }
-
-.dogs-home-section{
+.dog-home-img{
   width : 100%;
-  height: 100%;
+  height: 500px;
 }
-
 .right{
   width: 32%;
   height: 1000px;
@@ -49,7 +45,6 @@ li:after {
   margin-left: 2%;
   margin-right: 2%;
 }
-
 .dogs-main{
   margin-left: 4%;
   margin-top: 1%;
@@ -73,7 +68,6 @@ li:after {
 flex-wrap: wrap;
 justify-content: space-between;
 }
-
 .dog-tile{
   width: 33%;
   padding: 10px;
@@ -116,7 +110,6 @@ justify-content: space-between;
 }
 .adopt-dog-logo{
   height: 200px;
-
 }
 .cart-icon{
   height: 200px;
@@ -148,6 +141,9 @@ padding: 4px 30px;
 .home-blog-img{
   width: 80%;
 height: 200px;
+}
+.menu-bar{
+  background-color: red;
 }
 .btn-see-more{
   background-color: #EAEAEA;
