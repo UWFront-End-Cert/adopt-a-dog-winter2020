@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 
 h1 {
   font-weight: bold;
@@ -121,4 +124,17 @@ div.desc {
 #adopt {
   width: 10em;
   border: solid green;
+}
+
+
+@media screen and (max-width: 767px) {
+  .item4 {
+    display: none;
+  }
+  .item5 {
+    width: 100%;
+  }
+  .item3 {
+    width: 150%;
+  }
 }
