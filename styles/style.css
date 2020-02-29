@@ -321,7 +321,7 @@ footer p {
 }
 /* blog page style end */
 /* checkoout form page style start */
-.checkout-form-page h1, .checkout-form-page label, .checkout-form-page >p:nth-child(3), .checkout-form-page >p:nth-child(5), .checkout-dog-name, .checkout-form-page form p:nth-child(10) {
+.checkout-form-page h1, .checkout-form-page label, .form-field p, .checkout-dog-name, .form-text-field p:first-child, .form-text-field p:nth-child(3) {
   color: #103E67;
   font-weight: bold;
   font-size: 1.1rem;
@@ -336,7 +336,7 @@ footer p {
   padding-top: 1.5rem;
 }
 
-.checkout-form-page >p:nth-child(3) {   /* <p>Dogs Adopted</p> */
+.form-text-field >p:first-child {   /* <p>Dogs Adopted</p> */
   padding: 0.5rem 0 1rem 0;
 }
 
@@ -349,51 +349,51 @@ footer p {
   font-size: 0.8rem;
 }
 
-.checkout-form-page >p:nth-child(5) {   /* <p>Total Adoption Cost</p> */
+.form-text-field >p:nth-child(5) {   /* <p>Total Adoption Cost</p> */
   padding: 2rem 0 0.5rem 0;
 }
 
-.checkout-form-page >p:nth-child(6) {   /* <p>$1234.56</p> */
+.form-text-field >p:nth-child(6) {   /* <p>$1234.56</p> */
   padding: 0 0 1.5rem 0;
 }
 
-.checkout-form-page input, .checkout-form-page select {
+.form-field input, .form-field select {
   margin-bottom: 1.5rem;
   margin-top: 0.4rem;
   height: 2rem;
 }
 
-.checkout-form-page form >input:nth-child(2), .checkout-form-page #email, .checkout-form-page #street {
+.form-field #name, .form-field #email, .form-field #street {
   width: 70%;
 }
 
-.checkout-form-page select[id="location"] {
+.form-field select[id="location"] {
   width: 25%;
 }
 /* .checkout-form-page form label:nth-child(7)::before {
   content: '\a';
   white-space: pre;
 } */
-.checkout-form-page form label:first-child, .checkout-form-page label:nth-child(3), .checkout-form-page label:nth-child(5), .checkout-form-page label:nth-child(13) {
+.form-field label:first-child, .form-field label:nth-child(3), .form-field label:nth-child(5), .form-field label:nth-child(13) {
   display: block;
 }
 
 .checkout-form-tiles {
-  border: 2px solid #EBEBEB;
+/*  border: 2px solid #EBEBEB; */
   display: inline-block;
   padding-right: 2rem;
   margin: 0;
 }
 
-.checkout-form-page form>div:nth-child(7) {
+.form-field>div:nth-child(7) {
   width: 30%;
 }
 
-.checkout-form-page form>div:nth-child(8) {
+.form-field>div:nth-child(8) {
   width: 20%;
 }
 
-.checkout-form-page form>div:nth-child(9) {
+.form-field>div:nth-child(9) {
   width: calc(20% + 2rem);
 }
 
@@ -409,18 +409,18 @@ footer p {
   width: 100%;
 }
 
-.checkout-form-page >div:nth-child(4) {
+.dogs-to-checkout {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
 
-.checkout-form-page img[src="images/lucas-checkout.jpg"], .checkout-form-page img[src="images/duffy-checkout.jpg"] {
+.checkout-form-page img {
   max-width: 70px;
   margin: 0;
 }
 
-.checkout-form-page >div:nth-child(4) div:nth-child(even) {
+.dogs-to-checkout div:nth-child(even) {
   margin: 0;
   padding-left: 1rem;
   padding-right: 3rem;

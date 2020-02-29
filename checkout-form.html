@@ -35,62 +35,68 @@
     </header>
     <main class="checkout-form-page">
       <h1>Checkout</h1>
-      <form action="/action.php" method="get" target="_self">
-        <label for="name">Name</label>
-        <input type="text" name="name" id="name">
-        <label for="email">Email Address</label>
-        <input type="email" name="email" id="email">
-        <label for="street">Street Address</label>
-        <input type="text" name="street" id="street">
-        <div class="checkout-form-tiles">
-          <label for="city">City</label>
-          <input type="text" name="city" id="city">
-        </div>
-        <div class="checkout-form-tiles">
-          <label for="state">State</label>
-          <select name="state" id="state">
-            <option value=" ">--</option>
-            <option value="Alabama">Alabama</option>
-            <option value="Alaska">Alaska</option>
+      <form >
+        <div class="form-field">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name">
+          <label for="email">Email Address</label>
+          <input type="email" name="email" id="email">
+          <label for="street">Street Address</label>
+          <input type="text" name="street" id="street">
+          <div class="checkout-form-tiles">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+          </div>
+          <div class="checkout-form-tiles">
+            <label for="state">State</label>
+            <select name="state" id="state">
+              <option value=" ">--</option>
+              <option value="Alabama">Alabama</option>
+              <option value="Alaska">Alaska</option>
 
+            </select>
+          </div>
+          <div class="checkout-form-tiles">
+            <label for="zip">Zip Code</label>
+            <input type="number" name="zip" id="zip">
+          </div>
+          <p>First Time Adopter?</p>
+          <label class="checkout-radio">
+            <input type="radio" name="first time adopter" value="ture">Yes
+          </label>
+          <label class="checkout-radio">
+            <input type="radio" name="first time adopter" value="false">No
+          </label>
+          <label for="location">Pickup Location</label>
+          <select name="location" id="location">
+            <option value=" ">--</option>
+            <option value="seattle">seattle</option>
+            <option value="kirkland">kirkland</option>
           </select>
         </div>
-        <div class="checkout-form-tiles">
-          <label for="zip">Zip Code</label>
-          <input type="number" name="zip" id="zip">
+        <div class="form-text-field">
+          <p>Dogs Adopted</p>
+          <div class="dogs-to-checkout">
+            <img src="images/lucas-checkout.jpg" alt="a big head photo for Lucas">
+            <div>
+              <p class="checkout-dog-name">Lucas</p>
+              <p>Cost to Adopt: </p>
+              <p>$123.45</p>
+            </div>
+            <img src="images/duffy-checkout.jpg" alt="a big head photo for Duffy">
+            <div>
+              <p class="checkout-dog-name">Duffy</p>
+              <p>Cost to Adopt:</p>
+              <p>$123.45</p>
+            </div>
+          </div>
+          <p>Total Adoption Cost</p>
+          <p>$1234.56</p>
         </div>
-        <p>First Time Adopter?</p>
-        <label class="checkout-radio">
-          <input type="radio" name="first time adopter" value="ture">Yes
-        </label>
-        <label class="checkout-radio">
-          <input type="radio" name="first time adopter" value="false">No
-        </label>
-        <label for="location">Pickup Location</label>
-        <select name="location" id="location">
-          <option value=" ">--</option>
-          <option value="seattle">seattle</option>
-          <option value="kirkland">kirkland</option>
-        </select>
+        <button type="submit" name="button" onclick = "message()">Submit</button>
       </form>
-      <p>Dogs Adopted</p>
-      <div>
-        <img src="images/lucas-checkout.jpg" alt="a big head photo for Lucas">
-        <div>
-          <p class="checkout-dog-name">Lucas</p>
-          <p>Cost to Adopt: </p>
-          <p>$123.45</p>
-        </div>
-        <img src="images/duffy-checkout.jpg" alt="a big head photo for Duffy">
-        <div>
-          <p class="checkout-dog-name">Duffy</p>
-          <p>Cost to Adopt:</p>
-          <p>$123.45</p>
-        </div>
-      </div>
-      <p>Total Adoption Cost</p>
-      <p>$1234.56</p>
-      <button type="button" name="button">Submit</button>
+
+
     </main>
     <footer>
       <img src="images/adoptadog-logo.svg" alt="a white dog logo image for footer">
@@ -109,5 +115,6 @@
       </ul>
       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
     </footer>
+    <script src="js/form.js" charset="utf-8"></script>
   </body>
 </html>
