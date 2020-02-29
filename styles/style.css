@@ -132,11 +132,11 @@ li:last-child:before {
 }
 
 .main-blog-preview {
-    padding: 2rem 6rem 2rem 0;
+    padding: 2rem 0rem 2rem 0;
 }
 
 .mission {
-    padding: 2rem 2rem 2rem 6rem;
+    padding: 2rem 2rem 2rem 2rem;
 }
 
 .mission img {
@@ -154,7 +154,7 @@ li:last-child:before {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
-    padding: 0 2rem 0 6rem;
+    padding: 0 2rem 0 0rem;
 }
 
 .dog-box {
@@ -247,8 +247,13 @@ li:last-child:before {
 
 /* for mobile */
 @media only screen and (max-device-width: 767px) {
+    .main-container-index {
+        display: flex;
+        padding: 0 25%;
+    }
     .dog-boxes-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
     .main-menu {
         flex-direction: column;
@@ -268,7 +273,7 @@ li:last-child:before {
 }
 
 /* for tablet */
-@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
     .dog-boxes-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -278,7 +283,7 @@ li:last-child:before {
 }
 
 /* for larger than tablet */
-@media screen and (min-decvice-width: 1025px) {
+@media only screen and (min-decvice-width: 1367px) {
     .dog-boxes-grid {
         grid-template-columns: 1fr 1fr 1fr;
     }
