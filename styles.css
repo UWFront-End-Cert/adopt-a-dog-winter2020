@@ -6,50 +6,13 @@ html {
   font-size: 16px;
 }
 
-@media screen and (max-width: 576px) and (min-width: 576px) {
-  .grid-container {
-    clear: both;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    gap: 1rem;
-  }
-}
-
-@media screen and (min-width: 576px) {
-  .columnTwo {
-    display: flex;
-    width: 100%;
-    float: none;
-    flex-wrap: wrap;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .grid-container {
-    clear: both;
-    display: grid;
-    grid-template-columns: repeat(2,auto);
-    grid-template-rows: auto;
-    gap: 1rem;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .columnTwo {
-    display: flex;
-    width: 100%;
-    float: none;
-    flex-wrap: wrap;
-  }
-}
-
 header {
   display: flex;
   height: 15rem;
-  padding: 5% 3% 3% 8%;
+  padding: 5% 3% 3% 5%;
   border: none;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 h1 {
@@ -76,7 +39,7 @@ h4 {
 nav {
   display: flex;
   background-color: rgb(240, 240, 240);
-  padding-left: 10rem;
+  padding-left: 5rem;
   margin-bottom: 2rem;
 }
 
@@ -88,14 +51,9 @@ li {
   list-style-type: none;
 }
 
-section {
-  display: inline-block;
-  padding-left: 10rem;
-  padding-right: 2rem;
-}
-
-aside {
-  display: inline-block;
+main {
+  display: flex;
+  padding-left: 5rem;
   padding-right: 2rem;
 }
 
@@ -153,13 +111,9 @@ input[type=button]:hover {
   background-color: #45a049;
 }
 
-.grid-container {
-  clear: both;
-  display: grid;
-  grid-template-columns: repeat(3,auto);
-  gap: 1rem;
-  grid-auto-rows: auto;
-  float: left;
+.logo {
+  max-width: 100%;
+  min-width: 50%;
 }
 
 .container {
@@ -200,7 +154,8 @@ input[type=button]:hover {
 }
 
 .dog-card {
-  width: 20rem;
+  width: 20%;
+  min-width: 15rem;
   border: solid;
   border-color: rgb(240, 240, 240);
   margin: 1rem;
@@ -220,15 +175,16 @@ input[type=button]:hover {
 }
 
 .columnOne {
-  width: 50%;
+  width: 60%;
   float: left;
   flex-wrap: wrap;
+  /* margin: 0 5rem 0 5rem; */
 }
 
 .columnTwo {
   width: 20%;
-  float: right;
   flex-wrap: wrap;
+  margin: 0 5rem 0 5rem;
 }
 
 .blog {
@@ -333,4 +289,61 @@ a.done::before {
 
 .inline {
   display: inline;
+}
+
+@media screen and (max-width: 577px) {
+  header {
+    width: 100%;
+    display: flex;
+    height: 15rem;
+    padding: 5% 3% 3% 5%;
+    border: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .columnOne {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .columnTwo {
+    display: none;
+    width: 0%;
+  }
+}
+
+@media screen and (max-width: 769px) and (min-width: 578px) {
+  header {
+    width: 100%;
+    display: flex;
+    height: 15rem;
+    padding: 5% 3% 3% 5%;
+    border: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .columnTwo {
+    width: 100%;
+    margin: 1rem;
+  }
 }
