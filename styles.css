@@ -13,6 +13,7 @@ header {
   border: none;
   justify-content: space-between;
   flex-wrap: wrap;
+  background: linear-gradient(to right, #404040, white 115%);
 }
 
 h1 {
@@ -149,7 +150,6 @@ input[type=button]:hover {
   height: 15rem;
   width: 100%;
   background-repeat: no-repeat;
-  background-color: rgb(64, 64, 64);
 }
 
 .dog-card {
@@ -315,6 +315,13 @@ a.done::before {
     display: none;
     width: 0%;
   }
+
+  .hero-image {
+    height: 15rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-color: rgb(64, 64, 64);
+  }
 }
 
 @media screen and (max-width: 769px) and (min-width: 426px) {
@@ -341,7 +348,7 @@ a.done::before {
     /* width: 15%; */
     margin: 1rem;
   }
-  
+
   .dog-card {
     min-width: 40%;
     border: solid;
