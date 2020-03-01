@@ -53,8 +53,8 @@ li {
 
 main {
   display: flex;
-  padding-left: 5rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 footer {
@@ -146,7 +146,10 @@ input[type=button]:hover {
 
 .hero-image {
   background-image: url(images/header-image.jpg);
+  height: 15rem;
+  width: 100%;
   background-repeat: no-repeat;
+  background-color: rgb(64, 64, 64);
 }
 
 .dog-card {
@@ -283,7 +286,7 @@ a.done::before {
   display: inline;
 }
 
-@media screen and (max-width: 577px) {
+@media screen and (max-width: 425px) {
   header {
     width: 100%;
     display: flex;
@@ -300,7 +303,7 @@ a.done::before {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .columnOne {
@@ -314,7 +317,7 @@ a.done::before {
   }
 }
 
-@media screen and (max-width: 769px) and (min-width: 578px) {
+@media screen and (max-width: 769px) and (min-width: 426px) {
   header {
     width: 100%;
     display: flex;
@@ -326,16 +329,23 @@ a.done::before {
   }
 
   .container {
-    width: 100%;
+    /* width: 88%; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .columnTwo {
-    width: 100%;
+    /* width: 15%; */
+    margin: 1rem;
+  }
+  
+  .dog-card {
+    min-width: 40%;
+    border: solid;
+    border-color: rgb(240, 240, 240);
     margin: 1rem;
   }
 }
