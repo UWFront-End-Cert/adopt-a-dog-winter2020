@@ -59,17 +59,13 @@ main {
 
 footer {
   background-color: rgb(64, 64, 64);
-  height: 20%;
-  width: 100%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  height: 15rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   margin-top: 1.5rem;
   align-items: center;
   color: white;
-  position: relative;
   text-align: center;
-  z-index: -1;
-  clear: both;
 }
 
 button, input, textarea {
@@ -112,17 +108,16 @@ input[type=button]:hover {
 }
 
 .logo {
-  max-width: 100%;
-  min-width: 50%;
+  max-width: 300px;
 }
 
 .container {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .blog-container {
@@ -151,6 +146,7 @@ input[type=button]:hover {
 
 .hero-image {
   background-image: url(images/header-image.jpg);
+  background-repeat: no-repeat;
 }
 
 .dog-card {
@@ -231,13 +227,13 @@ a.done::before {
   flex-wrap: wrap;
 }
 
-.float-left {
+/* .float-left {
   float: left;
 }
 
 .float-right {
   float: right;
-}
+} */
 
 .small {
   width: 10%;
@@ -255,13 +251,9 @@ a.done::before {
   text-align: center;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: 100%;
   font-size: 20px;
   clear: both;
-}
-
-.logo {
-  width: 25%;
 }
 
 .city {
