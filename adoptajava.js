@@ -144,3 +144,50 @@ function stellaAdder() {
   result = stellaPrice + 100;
   let input = alert('Welcome to your new pet! Your total is now' + '$' + result);
 };
+
+
+const blogIntro = document.createElement('h1');
+blogIntro.textContent = 'Adoptadog DogaBlog';
+
+document.body.appendChild(blogIntro);
+
+
+
+/*
+
+<main>
+   <div>
+     <h1>Adoptadog DogaBlog</h1>
+    </div>
+  <section class="main-blog-paragraph">
+  <div class="intro-para">
+    <img src="images/blog-1.jpg" width="500" alt="a pet owner hugs his dog while both look at a grand desert vista">
+  </div>
+  <div>
+      <h2>The Best Ways to Keep Your Puppy Travel-happy</h2>
+         <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Good Boy park lazy dog walk kibble Scooby snacks licks canary. Roll Over kitty barky critters litter stick window litter box wagging field toy. Whiskers harness biscuit food lick small animals throw meow house train. Bedding field hamster small animals carrier polydactyl groom vaccine. Commands running gimme five groom slobber run fast head ball litter box biscuit catch run fast roll over. Roll Over litter box tabby pet slobbery play dead kitty roll over small animals barky good boy string kitty fish licks teeth chew drool. ID Tag barky lick parakeet wet nose ball walk tabby wag tail chirp nest. Spike bird seed water teeth leash ball. Crate pet food stripes carrier drool slobbery tabby dog puppy birds walk roll over bird food Mittens pet supplies.
+         </p>
+   </div>
+</section>
+<section class="main-blog-paragraph">
+   <div  class="intro-para">
+     <img src="images/blog-2.jpg" width="500" alt="multiple dogs on a leash in the park">
+  </div>
+  <div>
+       <h2>How to Walk Mulitple Dogs</h2>
+          <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Good Boy park lazy dog walk kibble Scooby snacks licks canary. Roll Over kitty barky critters litter stick window litter box wagging field toy. Whiskers harness biscuit food lick small animals throw meow house train. Bedding field hamster small animals carrier polydactyl groom vaccine. Commands running gimme five groom slobber run fast head ball litter box biscuit catch run fast roll over. Roll Over litter box tabby pet slobbery play dead kitty roll over small animals barky good boy string kitty fish licks teeth chew drool. ID Tag barky lick parakeet wet nose ball walk tabby wag tail chirp nest. Spike bird seed water teeth leash ball. Crate pet food stripes carrier drool slobbery tabby dog puppy birds walk roll over bird food Mittens pet supplies.
+          </p>
+    </div>
+</section>
+<section class="main-blog-paragraph">
+    <div class="intro-para">
+      <img src="images/blog-3.jpg" width="500" alt="A girl throws a ball for her sitting golden retriever">
+    </div>
+    <div >
+        <h2>Be Your Pet's Best Teacher, Best Friend</h2>
+           <p>Pet Food pet supplies gimme five puppy cage food feathers food heel feathers running pet gate walk lazy dog Spike. Good Boy park lazy dog walk kibble Scooby snacks licks canary. Roll Over kitty barky critters litter stick window litter box wagging field toy. Whiskers harness biscuit food lick small animals throw meow house train. Bedding field hamster small animals carrier polydactyl groom vaccine. Commands running gimme five groom slobber run fast head ball litter box biscuit catch run fast roll over. Roll Over litter box tabby pet slobbery play dead kitty roll over small animals barky good boy string kitty fish licks teeth chew drool. ID Tag barky lick parakeet wet nose ball walk tabby wag tail chirp nest. Spike bird seed water teeth leash ball. Crate pet food stripes carrier drool slobbery tabby dog puppy birds walk roll over bird food Mittens pet supplies.
+           </p>
+      </div>
+    </article>
+   </main>
+   */
