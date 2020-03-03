@@ -25,12 +25,13 @@ a:link {
 .header-upper {
   background: linear-gradient(60deg, dodgerblue, white, dodgerblue);
   background-image: url('../images/header-image.jpg');
-  background-image:
+  /*background-image:
     -webkit-image-set(url('../images/header-image-300w.jpg') 1x,
                       url('../images/header-image-1000w.jpg') 2x);
   background-image:
     image-set(url('../images/header-image-300w.jpg') 1x,
               url('../images/header-image-1000w.jpg') 2x);
+              */
   background-size: cover;
   display: grid;
   padding-left: 5rem;
@@ -105,6 +106,7 @@ header nav ul li:not(:last-child)::after {
   padding: 0.9rem;
 }
 /* nav style end */
+
 /* footer style start */
 footer {
   background-color: #037EAA;
@@ -142,6 +144,7 @@ footer p {
   text-align: center;
 }
 /* footer style end */
+
 /* home page style start */
 .home-page {
   display: flex;
@@ -220,6 +223,7 @@ footer p {
 }
 
 /* home page style end */
+
 /* dogs page style start */
 .dogs-card-container4all {
   padding:0;
@@ -280,6 +284,7 @@ footer p {
   display: inline;
 }
 /* dog-card style end */
+
 /* blog page style start */
 .blog-page {
   display: flex;
@@ -320,6 +325,7 @@ footer p {
   display: inline;
 }
 /* blog page style end */
+
 /* checkoout form page style start */
 .checkout-form-page h1, .checkout-form-page label, .form-field p, .checkout-dog-name, .form-text-field p:first-child, .form-text-field p:nth-child(3) {
   color: #103E67;
@@ -442,10 +448,23 @@ footer p {
   font-weight: 100;
   font-size: 1rem;
   padding-right: 2rem;
+  position: relative;
+  left: 15px;
 }
 
 .checkout-form-page input[type="radio"] {
   margin: 0;   /* override but useless */
+  position: absolute;
+  bottom: -9px;
+  left: -18px;
+}
+
+.total-adoption-cost-text{
+  padding-top: 2rem;
+}
+
+.total-adoption-cost-number {
+  padding-bottom: 2rem;
 }
 /* checkout form style end */
 
