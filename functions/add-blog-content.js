@@ -29,11 +29,11 @@ window.onload = function() {
     const target = document.getElementsByClassName('main-content-container')[0];
     const mainHeaderToAdd = document.createElement('h1');
     target.appendChild(mainHeaderToAdd);
-    let mainHeader = document.getElementsByTagName('h1')[0];
+    const mainHeader = document.getElementsByTagName('h1')[0];
     mainHeader.textContent = 'Adoptadog Blog';
 
     blogPosts.forEach(function(post) {
-        section = document.createElement('section');
+        const section = document.createElement('section');
         section.className = 'blog-preview-container';
         section.innerHTML += `<img src ="${post.imageSrc}" alt = "${post.imageAlt}">`;
         section.innerHTML += `<h2>${post.header}</h2>`;
