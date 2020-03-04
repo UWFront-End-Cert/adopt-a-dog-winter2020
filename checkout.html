@@ -37,7 +37,7 @@
     <main>
       <h2 class="h2-padding">Checkout</h2>
       <div class="checkout-main">
-        <form action="#" method="POST">
+        <form id="checkout-form">
           <div class="checkout-content">
             <label for="name" class="input-label">Name</label>
             <input type="text" name="name" id="name">
@@ -79,34 +79,34 @@
                 <option value="washington">Washington</option>
               </select>
           </div>
+          <section class="dogs-adopted-padding">
+            <h3 class="input-label">Dogs Adopted</h3>
+            <div class="dogs-adopted">
+              <div class="adopt-cost">
+                <img class="adopt-img" src="images/lucas-checkout.jpg" alt="a black dog looking up at the camera">
+                <div>
+                  <h4>Lucas</h4>
+                  <p>Cost to Adopt: $123.45</p>
+                </div>
+              </div>
+              <div class="adopt-cost">
+                <img class="adopt-img" src="images/duffy-checkout.jpg" alt="a white and brown pitbull">
+                <div>
+                  <h4>Duffy</h4>
+                  <p>Cost to Adopt: $123.45</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <h3 class="input-label">Total Adoption Cost</h3>
+            <p>$1234.56</p>
+            <!-- <div onclick="submitForm()" class="submit">
+              <p class="button-p">Submit</p>
+            </div> -->
+            <input onclick="submitForm()" class="submit" type="submit" value="Submit" name="submit">
+          </section>
         </form>
-        <section class="dogs-adopted-padding">
-          <h3 class="input-label">Dogs Adopted</h3>
-          <div class="dogs-adopted">
-            <div class="adopt-cost">
-              <img class="adopt-img" src="images/lucas-checkout.jpg" alt="a black dog looking up at the camera">
-              <div>
-                <h4>Lucas</h4>
-                <p>Cost to Adopt: $123.45</p>
-              </div>
-            </div>
-            <div class="adopt-cost">
-              <img class="adopt-img" src="images/duffy-checkout.jpg" alt="a white and brown pitbull">
-              <div>
-                <h4>Duffy</h4>
-                <p>Cost to Adopt: $123.45</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <h3 class="input-label">Total Adoption Cost</h3>
-          <p>$1234.56</p>
-          <div onclick="submitForm()" class="submit">
-            <p class="button-p">Submit</p>
-          </div></a>
-          <!-- <input class="submit" type="submit" value="Submit" name="submit"> -->
-        </section>
       </div>
     </main>
     <footer>

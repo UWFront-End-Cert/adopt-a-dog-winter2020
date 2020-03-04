@@ -335,7 +335,8 @@ h3 {
   display: inline-block;
   font-weight: bold;
   text-align: center;
-  padding: .5px 60px;
+  padding: 10px 20px;
+  width: 10rem;
   border-radius: 2px;
   color: white;
   border: none;
