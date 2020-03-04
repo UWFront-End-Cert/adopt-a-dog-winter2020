@@ -20,6 +20,12 @@ body {
   left: 80px; */
   text-align: left;
 }
+.header-image{
+  width: 500%;
+  heith: 900px;
+  background-color: blue;
+
+}
 a{
   color: blue;
 }
@@ -38,9 +44,14 @@ a{
   padding-bottom: 30px;
 }
 .bgColor{
-  background: #04296e!important;
+    background-image: url('https://github.com/UWFront-End-Cert/adopt-a-dog-winter2020/blob/master/images/header-image.jpg?raw=true');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+.liner-gradient-1{
+  background: linear-gradient(blue);
+}
 .footer {
   max-width:100%;
   height: 60%;
