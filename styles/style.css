@@ -96,7 +96,7 @@ li:last-child:before {
     flex-direction: column;
 }
 
-.main-container-blog {
+.blog-container {
     background-color: #FFFFFF;
     max-width: 100%;
     padding-right: 6rem;
@@ -243,6 +243,32 @@ li:last-child:before {
 
 .footer-nav li:last-child:before { 
     content: ''; 
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 33%);
+}
+
+.box img {
+    grid-column: 1/2;
+    grid-row: 1/4;
+    padding: 2rem;
+}
+
+.box h2 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    padding-top: 4rem;
+
+}
+
+.checkout-container form{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 20%;
 }
 
 /* for mobile */
