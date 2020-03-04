@@ -26,38 +26,23 @@ const blogPosts = [
 
 window.onload = function() {
     //add h1 to document
-    const mainHeaderToAdd = document.createElement('h1');
     const target = document.getElementsByClassName('main-content-container')[0];
+    const mainHeaderToAdd = document.createElement('h1');
     target.appendChild(mainHeaderToAdd);
     let mainHeader = document.getElementsByTagName('h1')[0];
     mainHeader.textContent = 'Adoptadog Blog';
 
-    //loop creating and displaying content from blogPosts array
-    for (let i = 0; i < blogPosts.length; i++) {
-        let o = blogPosts[i];
-        let sectionToAdd = document.createElement('section');
-        target.appendChild(sectionToAdd);
-        
-        let newSection = document.getElementsByTagName('section')[i];
-        newSection.className = 'blog-preview-container';
-        
-        let imgToAdd = document.createElement('img');
-        newSection.appendChild(imgToAdd);
-        let newImg = newSection.getElementsByTagName('img')[0];
-        newImg.src = o['imageSrc'];
-        newImg.alt = o['imageAlt'];
-      
-        let blogHeader = document.createElement('h2');
-        newSection.appendChild(blogHeader);
-        let newBlogHeader = newSection.getElementsByTagName('h2')[0];
-        newBlogHeader.textContent = o['header'];
-        
+    blogPosts.forEach(function(post) {
+        section = document.createElement('section');
+        section.className = 'blog-preview-container';
+        section.innerHTML += `<img src ="${post.imageSrc}" alt = "${post.imageAlt}">`;
+        section.innerHTML += `<h2>${post.header}</h2>`;
+
         //Two paragraphs per blog post
         for (let p = 0; p < 2; p++) {
-            let paragToAdd = document.createElement('p');
-            newSection.appendChild(paragToAdd);
-            let newParag = newSection.getElementsByTagName('p')[p];
-            newParag.textContent = o['text'];
+            section.innerHTML += `<p>${post.text}</p>`;
         }
-    }
+
+        target.appendChild(section);
+    })
 }
