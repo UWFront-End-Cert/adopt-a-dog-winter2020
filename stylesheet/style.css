@@ -1,29 +1,27 @@
 *{
-
   box-sizing: border-box;
 }
 body{
-  margin : 0px;
+  margin : 0px auto;
   padding: 10px;
-  text-align: center;
 }
 .header-container{
   background-image: linear-gradient(blue, yellow);
   background-image: url("../images/header-image.jpg");
 background-size: cover;
+padding: 10px;
 height: 400px;
 display: flex;
 flex-direction: row;
 flex-wrap: nowrap;
 justify-content: space-around;
-align-items: baseline;
 }
 
 li{
  display: inline;
  font-size: 1.2rem;
- color: blue;
  font-weight: bold;
+ color: #093C60;
 }
 li:after {
    content: ' \002F';
@@ -33,6 +31,9 @@ li:last-child::after { display: none; }
   width : 60%;
   float : left;
   height: 100%;
+}
+a:link,a:visited, a:hover, a:active{
+  color: blue;
 }
 .dog-home-img{
   width : 100%;
@@ -47,8 +48,7 @@ li:last-child::after { display: none; }
 }
 .dogs-main{
   margin-left: 4%;
-  margin-top: 1%;
-  margin-bottom: 1%;
+  margin: 1%;
   background: white;
   height: 100%;
   width: 100%;
@@ -85,10 +85,34 @@ justify-content: space-between;
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .dogs-main-section  {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .right  {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-container  {
+    flex-direction: column;
+    float: none;
+    width: 100%;
+  }
+}
+
+
   @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
       .dogs-dog-tile  {
       float: none;
-      width: 50%;
+      width: 25%;
 }
 }
 @media print {
@@ -97,7 +121,7 @@ justify-content: space-between;
     }
   }
 .btn{
-  padding: 8px 80px;
+  padding: 8px 20px;
   font-size: 18px;
   border-radius: 4px;
   color: white;
@@ -111,11 +135,7 @@ justify-content: space-between;
 .adopt-dog-logo{
   height: 200px;
 }
-.cart-icon{
-  height: 200px;
-  width: 300px;
-  align-self: flex;
-}
+
 .adoption-cost{
   height: 25px;
   width: 100px;
@@ -123,8 +143,15 @@ justify-content: space-between;
   font-weight: bold;
 }
 .logo-bar-img{
-  width: 400px;
-}
+  max-width: 400px;
+  }
+  @media screen and (max-width: 768px) {
+    .logo-bar-img  {
+      float: none;
+      width: 100%;
+    }
+  }
+
 .cart-img{
   width: 50px;
 }
@@ -138,16 +165,35 @@ justify-content: space-between;
 .btn.btn-checkout{
 padding: 4px 30px;
 }
+.blogs-container{
+  display: flex;
+  flex-wrap: wrap;
+
+}
 .home-blog-img{
   width: 80%;
 height: 200px;
+
+}
+.blog-left{
+  float: left;
+  width : 500px;
+  padding: 5px;
+}
+.blog-right{
+  float: left;
+  width : 500px;
+}
+.blog-paragraph{
+  font-size: 16px;
+  text-align: justify;
 }
 .menu-bar{
   background-color: red;
 }
 .btn-see-more{
   background-color: #EAEAEA;
-    margin-left: 500px;
+    margin: 0 auto;
     padding: 5px 60px;
     font-weight: bold;
 }
@@ -157,24 +203,42 @@ height: 200px;
 justify-content:space-between;
 background-color: white;
 width:100%;
+margin: 50px;
 }
 .checkout-container{
-display: flex;
+padding: 50px;
 background-color: white;
+color: #093C60;
+font-size: 20px;
+font-weight: bold;
+}
+input[type=text] {
+  width: 70%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+}
+.first-time-adopter, .pickup-location{
+    padding: 5px;
+    margin-bottom: 10px;
 }
 .main-container div, .dogs-container div , .blog-container div{
   padding:10px;
 }
-#frm-checkout{
-  margin-left: 100px;
-  margin-bottom: 10px;
+.adopted-dog-img{
+  width: 8%;
+  margin-top: 10px;
+}
+.adopted-dog-cost{
+  font-size: 12px;
+  display: inline-block;
 }
 .footer-container{
   display: flex;
   flex-direction: column;
   align-items: center;
 height: 100%;
-background-color: #3D3D3D;
+background-color: #093C60;
 }
 .footer-image-container{
   width: 50%;
