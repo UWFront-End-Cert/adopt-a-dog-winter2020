@@ -491,8 +491,6 @@ label {
 }
 
 
-
-
 @media screen and (max-width: 575px) {
   .master-container, .main-container {
     display: flex;
