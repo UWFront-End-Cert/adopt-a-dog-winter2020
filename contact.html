@@ -36,18 +36,18 @@
       <h3 class="checkout-headline">Checkout</h3>
         <form name="adoptDogs" method="GET">
           <label>Name
-            <input type="text" name="customerName">
+            <input type="text" name="customerName" value="">
           </label>
           <label>Email Address
-            <input type="email" name="customerEmail">
+            <input type="email" name="customerEmail" value="">
           </label>
           <label>Street Address
-            <input type="text" name="customerAddress">
+            <input type="text" name="customerAddress" value="">
           </label>
           <div class="city-state-zip">
             <div>
               <label>City
-                <input type="text" name="customerCity">
+                <input type="text" name="customerCity" value="">
               </label>
             </div>
             <div>
@@ -63,7 +63,7 @@
                   <option value="illinois">Illinois</option>
                   <option value="wisconsin">Wisconsin</option>
                   <option value="texas">Texas</option>
-                  <option value="michigan">Michegan</option>
+                  <option value="michigan">Michigan</option>
                   <option value="philadelphia">Philadelphia</option>
                   <option value="newYork">New York</option>
                   <option value="massachusetts">Massachusetts</option>
@@ -77,7 +77,7 @@
             </div>
             <div>
             <label>Zip Code
-              <input type="text" name="customerZipCode">
+              <input type="text" name="customerZipCode" value="">
             </label>
             </div>
           </div>
@@ -119,10 +119,10 @@
             </label>
           </div>
 
-          <p class="form-paragraph">Total Adoption Cost</p>
+          <p class="form-paragraph">Total Adoption Cost: $1234.56</p>
 
           <label class="submit-order">
-            <input type="submit" value="Submit Order">
+            <input type="submit" value="Submit Order" onclick="submitAlert()">
           </label>
 
        </form>
