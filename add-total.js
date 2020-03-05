@@ -80,18 +80,9 @@ function handleClick(dogName, breed, adoptFee) {
 
 
 // Checkout Submit Section
-// On the form page, display an alert that says "Thank you.
-// The form information has been received" when the form has been submitted.
-// Console log the values inside the form, you can build a string or build an object.
-
-
-
-// function checkoutSubmit() {
-//   let result2 = null;
-//   result2 = `Thank you! Your total cost is ${totalCost}`;
-//   alert(result2);
-//   console.log(totalCost);
-// }
+    // On the form page, display an alert that says "Thank you.
+    // The form information has been received" when the form has been submitted.
+    // Console log the values inside the form, you can build a string or build an object.
 
 
 const form = document.getElementById('form-box-irate');
