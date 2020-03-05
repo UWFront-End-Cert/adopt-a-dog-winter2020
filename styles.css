@@ -108,6 +108,10 @@ input[type=button]:hover {
   background-color: #45a049;
 }
 
+#insert-here {
+  color: white;
+}
+
 .logo {
   max-width: 300px;
 }
