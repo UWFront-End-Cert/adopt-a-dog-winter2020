@@ -183,6 +183,29 @@ footer {
   color: white;
   line-height: 2em;
 }
+.blog-container{
+display: flex;
+flex-flow: wrap;
+margin-top: 2%;
+
+}
+.blog-image {
+  width: 35%;
+  vertical-align: text-top;
+}
+.blog-text {
+  width: 65%;
+  margin-left: 2%;
+  margin-right: 2%;
+  vertical-align: top;
+}
+.blog-preview {
+  width: 25%;
+  display: none;
+}
+.blog-box img {
+  width: 100%;
+}
 @media only screen and (max-width: 768px) {
   .content-container {
     display: block;
