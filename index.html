@@ -10,12 +10,12 @@
   </head>
   <body>
     <header>
-      <div id="brand-container">
-        <div id="brand-logo">
+      <div class="brand-container">
+        <div class="brand-logo">
           <img src="images/adoptadog-logo.png" height="150px" alt="Adoptadog Logo">
         </div>
-        <div id="brand-checkout">
-          <p>$123.05</p>
+        <div class="checkout">
+          <p><strong>$123.45</strong></p>
           <button id="checkout-btn" type="button" name="button">Checkout</button>
         </div>
       </div>
@@ -27,97 +27,99 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div id="content-container">
-        <div class="content-photo">
-          <img src="images/home-intro.jpg" alt="Picture of man holding a dog">
+    <main class="index-container">
+      <div class="index-left">
+        <div class="content-container">
+          <div class="content-img">
+            <img src="images/home-introlrg.jpg" alt="Picture of man holding a dog">
+          </div>
+          <div class="content-txt">
+            <h1>Adopt A Dog</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
         </div>
-        <div class="content-text">
-          <h1>Adopt A Dog</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </div>
-      <div id="adopt-container">
-        <div class="adopt-item-1" onclick="dogInfo()">
-          <img src="images/murphy-card.jpg" alt="Murphy the dog">
-          <h1>Murphy</h1>
-          <p><b>Cost to Adopt:</b> $123.45</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <div class="adopt-btn">
-            <button class="button" type="button" name="button"><b>Adopt</b></button>
-          </div>        </div>
-        <div class="adopt-item-1" onclick="dogInfo()">
-          <img src="images/poppy-card.jpg" alt="Poppy the dog">
-          <h1>Poppy</h1>
-          <p><b>Cost to Adopt:</b> $123.45</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <div class="adopt-btn">
-            <button class="button" type="button" name="button"><b>Adopt</b></button>
-          </div>        </div>
-        <div class="adopt-item-1" onclick="dogInfo()">
-          <img src="images/jack-card.jpg"  alt="Jack the dog">
-          <h1>Jack</h1>
-          <p><b>Cost to Adopt:</b> $123.45</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <div class="adopt-btn">
-            <button class="button" type="button" name="button"><b>Adopt</b></button>
-          </div>        </div>
-        <div class="adopt-item-1" onclick="dogInfo()">
-          <img src="images/duffy-card.jpg" alt="Duffy the dog">
-          <h1>Duffy</h1>
-          <p><b>Cost to Adopt:</b> $123.45</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <div class="adopt-btn">
-            <button class="button" type="button" name="button"><b>Adopt</b></button>
-          </div>        </div>
-        <div class="adopt-item-1" onclick="dogInfo()">
-          <img src="images/lucas-card.jpg" alt="Lucas the dog">
-          <h1>Lucas</h1>
-          <p><b>Cost to Adopt:</b> $123.45</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <div class="adopt-btn">
-            <button class="button" type="button" name="button"><b>Adopt</b></button>
-          </div>        </div>
-        <div class="adopt-item-1" onclick="dogInfo()">
-          <img src="images/jake-card.jpg" alt="Jake the dog">
-          <h1>Jack</h1>
-          <p><b>Cost to Adopt:</b> $123.45</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <div class="adopt-btn">
-            <button class="button" type="button" name="button"><b>Adopt</b></button>
-          </div>        </div>
-        <div class="adopt-item-1" onclick="dogInfo()">
-          <img src="images/angus-card.jpg" alt="Angus the dog">
-          <h1>Angus</h1>
-          <p><b>Cost to Adopt:</b> $123.45</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-          <div class="adopt-btn">
-            <button class="button" type="button" name="button"><b>Adopt</b></button>
-          </div>        </div>
-        <div class="adopt-item-1" onclick="dogInfo()">
-          <img src="images/violet-card.jpg"  alt="Violet the dog">
-          <h1>Violet</h1>
-          <p><b>Cost to Adopt:</b> $123.45</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="adopt-container">
+          <div class="adopt-item-1" onclick="dogInfo()">
+            <img src="images/murphy-card.jpg" alt="Murphy the dog">
+            <h1>Murphy</h1>
+            <p><b>Cost to Adopt:</b> $123.45</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
             <div class="adopt-btn">
               <button class="button" type="button" name="button"><b>Adopt</b></button>
             </div>
+           </div>
+           <div class="adopt-item-1" onclick="dogInfo()">
+             <img src="images/poppy-card.jpg" alt="Poppy the dog">
+             <h1>Poppy</h1>
+             <p><b>Cost to Adopt:</b> $123.45</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+             <div class="adopt-btn">
+               <button class="button" type="button" name="button"><b>Adopt</b></button>
+             </div>        </div>
+           <div class="adopt-item-1" onclick="dogInfo()">
+             <img src="images/jack-card.jpg"  alt="Jack the dog">
+             <h1>Jack</h1>
+             <p><b>Cost to Adopt:</b> $123.45</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+             <div class="adopt-btn">
+               <button class="button" type="button" name="button"><b>Adopt</b></button>
+             </div>        </div>
+           <div class="adopt-item-1" onclick="dogInfo()">
+             <img src="images/duffy-card.jpg" alt="Duffy the dog">
+             <h1>Duffy</h1>
+             <p><b>Cost to Adopt:</b> $123.45</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+             <div class="adopt-btn">
+               <button class="button" type="button" name="button"><b>Adopt</b></button>
+             </div>        </div>
+           <div class="adopt-item-1" onclick="dogInfo()">
+             <img src="images/lucas-card.jpg" alt="Lucas the dog">
+             <h1>Lucas</h1>
+             <p><b>Cost to Adopt:</b> $123.45</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+             <div class="adopt-btn">
+               <button class="button" type="button" name="button"><b>Adopt</b></button>
+             </div>        </div>
+           <div class="adopt-item-1" onclick="dogInfo()">
+             <img src="images/jake-card.jpg" alt="Jake the dog">
+             <h1>Jack</h1>
+             <p><b>Cost to Adopt:</b> $123.45</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+             <div class="adopt-btn">
+               <button class="button" type="button" name="button"><b>Adopt</b></button>
+             </div>        </div>
+           <div class="adopt-item-1" onclick="dogInfo()">
+             <img src="images/angus-card.jpg" alt="Angus the dog">
+             <h1>Angus</h1>
+             <p><b>Cost to Adopt:</b> $123.45</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+             <div class="adopt-btn">
+               <button class="button" type="button" name="button"><b>Adopt</b></button>
+             </div>        </div>
+           <div class="adopt-item-1" onclick="dogInfo()">
+             <img src="images/violet-card.jpg"  alt="Violet the dog">
+             <h1>Violet</h1>
+             <p><b>Cost to Adopt:</b> $123.45</p>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+               <div class="adopt-btn">
+                 <button class="button" type="button" name="button"><b>Adopt</b></button>
+               </div>
+           </div>
+        </div>
+        <div class="adopt-more">
+          <button id="more-btn" type="button" name="button"><b>See More Dogs</b></button>
         </div>
       </div>
-      <div class="adopt-more">
-        <button id="more-btn" type="button" name="button"><b>See More Dogs</b></button>
-      </div>
-    </main>
-    <aside class="blog-preview">
+      <div class="index-right">
         <h1>From Our Blog</h1>
         <div class="blog-box">
           <img src="images/blog-1.jpg" alt="Picture of dog on a cliff">
@@ -141,7 +143,8 @@
             <a href="blog.html">Read More >></a>
         </div>
       </div>
-    </aside>
+
+    </main>
     <footer>
       <div class="ft-container">
         <img src="images/adoptadog-logo.png" height="100px" alt="Adoptadog Logo">
