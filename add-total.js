@@ -88,11 +88,22 @@ function handleClick(dogName, breed, adoptFee) {
 const form = document.getElementById('form-box-irate');
   console.log(form);
 
+
   form.addEventListener('submit', function(event) {
-  event.preventDefault()
-  result2 = `Thank you! Your total cost is ${totalCost}`;
-  alert(result2);
-  console.log(totalCost);
+    event.preventDefault()
+    let formInfo = {};//create an empty object
+      formInfo.name = document.getElementById('name').value;
+      formInfo.email = document.getElementById('email').value;
+      formInfo.street = document.getElementById('street').value;
+      formInfo.city = document.getElementById('city').value;
+      formInfo.state = document.getElementById('state').value;
+      formInfo.zipcode = document.getElementById('zipcode').value;
+      formInfo.yes = document.getElementById('yes').value;
+      formInfo.no = document.getElementById('no').value;
+      formInfo.region = document.getElementById('region').value;
+    result2 = `Thank you! The form has been received.`;
+    alert(result2);
+    console.log(formInfo);
 
 });
 
