@@ -1,7 +1,7 @@
 let submittedForms = [];
 
 window.onload = function() {  
-    let checkoutForm = document.getElementsByTagName('form')[0];
+    let checkoutForm = $('form')[0];
 
     checkoutForm.addEventListener('submit', function(event) {
         event.preventDefault();
@@ -19,15 +19,15 @@ window.onload = function() {
         }
 
         //update object
-        checkoutInfo.name = document.getElementById('coName').value;
-        checkoutInfo.emailAddress = document.getElementById('coEmail').value;
-        checkoutInfo.streetAddress = document.getElementById('coStaddr').value;
-        checkoutInfo.city = document.getElementById('coCity').value;
-        checkoutInfo.state = document.getElementById('coState').value;
-        checkoutInfo.zipCode = document.getElementById('coZipcode').value;
-        checkoutInfo.firstTimeAdopterYes = document.getElementById('coFirsttimeYes').value;
-        checkoutInfo.firstTImeAdopterNo = document.getElementById('coFirsttimeNo').value;
-        checkoutInfo.pickUpLocation = document.getElementById('coPickup').value;
+        checkoutInfo.name = $('#coName').val();
+        checkoutInfo.emailAddress = $('#coEmail').val();
+        checkoutInfo.streetAddress = $('#coStaddr').val();
+        checkoutInfo.city = $('#coCity').val();
+        checkoutInfo.state = $('#coState').val();
+        checkoutInfo.zipCode = $('#coZipcode').val();
+        checkoutInfo.firstTimeAdopterYes = $('#coFirsttimeYes').val();
+        checkoutInfo.firstTImeAdopterNo = $('#coFirsttimeNo').val();
+        checkoutInfo.pickUpLocation = $('#coPickup').val();
 
         //store object into a list
         submittedForms.push(checkoutInfo);
