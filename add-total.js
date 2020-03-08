@@ -88,7 +88,6 @@ function handleClick(dogName, breed, adoptFee) {
 const form = document.getElementById('form-box-irate');
   console.log(form);
 
-
   form.addEventListener('submit', function(event) {
     event.preventDefault()
     let formInfo = {};//create an empty object
@@ -106,7 +105,6 @@ const form = document.getElementById('form-box-irate');
     console.log(formInfo);
 
 });
-
 
 
 // Manual way of Blog Generation section:
@@ -133,3 +131,27 @@ const form = document.getElementById('form-box-irate');
           // const blogP = document.createElement('p');
           //   blogP.textContent = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
           //   blogText.appendChild(blogP);
+
+
+// Homework #9
+          // Implement jQuery on your dog site. Use the CDN option to keep file size smaller.
+          // Use jQuery to effect on the dog tiles in some way. It's up to you, it can be something
+          // very simple or something more complicated. Some ideas...
+
+          // A hover effect that gives the tile an outline, or give it a box shadow.
+          // Zooms in on the dog photo
+          // Add a ripple effect to your button.
+
+          // $('.dog-box').hover(function(e) {
+          //   $('img', this).addClass('dog-box-shadow');
+          // })
+
+          $('.dog-box').hover(function(e) {
+            $('.dog-box-img').addClass('dog-box-shadow');
+          })
+
+
+
+          // Use jQuery and refactor the form submission. Simply console log the form data as before.
+          // Use jQuery to update the checkout total on the index page with each click of an adopt button.
+          // This won't persist if you refresh or navigate to a new page, this is expected.
