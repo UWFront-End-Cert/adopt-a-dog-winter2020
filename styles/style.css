@@ -247,6 +247,10 @@ footer p {
   padding-bottom: 0.7rem;
 }
 
+.container-dog-card-hover {
+  border: 2px solid #D8C3A5;
+}
+
 .button-dog-card {
   background-color: #81B741;
   color: white;

@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Adopt a dog home page</title>
     <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" charset="utf-8"></script>
+    <script src="js/dogsInfo.js" charset="utf-8"></script>
   </head>
   <body>
     <header>
@@ -15,7 +17,7 @@
         </div>
         <div class="cart-icon-money">
           <img src="images/cart-icon.svg" alt="a white color cart icon in the header">
-          <p>$1234.56</p>
+          <p class="checkout-total">$0</p>
         </div>
         <button type="button" onclick="window.location.href='checkout-form.html'">Checkout</button>
       </div>
@@ -75,10 +77,11 @@
           </select>
         </div>
         <div class="form-text-field">
+          <!--
           <p>Dogs Adopted</p>
           <div class="dogs-to-checkout">
             <img src="images/lucas-checkout.jpg" alt="a big head photo for Lucas">
-            <div>
+            <div id="dogs-to-checkout-dogName[i]">
               <p class="checkout-dog-name">Lucas</p>
               <p>Cost to Adopt: </p>
               <p>$123.45</p>
@@ -90,8 +93,10 @@
               <p>$123.45</p>
             </div>
           </div>
+
           <p class="total-adoption-cost-text">Total Adoption Cost</p>
           <p class="total-adoption-cost-number">$1234.56</p>
+              -->
         </div>
         <button type="submit" name="button" onclick = "message()">Submit</button>
       </form>
@@ -115,6 +120,8 @@
       </ul>
       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
     </footer>
+    <script src="js/script.js" charset="utf-8"></script>
     <script src="js/form.js" charset="utf-8"></script>
+
   </body>
 </html>
