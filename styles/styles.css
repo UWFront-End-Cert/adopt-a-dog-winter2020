@@ -244,6 +244,12 @@ h2 {
   margin-bottom: 0rem;
 }
 
+.dog-outline {
+  outline-style: dotted;
+  outline-color: orange;
+  outline-width: thick;
+}
+
 .homepage-dogs .dog-description {
   margin: 0 auto;
   width: 10rem;
@@ -271,6 +277,11 @@ h2 {
    .homepage-dogs img {
      width: 100%;
      height: 75%;
+   }
+
+   .enlarge-pic {
+     width: 200%;
+     height: 175%;
    }
 
    .homepage-dogs .dog-description {
