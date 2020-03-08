@@ -139,16 +139,6 @@ main p {
   width: 100%;
 }
 
-/* .intro {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
-/* .intro-text {
-  margin: 0 0 0 2rem;
-  max-width: 60%;
-} */
-
 .intro p {
   font-weight: 300;
   line-height: 150%;
@@ -185,6 +175,12 @@ main p {
 .card {
   border: 1px solid var(--lightgrey);
   border-radius: 5px;
+}
+
+.card-box-shadow {
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  position: relative;
+  bottom: 1rem;
 }
 
 .card img {
