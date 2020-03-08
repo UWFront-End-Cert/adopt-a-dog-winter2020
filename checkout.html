@@ -30,46 +30,48 @@
     </ul>
   </nav>
 
-  <section>
-    <h2 id="form">Checkout</h2>
+  <h2>Checkout</h2>
 
-    <!-- <form method="POST">
+  <section id="form">
+
+    <form method="POST">
       <div class="flex-container column">
-        <label>Name:
+        <label id="name">Name:
           <input type="text" name="Name">
         </label>
 
-        <label>Email Address:
+        <label id="email">Email Address:
           <input type="email" name="emailAddress">
         </label>
 
-        <label>Address:
+        <label id="address">Address:
           <input type="text" name="Address">
         </label>
       </div>
 
       <div class="flex-container">
-        <label class="city">City:
+        <label id="city" class="city">City:
           <input type="text" name="City">
         </label>
 
         <label class="state">State:
+          <select id="state">
+        <!-- <label class="state">State:
           <select name="state">
             <option value="Alabama">AL</option>
             <option value="Alaska">AK</option>
             <option value="Arizona">AZ</option>
-            <option value="Arkansas">AR</option>
           </select>
-        </label>
+        </label> -->
 
-        <label class="zip">Zip Code:
+        <label id="zip" class="zip">Zip Code:
           <input type="text" name="Zip">
         </label>
       </div>
 
       <fieldset>
         <legend>First Time Adopter?</legend>
-        <label>
+        <label id="first">
           <input type="radio" name="first" value="yes">Yes
         </label>
         <label class="city">
@@ -78,7 +80,7 @@
       </fieldset>
 
       <div>
-        <label>Pickup Location:
+        <label id="pickup">Pickup Location:
           <select name="pickup">
             <option value="Seattle">Seattle</option>
             <option value="Olympia">Olympia</option>
@@ -89,15 +91,15 @@
       </div>
 
       <div class="margin-top">
-        <label>Dogs Adopted:
+        <label id="dogs">Dogs Adopted:
               </label>
       </div>
 
       <div class="margin-top zip">
-        <label class="city">Total Adoption Cost:
+        <label id="total" class="city">Total Adoption Cost:
           <input type="text" value="$246.90">
         </label>
-      </div> -->
+      </div>
 
       <div id="purchase">
         <!-- <input type="button" class="checkout city" value="Submit"> -->
