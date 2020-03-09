@@ -3,16 +3,18 @@ let cart = {
   dogsCheckout : [],
   add: function (x) {
     /*can not use arrow function, because it will let this to be global*/
-
     this.load();
-    let dog = dogsMap.get(x);
-    this.total += dog.adoptFee;
-    dogsCheckout.push(x);
-
-
-    this.save();
-    render();
-    return this.total;
+    if(this.dogsCheckout.includes(x)) {
+      alert('This lovely dog already in your cart.');
+      return this.total;
+    } else {
+      let dog = dogsMap.get(x);
+      this.total += dog.adoptFee;
+      this.dogsCheckout.push(x);
+      this.save();
+      render();
+      return this.total;
+    }
   },
   load: function () {
     let totalData = sessionStorage.getItem('totalInCart');
@@ -32,7 +34,7 @@ let cart = {
   },
   save: function () {
     sessionStorage.setItem('totalInCart', this.total);
-    let dogsData = JSON.stringify(dogsCheckout);
+    let dogsData = JSON.stringify(this.dogsCheckout);
     console.log('save' + dogsData);
     sessionStorage.setItem('dogsInCart', dogsData);
   }
