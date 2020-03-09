@@ -8,11 +8,13 @@ body {
 header {
   background-color: black;
   color: white;
-  background-image: url('https://boone824.github.io/adopt-a-dog-winter2020/images/header-image.jpg');
+  background-image: url('../images/header-image.jpg'), linear-gradient(to bottom, black, grey);
   height: 256px;
   width: 100%;
   background-size: cover;
   background-position: center;
+
+
 }
 .brand-container {
   display: flex;
@@ -153,14 +155,14 @@ nav ul {
   max-width: 250px;
 }
 .adopt-more {
-  width: 100%;
-  margin: 0 auto;
+  text-align: center;
 }
 /* Footer */
 footer {
   text-align: center;
   height: 300px;
   background-color: blue;
+  margin-top: .5em;
 }
 .ft-container {
   margin: 0 auto;
@@ -206,7 +208,7 @@ margin-top: 2%;
 .blog-box img {
   width: 100%;
 }
-@media only screen and (max-width: 768px) {
+/*@media only screen and (max-width: 768px) {
   .content-container {
     display: block;
     }
@@ -236,5 +238,5 @@ margin-top: 2%;
     border: 2px grey solid;
     margin: 0.5em;
     padding: 1em;
-  }
+  } /
 }
