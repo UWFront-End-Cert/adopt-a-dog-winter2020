@@ -2,18 +2,25 @@ function handleClick(text) {
   alert(text);
 }
 
-let adoptFee = 123.45;
+let adoptFee = 125;
 
-function dogTotal() {
-  adoptFee = 123.45;
-  alert('$' + adoptFee);
-}
+// function dogTotal() {
+//   adoptFee = 125;
+//   alert('$' + adoptFee);
+// }
+
+let theTotal = 0;
+
+const adopt = document.getElementById('total');
+const cart = document.createElement('div');
+
+$('button').click(function(e){
+  theTotal = Number(theTotal) + Number(adoptFee);
+  $('#total').text("Total: $" + theTotal);
+})
+
 
 const blogArray = [
-  // {
-  //   header: 'From Our Blog',
-  // },
-
   {
     image: 'images/blog-1.jpg',
     alt: 'Person hugging dog',

@@ -9,55 +9,6 @@ function dogTotal() {
   alert('$' + adoptFee);
 }
 
-// const formArray = [
-//     {
-//     name: 'Name',
-//     label: 'Name',
-//   },
-//
-//   {
-//     name: 'Address',
-//     label: 'Address',
-//   },
-//
-//   {
-//     name: 'City',
-//     label: 'City',
-//   },
-//
-//   {
-//     name: 'State',
-//     label: 'State',
-//   },
-//
-//   {
-//     name: 'Zip Code',
-//     label: 'Zip Code',
-//   },
-//
-//   {
-//     name: 'First Time',
-//     label: 'First Time Adopter?',
-//     input: 'radio',
-//   }
-// ];
-//
-// const checkout = document.getElementById('form');
-// const content = document.createElement('div');
-// const fields = ['Name', 'Address', 'City', 'State', 'Zip Code', 'First Time Adopter?'];
-//
-// for (let i = 0; i < fields.length; i += 1) {
-//   const label = document.createElement('label');
-//   label.textContent = fields[i];
-//   label.setAttribute('for', fields[i]);
-//
-//   const input = document.createElement('input');
-//   input.setAttribute('id', fields[i]);
-//
-//   form.appendChild(label);
-//   form.appendChild(input);
-// }
-
 const formSubmit = document.getElementById('form');
 
 const usStates = [
@@ -117,10 +68,10 @@ const usStates = [
 const stateSelect = document.getElementById('state');
 
 for (let i = 0; i < usStates.length; i++) {
-  const select = document.createElement('select');
-  select.text = usStates[i].name;
-  select.value = usStates[i].abbreviation
-  stateSelect.appendChild(select);
+  const chooseState = document.createElement('option');
+  chooseState.text = usStates[i].name;
+  chooseState.value = usStates[i].abbreviation
+  stateSelect.appendChild(chooseState);
 }
 
 

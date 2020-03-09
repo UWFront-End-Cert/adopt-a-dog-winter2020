@@ -164,6 +164,11 @@ input[type=button]:hover {
   margin: 1rem;
 }
 
+.card-shadow {
+  box-shadow: 10px 10px 5px grey;
+  background-color: rgb(255, 247, 138);
+}
+
 .dog {
   width: 100%;
 }
@@ -231,16 +236,13 @@ a.done::before {
 
 .flex-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 1rem;
 }
-
-/* .float-left {
-  float: left;
-}
-
-.float-right {
-  float: right;
-} */
 
 .small {
   width: 10%;
@@ -251,15 +253,22 @@ a.done::before {
   border: none;
   align-items: center;
   color: white;
+  display: block;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  font-family: inherit;
+  font-size: 100%;
+  width: 80%;
+  outline: inherit;
 }
 
+
 .see-more {
-  background-color: rgb(225, 225, 225);
   text-align: center;
   justify-content: center;
   align-items: center;
   width: 100%;
-  font-size: 20px;
+  font-size: 32px;
   clear: both;
 }
 
@@ -268,7 +277,7 @@ a.done::before {
 }
 
 .state {
-  width: 13%;
+  width: 50%;
   border-radius: 0;
   display: block;
   margin-bottom: 1rem;
@@ -280,10 +289,6 @@ a.done::before {
 
 .zip {
   width: 20%;
-}
-
-.column {
-  flex-direction: column;
 }
 
 .inline {
@@ -337,15 +342,6 @@ a.done::before {
     border: none;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
-
-  .container {
-    /* width: 88%; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
   }
 
   .columnTwo {
