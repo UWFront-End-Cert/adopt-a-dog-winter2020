@@ -244,6 +244,16 @@ a.done::before {
   margin-left: 1rem;
 }
 
+.dog-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  margin-left: 1rem;
+}
+
 .small {
   width: 10%;
 }
