@@ -8,7 +8,7 @@
      <link href="https://fonts.googleapis.com/css?family=Eczar&display=swap" rel="stylesheet">
      <link rel="stylesheet" type="text/css" href="styles/styles.css">
      <script src="https://code.jquery.com/jquery-3.4.1.js" defer></script>
-     <script src="script/form.js" defer></script>
+     <script src="script/script.js" defer></script>
   </head>
   <body>
       <p><a href="#skip-navigation" class="skip-hidden">Skip navigation links</a></p>
@@ -34,11 +34,99 @@
       </ul>
     </nav>
     <section class="contact-body">
+      <h3 class="checkout-headline">Checkout</h3>
+        <form name="adoptDogs" method="GET">
+          <label>Name
+            <input type="text" name="customerName" value="" id="name">
+          </label>
+          <label>Email Address
+            <input type="email" name="customerEmail" value="" id="email">
+          </label>
+          <label>Street Address
+            <input type="text" name="customerAddress" value="" id="address">
+          </label>
+          <div class="city-state-zip">
+            <div>
+              <label>City
+                <input type="text" name="customerCity" value="" id="city">
+              </label>
+            </div>
+            <div>
+              <label>State
+                <select name="state" id="state">
+                  <option value="selectOne">Select One</option>
+                  <option value="washington">Washington</option>
+                  <option value="oregon">Oregon</option>
+                  <option value="california">California</option>
+                  <option value="nevada">Nevada</option>
+                  <option value="iowa">Iowa</option>
+                  <option value="montana">Montana</option>
+                  <option value="illinois">Illinois</option>
+                  <option value="wisconsin">Wisconsin</option>
+                  <option value="texas">Texas</option>
+                  <option value="michigan">Michigan</option>
+                  <option value="philadelphia">Philadelphia</option>
+                  <option value="newYork">New York</option>
+                  <option value="massachusetts">Massachusetts</option>
+                  <option value="dc">Washington, D.C.</option>
+                  <option value="georgia">Georgia</option>
+                  <option value="southCarolina">South Carolina</option>
+                  <option value="northCarolina">North Carolina</option>
+                  <option value="florida">Florida</option>
+                </select>
+              </label>
+            </div>
+            <div>
+            <label>Zip Code
+              <input type="text" name="customerZipCode" value="" id="zipcode">
+            </label>
+            </div>
+          </div>
 
+          <p class="form-paragraph">First Time Adopter?</p>
+            <div id="yes-no">
+              <label class="yes-no">Yes
+                <input type="radio" name="firstTime" value="yes">
+              </label>
+              <label class="yes-no">No
+                <input type="radio" name="firstTime" value="no">
+              </label>
+            </div>
+            <div class="pickup">
+              <label>Pickup Location
+                <select name="cityLocation" id="pickup">
+                  <option value="downtownSeattle">Downtown Seattle</option>
+                  <option value="capHill">Capitol Hill</option>
+                  <option value="uDistrict">University District</option>
+                  <option value="queenAnee">Queen Anne</option>
+                  <option value="fremont">Fremont</option>
+                  <option value="shoreline">Shoreline</option>
+                  <option value="ballard">Ballard</option>
+                  <option value="bellevue">Bellevue</option>
+                  <option value="kirkland">Kirkland</option>
+                  <option value="redmond">Redmond</option>
+                  <option value="mercerIsland">Mercer Island</option>
+                </select>
+              </label>
+            </div>
 
+          <p class="form-paragraph">Dogs Adopted</p>
+          <div>
+            <label>
+              <input type="image" src="images/lucas-card.jpg" alt="black rottweiler eager to find a new owner" height="55">
+            </label>
+            <label>
+              <input type="image" src="images/duffy-card.jpg" alt="white-faced beagle looking solemnly at the camera" height="55">
+            </label>
+          </div>
 
+          <p class="form-paragraph">Total Adoption Cost: $1234.56</p>
 
+          <label class="submit-order">
+            <input type="submit" value="Submit Order" onclick="submitAlert()">
+          </label>
 
+       </form>
      </section>
      <footer>
        <div class="footer-info">

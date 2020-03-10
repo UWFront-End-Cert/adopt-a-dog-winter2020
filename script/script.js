@@ -2,7 +2,6 @@
 function dogInfo(name, breed, cost) {
   result = 'Name: ' + name + '\n' + 'Breed: ' + breed + '\n' + 'Cost: ' + cost;
   alert(result);
-  //alert('Name: (name)\nBreed: (breed)\nCost: (cost)');
 }
 
 //Create click handlers on each dog’s button that will add to the total.
@@ -19,26 +18,41 @@ function submitAlert() {
   alert('Thank you. The form information has been received.')
 }
 
-//Console log the values inside the form; you can build a string or build an object.
-document.addEventListener('submit', function(e) {
-  e.preventDefault();
-  const formInfo = {};
+// Console log the values inside the form; you can build a string or build an object.
+// document.addEventListener('submit', function(e) {
+//   e.preventDefault();
+//   const formInfo = {};
+//
+//   for (let i = 0; i < e.target.elements.length - 1; i++) {
+//     formInfo[e.target.elements[i].id] = e.target.elements[i].value;
+//   }
+//   console.log(formInfo);
+// })
 
-  for (let i = 0; i < e.target.elements.length - 1; i++) {
-    formInfo[e.target.elements[i].id] = e.target.elements[i].value;
-  }
+// Use jQuery and refactor the form submission. Simply console log the form data as before.
+$(document).ready(function() {
+    $('form').submit(function(e) {
+    let val = $('input[type=submit][clicked=true]').val()
+    e.preventDefault()
+    const formInfo = {};
 
-  console.log(formInfo);
+    console.log(e.target.elements.length);
+    for (let i = 0; i < e.target.elements.length; i++) {
+      formInfo[e.target.elements[i].name] = e.target.elements[i].value;
+    }
+    console.log(formInfo);
+  })
 })
 
 //hover effect that gives the tile an outline, or give it a box shadow.
 $('.dog-container').hover(function() {
-  $('.dog-container > img').animate({
-    left: '240px',
-    width: '100%'
-  })
+  $('img', this).addClass('dog-tile-box-shadow-outline');
 })
 
-// animate({
-//   transform: 'rotate(135deg)'
-// });
+//Use jQuery to update the checkout total on the index page with each click of an adopt button.
+
+$(document).ready(function() {
+  $(':button').click(function(e) {
+  $('.cart > p').text('$ ' + total);
+  });
+})

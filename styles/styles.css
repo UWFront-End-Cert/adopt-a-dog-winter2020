@@ -264,6 +264,12 @@ h2 {
   border: 1px solid #d3d3d3;
  }
 
+.dog-tile-box-shadow-outline {
+  box-shadow: 10px 10px #FFD700;
+  outline-style: groove;
+  cursor: pointer;
+}
+
 .homepage-dogs {
   display: flex;
   flex-direction: row;

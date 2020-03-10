@@ -13,7 +13,7 @@ let formInput = [
   },
 
   {
-    labelName: 'Email',
+    labelName: 'Email Address',
     inputType: 'email',
     inputName: 'customerEmail',
     inputId: 'email'
@@ -28,10 +28,10 @@ let formInput = [
 ]
 
 for (let i = 0; i < formInput.length; i++) {
-  $('form').append('<label></label>');
-  $('label').html(formInput[i].labelName);
-  $('label').append('<input>');
-  $('input').attr('type', formInput[i].inputType).attr('name', formInput[i].inputName).attr('id', formInput[i].inputId);
+  $('form').append('<label id="label-${i}"></label>');
+  $('#label-${i}').html(formInput[i].labelName);
+  $('#label-${i}').append('<input id="input-${i}">');
+  $('input id="input-${i}"').attr('type', formInput[i].inputType).attr('name', formInput[i].inputName).attr('id', formInput[i].inputId);
 }
 
 // $('form').append('<label></label>');
@@ -48,3 +48,10 @@ for (let i = 0; i < formInput.length; i++) {
 // $('label').html('Street Address');
 // $('label').append('<input>');
 // $('input').attr('type', 'text').attr('name', 'customerAddress').attr('id', 'address');
+
+// $('form').append('<div></div>');
+// $('form > div').addClass('city-state-zip').append('<div></div>');
+
+// $('label').html('City');
+// $('label').append('<input>');
+// $('input').attr('type', 'text').attr('name', 'customerCity').attr('id', 'city');
