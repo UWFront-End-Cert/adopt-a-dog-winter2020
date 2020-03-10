@@ -554,6 +554,10 @@ input[type=radio] {
   margin-bottom: .5rem;
 }
 
+input[type=button] {
+  cursor: pointer;
+}
+
 .yes-no {
   font-family: 'Assistant', Arial, sans-serif;
   font-size: 1rem;
