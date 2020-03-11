@@ -4,3 +4,6 @@
     alert(total * i); 
 }*/
 
+$('.dog-box').hover(function(e) {
+    $('img').addClass('box-border');
+})

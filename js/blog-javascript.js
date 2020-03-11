@@ -1,3 +1,4 @@
+const target = document.getElementById('blog-container');
 
 const blogContent = [
     {
@@ -19,8 +20,6 @@ const blogContent = [
     },
 ];
 
-const target = document.getElementById('blog-container');
-
 blogContent.forEach(function(dogBlog) {
     const box = document.createElement('div');
     box.setAttribute('class', 'box');
@@ -31,16 +30,3 @@ blogContent.forEach(function(dogBlog) {
 
     target.appendChild(box);
 })
-/*
-const div = document.createElement('div');
-document.body.appendChild(div);
-
-const blogPic = document.createElement('img');
-blogPic.src = "./images/blog-1.jpg";
-document.body.appendChild(blogPic);
-
-const blogTitle = document.createElement('h2');
-document.body.appendChild(blogTitle);
-
-const blogText = document.createElement('p');
-document.body.appendChild(blogText);*/
