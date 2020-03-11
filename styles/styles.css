@@ -311,6 +311,7 @@ h3 {
   font-weight: bold;
   font-size: 1.25rem;
   color: rgb(13, 45, 78);
+  /* padding-bottom: 1rem; */
 }
 
 .dogs-adopted {
@@ -342,9 +343,10 @@ h3 {
 }
 
 .adopt-img {
-  width: 25%;
+  width: 20%;
+  heigh: auto;
   align-self: center;
-  padding-right: 1rem;
+  padding: 1rem;
 }
 
 .radio-input {

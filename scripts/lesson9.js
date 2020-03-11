@@ -5,27 +5,16 @@ $('.dog-img').hover(function(e) {
 });
 
 
+// update the checkout total on the index & dogs pages with each click of an adopt button (currently not working)
 
+let checkoutCost = 0
 
-// let totalCost = 0;
-//
-// function dogFees(num) {
-//   totalCost += num;
-  // alert('Total Fees: ' + '$' + totalCost / 100);
-// }
-
-
-// update the checkout total on the index & dogs pages with each click of an adopt button
-
-// let checkoutCost = 0
-//
-// $('.adopt').click(function(e) {
-//
-//   function dogFees(num) {
-//     checkoutCost += num;
-//     $('.cost').textContent = checkoutCost;
-//   }
-// });
+$('.adopt').click(function(e) {
+  function dogFees(num) {
+    checkoutCost += num;
+    $('.cost').textContent = checkoutCost;
+  }
+});
 
 
 // refactor the form submission

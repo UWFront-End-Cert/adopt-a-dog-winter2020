@@ -80,11 +80,9 @@ for (let i = 0; i < blogArr.length; i++) {
   blogContainer.appendChild(blogArticle);
 }
 
-// console logs form inputs
+// console logs form inputs (currently not working)
 
-// const getForm = document.getElementById('checkout-form');
-
-document.addEventListener('submit', function(event) {
+getForm.addEventListener('submit', function(event) {
 
   event.preventDefault();
 
