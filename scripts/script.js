@@ -4,6 +4,7 @@ function dogInfo(nameFees) {
   alert(nameFees);
 }
 
+
 // click adopt button - alerts total cost
 
 let totalCost = 0;

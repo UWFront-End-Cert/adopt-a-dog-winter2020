@@ -18,7 +18,7 @@
         <div class="cart-cost-button">
           <div class="cart-cost">
             <img class="cart" src="images/cart-icon.svg" alt="cart icon">
-            <p class="cost">$1234.56</p>
+            <p class="cost">$0.00</p>
           </div>
           <a href="checkout.html" class="checkout-link">
           <div class="checkout">
@@ -34,77 +34,8 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <h2 class="h2-padding">Checkout</h2>
-      <div class="checkout-main">
-        <form id="checkout-form">
-          <div class="checkout-content">
-            <label for="name" class="input-label">Name</label>
-            <input type="text" name="name" id="name">
-            <label for="email" class="input-label">Email Address</label>
-            <input type="email" name="email" id="email">
-            <label for="address" class="input-label">Street Address</label>
-            <input type="text" name="address" id="address">
-            <div class="city-state-zip">
-              <div>
-                <label for="city" class="cityzip input-label">City</label>
-                <input class="city-input" type="text" name="city" id="city">
-              </div>
-              <div>
-                <label for="state" class="statezip input-label">State</label>
-                  <select class="state-select" name="state" id="state">
-                    <option value="">-</option>
-                    <option value="alaska">Alaska</option>
-                    <option value="oregon">Oregon</option>
-                    <option value="washington">Washington</option>
-                  </select>
-              </div>
-              <div>
-                <label for="zipcode" class="zip input-label">Zip Code</label>
-                <input class="zip-input" type="number" name="zipcode" id="zipcode">
-              </div>
-            </div>
-            <span class="input-label">First Time Adopter?</span>
-            <div class="radio-input">
-              <label class="no-label" for="no">No</label>
-                <input class="no-input" type="radio" name="adopter" value="no" id="no">
-              <label class="yes-label" for="yes">Yes</label>
-                <input class="yes-input" type="radio" name="adopter" value="yes" id="yes">
-            </div>
-            <label for="pickup" class="input-label">Pickup Location</label>
-              <select class="pickup-select" name="pickup" id="pickup">
-                <option value="">-</option>
-                <option value="alaska">Alaska</option>
-                <option value="oregon">Oregon</option>
-                <option value="washington">Washington</option>
-              </select>
-          </div>
-          <section class="dogs-adopted-padding">
-            <h3 class="input-label">Dogs Adopted</h3>
-            <div class="dogs-adopted">
-              <div class="adopt-cost">
-                <img class="adopt-img" src="images/lucas-checkout.jpg" alt="a black dog looking up at the camera">
-                <div>
-                  <h4>Lucas</h4>
-                  <p>Cost to Adopt: $123.45</p>
-                </div>
-              </div>
-              <div class="adopt-cost">
-                <img class="adopt-img" src="images/duffy-checkout.jpg" alt="a white and brown pitbull">
-                <div>
-                  <h4>Duffy</h4>
-                  <p>Cost to Adopt: $123.45</p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section>
-            <h3 class="input-label">Total Adoption Cost</h3>
-            <p>$1234.56</p>
-          </section>
-          <input onclick="submitForm()" class="submit" type="submit" value="Submit" name="submit">
-        </form>
-      </div>
+    <main id="checkout-wrapper">
+
     </main>
     <footer>
       <img class="footer-logo" src="images/adoptadog-logo.svg" alt="Adoptadog logo">
@@ -121,6 +52,79 @@
       </ul>
       <p>© 2018 Adoptadog, LLC | Seattle, WA</p>
     </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" type="text/javascript"></script>
   <script src="scripts/script.js" charset="utf-8"></script>
+  <script src="scripts/lesson9.js" charset="utf-8"></script>
   </body>
 </html>
+
+<!-- <h2 class="h2-padding">Checkout</h2>
+<div class="checkout-main">
+  <form id="checkout-form">
+    <div class="checkout-content">
+      <label for="name" class="input-label">Name</label>
+      <input type="text" name="name" id="name">
+      <label for="email" class="input-label">Email Address</label>
+      <input type="email" name="email" id="email">
+      <label for="address" class="input-label">Street Address</label>
+      <input type="text" name="address" id="address">
+      <div class="city-state-zip">
+        <div id="city-div">
+          <label for="city" class="cityzip input-label">City</label>
+          <input class="city-input" type="text" name="city" id="city">
+        </div>
+        <div id="state-div">
+          <label for="state" class="statezip input-label">State</label>
+            <select class="state-select" name="state" id="state">
+              <option value="">-</option>
+              <option value="alaska">Alaska</option>
+              <option value="oregon">Oregon</option>
+              <option value="washington">Washington</option>
+            </select>
+        </div>
+        <div id="zip-div">
+          <label for="zipcode" class="zip input-label">Zip Code</label>
+          <input class="zip-input" type="number" name="zipcode" id="zipcode">
+        </div>
+      </div>
+      <span class="input-label">First Time Adopter?</span>
+      <div class="radio-input">
+        <label class="no-label" for="no">No</label>
+          <input class="no-input" type="radio" name="adopter" value="no" id="no">
+        <label class="yes-label" for="yes">Yes</label>
+          <input class="yes-input" type="radio" name="adopter" value="yes" id="yes">
+      </div>
+      <label for="pickup" class="input-label">Pickup Location</label>
+        <select class="pickup-select" name="pickup" id="pickup">
+          <option value="">-</option>
+          <option value="alaska">Alaska</option>
+          <option value="oregon">Oregon</option>
+          <option value="washington">Washington</option>
+        </select>
+    </div>
+    <section class="dogs-adopted-padding">
+      <h3 class="input-label">Dogs Adopted</h3>
+      <div class="dogs-adopted">
+        <div class="adopt-cost">
+          <img class="adopt-img" src="images/lucas-checkout.jpg" alt="a black dog looking up at the camera">
+          <div>
+            <h4>Lucas</h4>
+            <p>Cost to Adopt: $123.45</p>
+          </div>
+        </div>
+        <div class="adopt-cost">
+          <img class="adopt-img" src="images/duffy-checkout.jpg" alt="a white and brown pitbull">
+          <div>
+            <h4>Duffy</h4>
+            <p>Cost to Adopt: $123.45</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h3 class="input-label">Total Adoption Cost</h3>
+      <p>$1234.56</p>
+    </section>
+    <input onclick="submitForm()" class="submit" type="submit" value="Submit" name="submit">
+  </form>
+</div> -->
