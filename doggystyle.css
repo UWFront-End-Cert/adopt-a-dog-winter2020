@@ -139,6 +139,11 @@ p {
   padding-bottom: 1%;
 }
 
+
+.green-tile-border {
+  outline: 10px groove green;
+}
+
 .moredogs {
   background-color: pink;
   color: DarkCyan;
@@ -155,24 +160,32 @@ p {
 }
 
 
-.blog-box {
+.wrap {
   width: 100%;
-  height: 500px;
+  height: 700px;
   display: flex;
-  justify-content: left;
-  align-items: left;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
 }
 
 .box1 {
-
-  width: 50%;
-  border: 1px solid white;
-  text-align: center;
+height: 250px;
+width: 20px;
+border: 1px solid white;
+text-align: center;
+font-size: 1px;
+padding: 1rem;
 }
 
 .box2 {
-  width: 100%;
+  height: 250px;
+  width: 200px;
+ text-align: center;
+ }
+
+.box2 img {
+width: 100%;
 }
 
 

@@ -144,3 +144,8 @@ function stellaAdder() {
   result = stellaPrice + 100;
   let input = alert('Welcome to your new pet! Your total is now' + '$' + result);
 };
+
+
+$('dogboxpix').hover(function(e) {
+  $('img'),addClass('green-tile-border')
+})
