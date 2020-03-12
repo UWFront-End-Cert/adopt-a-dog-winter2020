@@ -6,6 +6,9 @@ h1 {
   font-weight: bold;
   color: red;
 }
+.large-headline {
+  font-size: 30rem;
+}
 h2 {
   font-weight: bold;
   color: red;
@@ -144,6 +147,9 @@ div.gallery {
 div.gallery img {
   width: 100%;
   height: auto;
+}
+.image-border {
+ outline: 4px solid orange;
 }
 div.desc {
   padding: 15px;
