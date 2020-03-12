@@ -50,5 +50,5 @@ form.appendChild(submitButton);
 
 form.addEventListener('submit', function(e) {
     e.preventDefault();
-    alert('Form submitted!');
+    alert('Thank you. The form information has been received!');
 });
