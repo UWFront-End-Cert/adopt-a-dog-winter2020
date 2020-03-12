@@ -82,6 +82,8 @@ for (let i = 0; i < blogArr.length; i++) {
 
 // console logs form inputs (currently not working)
 
+const getForm = document.getElementById('checkout-form');
+
 getForm.addEventListener('submit', function(event) {
 
   event.preventDefault();
