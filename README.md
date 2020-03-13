@@ -2,7 +2,7 @@
 
 ## Background
 
-This repository contains source files for cyyllam.github.io/adopt-a-dog-winter2020, one of the course projects for HTML5 200 winter quarter 2020 of the University of Washington's Certificate in Front-End Development program. 
+This repository contains source files for http://cyyllam.github.io/adopt-a-dog-winter2020, one of the course projects for HTML5 200 winter quarter 2020 of the University of Washington's Certificate in Front-End Development program. 
 
 The fictional Adopt-a-dog website is written in HTML5, CSS, and JavaScript with some instances of JQuery. The purpose of the site was to build on top of the skills learned in HTML5 100 (Intro to HTML & CSS) and incorporate items from lessons relating to:
 
