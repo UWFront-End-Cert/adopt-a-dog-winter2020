@@ -1,0 +1,57 @@
+User Persona ------------------------------------------------------------
+
+Name: Sandi Smith
+Age: 60s, widowed, lives alone
+Occupation: Factory worker
+Education: High school
+Experience with technology: Knows how to use her smart-phone to surf the web and open commonly used apps. 
+Will rely on technical assistance from friends or family to install apps and navigate her phone.
+Little experience using her laptop and little need of it. Will often use her phone. She is more likely to
+call or do things in person to pay bills if apps have not been downloaded onto her phone.
+Use of Adopt-a-dog site: Seeking pet companionship
+
+
+Testing via different browsers and devices:
+
+Testing criteria --------------------------------------------------------
+
+*First choice Header and Paragraph Font-type perseveres across browsers:
+'Gelasio', 'Open Sans'
+
+Resize browsers on laptop to ensure:
+*3 dog-tiles max per row where screen width > 1080px 
+*2 dog-tiles per row where screen width 768px < 1080px
+*Single column where screen width < 767px
+
+Clickability on mobile devices:
+*Can click on intended button and be directed to the right page or action
+*Ease of orientation. The site is readable when oriented in landscape postion
+
+Readability on mobile devices:
+Are all text readable without having to zoom in page?
+
+Testing Results ----------------------------------------------------------
+
+Chrome
+*Developed using Chrome, Desktop first
+*Everything is as it should appear and function
+*Based on user persona (Sandi), site should have been developed mobile first
+
+Edge
+*Functionality is as expected (like Chrome)
+*alerts appear in the middle of the screen as opposed to the top
+*Header font looks slightly different than in Chrome, but DOM lists the correct font style
+
+Samsung Tablet
+*Adopt buttons are easily clickable
+*Media query for tablet allows for checkout total display
+*Font size for paragraphs within dog-tiles should be increased for more optimal readability
+*Logo and tagline in header should have a max-size. Currently disporportional to checkout display.
+
+Samsung Galaxy 9
+*Adopt buttons are easily clickable
+*Media query removes the checkout total display at this level.
+*Media query for this size of mobile device does not have an alternate link to the checkout from
+*Font size for paragraphs within dog-tiles should be increased for more optimal readability
+
+
