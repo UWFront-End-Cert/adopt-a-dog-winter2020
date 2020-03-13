@@ -210,6 +210,11 @@ footer p {
   margin: 0;
 }
 
+#home-page-aside-title {
+  text-align: left;
+  margin: 0;
+}
+
 .home-aside-blog-tiles-text h2 {
   color:  #103E67;
   font-size: 0.8rem;

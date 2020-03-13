@@ -33,7 +33,7 @@ function message() {
   alert('Thank you. The form information has been received');
 }
 
-/*use jquery to console.log the form info*/
+/*use jquery to console.log the form info
 const form = $('form')[0];
 const submitButton = $('button')[0];
 const data = {};
@@ -45,3 +45,17 @@ form.addEventListener('submit',function(event){
   }
   console.log(data);
 });
+*/
+/* another way */
+$(document).ready(function() {
+    $("form").submit(function(e) {
+    var val = $("input[type=submit][clicked=true]").val()
+    e.preventDefault()
+    const formInfo = {};
+    console.log(e.target.elements.length);
+    for (let i = 0; i < e.target.elements.length; i++) {
+      formInfo[e.target.elements[i].name] = e.target.elements[i].value;
+    }
+    console.log(formInfo);
+  })
+})
