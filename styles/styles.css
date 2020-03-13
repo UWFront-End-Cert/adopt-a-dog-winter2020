@@ -473,7 +473,7 @@ footer {
   display: inline-flex;
   flex-direction: row;
   margin-bottom: 4rem;
-  width: 90%;
+  width: 100%;
 }
 
 .blog-body img {

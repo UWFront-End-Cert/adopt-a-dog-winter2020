@@ -32,13 +32,12 @@ function submitAlert() {
 // Use jQuery and refactor the form submission. Simply console log the form data as before.
 $(document).ready(function() {
     $('form').submit(function(e) {
-    let val = $('input[type=submit][clicked=true]').val()
-    e.preventDefault()
     const formInfo = {};
 
     console.log(e.target.elements.length);
     for (let i = 0; i < e.target.elements.length; i++) {
       formInfo[e.target.elements[i].name] = e.target.elements[i].value;
+      e.preventDefault()
     }
     console.log(formInfo);
   })
@@ -46,7 +45,7 @@ $(document).ready(function() {
 
 //hover effect that gives the tile an outline, or give it a box shadow.
 $('.dog-container').hover(function() {
-  $('img', this).addClass('dog-tile-box-shadow-outline');
+  $('img', this).toggleClass('dog-tile-box-shadow-outline');
 })
 
 //Use jQuery to update the checkout total on the index page with each click of an adopt button.
