@@ -4,12 +4,6 @@ var imageClicked = function(name, fee) {
   alert(name + ' for ' + fee);
 }
 
-var adoptClicked = function(fee) {
-  total = total + fee;
-  alert('Total: $' + total);
-}
-
-
 var posts = [{
     image: "images/blog-1.jpg",
     title: "Traveling with your dog",
@@ -68,3 +62,19 @@ posts.forEach(post => {
   blog.appendChild(link);
   blogContainer.appendChild(blog);
 });
+
+$('.dog-box').hover(
+  function() {
+    $(this).addClass('box-shadow')
+  },
+  function() {
+    $(this).removeClass('box-shadow')
+  }
+)
+
+
+$('.dog-box-detail button').click(function() {
+
+  total = total + $(this).data('price');
+  $('#checkout-icon').text('$' + (total));
+})
