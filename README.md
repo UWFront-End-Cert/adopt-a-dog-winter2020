@@ -14,8 +14,8 @@ There is a CSS file to handle all the styling of the website. The folder that co
 
 The comps files contains the mockup versions of the site we could create (one with/without a background image in the header).
 
-Design Notes
+Design Notes:
 As mentioned before, this is a mockup and, therefore, was not designed by me. 
 
-Credits
+Credits:
 Built by Jennifer Lee
