@@ -1,9 +1,7 @@
-/*function addToCart() {
-    let total = 123.45;
-    for (i=1; i<=total; i++)
-    alert(total * i); 
-}*/
+$(document).ready(function () {
+   console.log("ello ello ello")
+});
 
-$('.dog-box').hover(function(e) {
-    $('img').addClass('box-border');
-})
+//$('.dog-box').hover(function(event) {
+    //$(this).toggleClass('box-border');
+//})
