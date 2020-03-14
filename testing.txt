@@ -1,0 +1,106 @@
+Desktop...
+
+1. Opera
+Text and images are aligned properly
+Hover and selection states highlight and color changes
+Suitable clicking area
+Color, shading, and gradient are consistent
+Font size, style and color are consistent for each type of text
+Typed text scrolls and displays properly
+Pages are readable on all resolutions
+Never see horizontal bar
+Important content visible at all breakpoints
+
+Problems: Not following the setting of the min width of 320px; adopt buttons run into container border and do not stay centered
+
+2. Microsoft Edge
+Text and images are aligned properly
+Hover and selection states highlight and color changes
+Suitable clicking area
+Color, shading, and gradient are consistent
+Font size, style and color are consistent for each type of text
+Typed text scrolls and displays properly
+Pages are readable on all resolutions
+Never see horizontal bar
+Important content visible at all breakpoints
+
+Problem: Adopt buttons run into container border and do not stay centered
+
+3. Chrome
+Text and images are aligned properly
+Hover and selection states highlight and color changes
+Suitable clicking area
+Color, shading, and gradient are consistent
+Font size, style and color are consistent for each type of text
+Typed text scrolls and displays properly
+Pages are readable on all resolutions
+Never see horizontal bar
+Important content visible at all breakpoints
+
+Problem: Adopt buttons run into container border and do not stay centered
+
+4. Firefox
+Hover and selection states highlight and color changes
+Suitable clicking area
+Color, shading, and gradient are consistent
+Font size, style and color are consistent for each type of text
+Typed text scrolls and displays properly
+Pages are readable on all resolutions
+Never see horizontal bar
+Important content visible at all breakpoints
+
+Problems: Adopt buttons run into container border and do not stay centered; blog images get tiny when it gets 1400px wide
+
+
+iPad mini...
+
+1. Chrome
+Hover and selection states highlight and color changes
+Suitable clicking area
+Typed text scrolls and displays properly
+Pages are readable on all resolutions
+Never see horizontal bar
+Important content visible at all breakpoints
+
+Problems: Radio buttons on form are too big but definitely suitable clicking areas; dog tiles come out in one column on dog page when in vertical form; adopt buttons actually look differently than from desktop or mobile browsers...the buttons come in a lighter shade of green and have curved edges for some reason
+
+
+2. Safari
+Hover and selection states highlight and color changes
+Suitable clicking area
+Typed text scrolls and displays properly
+Pages are readable on all resolutions
+Never see horizontal bar
+Important content visible at all breakpoints
+
+Problems: Radio buttons on form are too big but definitely suitable clicking areas; dog tiles come out in one column on dog page when in vertical form; adopt buttons actually look differently than from desktop or mobile browsers...the buttons come in a lighter shade of green and have curved edges for some reason
+
+
+Mobile...
+
+1. Samsung Internet
+Hover and selection states highlight and color changes
+Suitable clicking area
+Color, shading, and gradient are consistent
+Font size, style and color are consistent for each type of text
+Typed text scrolls and displays properly
+Pages are readable on all resolutions
+Never see horizontal bar
+Important content visible at all breakpoints
+
+Problem: Adopt buttons run into container border and do not stay centered; when in horizontal view, the dog tiles come out in one column
+
+2. Chrome
+Hover and selection states highlight and color changes
+Suitable clicking area
+Color, shading, and gradient are consistent
+Font size, style and color are consistent for each type of text
+Typed text scrolls and displays properly
+Pages are readable on all resolutions
+Never see horizontal bar
+Important content visible at all breakpoints
+
+Problem: Adopt buttons run into container border and do not stay centered; when in horizontal view, the dog tiles come out in one column
+
+
+
