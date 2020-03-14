@@ -1,0 +1,65 @@
+User Personas
+Name: Kate Wang
+Age: 36 years old
+Gender: Female
+Demographics: • Married
+              • Mother of two boys                          
+Education: Master’s degree in financial
+Occupation: real estate agent
+Goals and background: She wants to adopt a small dog. They had two dogs, but the elderly one passed away last month.
+Environment: She is comfortable using a computer and a smartphone. She has a laptop and a smartphone. The laptop is 3 years old Dell with a Windows system and the smartphone is a 2 years old iPhone. She is very busy with her family and her job. When she has spare time, she usually looks through the website by the laptop. Sometimes when she is waiting for clients, she uses her smartphone. Her husband has a Mac. When she wants to ask his advice may open the website in his Mac.
+Quote: “Can I find a dog that looks like my former one?”
+
+
+Test
+Manually test the AdoptADog website in different devices and browsers
+
+HP Laptop - Windows 10 - Chrome
+1. Open Chrome
+2. Navigate to https://jingting2019.github.io/adopt-a-dog-winter2020/index.html
+3. Click the Restore Down button on the right top corner
+4. Shrink the window width in multiple sizes
+5. Hover the dog tiles to check color change
+6. Click all the links on the home page to check their functionality
+7. Navigate to dogs page
+8. Shrink the window width in multiple sizes
+9. Hover the dog tiles to check color change
+10. Click all the links on the dog page to check their functionality
+11. Navigate to the blog page
+12. Shrink the window width in multiple sizes
+13. Click all the links on the dog page to check their functionality
+14. Navigate to the checkout page
+15. Shrink the window width in multiple sizes
+16. Click all the links on the blog page to check their functionality
+17. Fill the form then click submit button to check their functionality
+
+Mac Pro - Firefox
+1. Open Firefox
+2. Navigate to https://jingting2019.github.io/adopt-a-dog-winter2020/index.html
+3. Click the Restore Down button on the left top corner
+4. Shrink the window width in multiple sizes
+5. Hover the dog tiles to check color change
+6. Click all the links on the home page to check their functionality
+7. Navigate to dogs page
+8. Shrink the window width in multiple sizes
+9. Hover the dog tiles to check color change
+10. Click all the links on the dog page to check their functionality
+11. Navigate to the blog page
+12. Shrink the window width in multiple sizes
+13. Click all the links on the dog page to check their functionality
+14. Navigate to the checkout page
+15. Shrink the window width in multiple sizes
+16. Click all the links on the blog page to check their functionality
+17. Fill the form then click submit button to check their functionality
+
+iPhone - Safari
+1. Open Safari
+2. Navigate to https://jingting2019.github.io/adopt-a-dog-winter2020/index.html
+3. Click all the links on the home page to check their functionality
+4. Navigate to dogs page
+5. Click all the links on the dog page to check their functionality
+6. Navigate to the blog page
+7. Click all the links on the dog page to check their functionality
+8. Navigate to the checkout page
+9. Click all the links on the blog page to check their functionality
+10. Fill the form then click submit button to check their functionality
