@@ -26,7 +26,7 @@ And of course, the code of this website is open-source with a [public repository
 ### Installation
 
 * Internet Browsers
-* https://jingting2019.github.io/adopt-a-dog-winter2020/index.html
+* Navigate to https://jingting2019.github.io/adopt-a-dog-winter2020/index.html
 
 ### Development
 
@@ -44,6 +44,7 @@ Test this project on:
 * On 3 different browsers
 * On 3 operating systems
 * On 2 laptops and 1 phone
+
 [[Click here to see details]](testing.txt)
 
 ### Todos
