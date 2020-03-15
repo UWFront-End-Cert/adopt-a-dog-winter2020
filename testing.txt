@@ -5,34 +5,55 @@ Based on user personas, the most likely used operating systems are ios and andro
 Browsers most likely used will be internet explorer, safari, chrome, and firefox.
 
 Overall:
---on the dogs page, it would be more navigable when scrolling down through the dog tiles, if there was a static "back to top" option that the user could click to snap back to the top.
---on the blog page, it would look better if the blog entries stacked two to three across the page when tablet size or wider.
---on the checkout form, the zip code has up/down buttons that increase/reduce the number entered. Change this to a text field.
+--on the dogs page, it would be more navigable when scrolling down through the dog tiles,
+if there was a static "back to top" option that the user could click to snap back to the top.
+--on the blog page, it would look better if the blog entries stacked two to three across the
+page when tablet size or wider.
+--on the checkout form, the zip code has up/down buttons that increase/reduce the number entered.
+Change this to a text field.
 --a horizontal scroll bar appears on mobile views.
---most of these issues can be fixed for all browsers/devices fairly easily without specialized code for each.
+--most of these issues can be fixed for all browsers/devices fairly easily without specialized
+code for each.
 
 Chrome (Mac):
---Nav bar and footer does not extend to full width of screen when viewing within 'inspect' device 'laptop'.
---See More Dogs button does not look like a button, nor does the mouse hover change to look like a clickable item.
+--Nav bar and footer does not extend to full width of screen when viewing within 'inspect'
+device 'laptop'.
+--See More Dogs button does not look like a button, nor does the mouse hover change to look like
+a clickable item.
 --Checkout button on header/hero image disappears when viewing at 1440px.
---Header child objects do not conform to different screen sizes. When at a smaller screen, the logo should get smaller and the checkout button, cart icon, etc should stack below the logo.
---the checkout page (checkout form) needs further styling work. The fields need to be defined in format, so the user knows where to click for entry of data. The fields are too wide and need to be formatted specifically for mobile vs wider. The radio buttons need further work for the header (question) to appear.
---on the checkout page, the total needs to calculate from what the user clicked on the home page or the dogs page. The dog tile/photo also needs to be added to this page.
+--Header child objects do not conform to different screen sizes. When at a smaller screen,
+the logo should get smaller and the checkout button, cart icon, etc should stack below the logo.
+--the checkout page (checkout form) needs further styling work. The fields need to be defined in
+format, so the user knows where to click for entry of data. The fields are too wide and need to be
+formatted specifically for mobile vs wider. The radio buttons need further work for the header
+(question) to appear.
+--on the checkout page, the total needs to calculate from what the user clicked on the home page
+or the dogs page. The dog tile/photo also needs to be added to this page.
 --Submit button is below the footer.
 --In the console log on the checkout page, the user data needs to be logged.
 
 Safari (Mac):
---On home page, the checkout button in the header is too small for the "checkout" text and the cart icon is too small.
---Home page is not as responsive to narrowing the screen size as compared to the dog tile page. The blog smashes into the dog tiles on the home page at narrow widths.
+--On home page, the checkout button in the header is too small for the "checkout" text and the cart
+icon is too small.
+--Home page is not as responsive to narrowing the screen size as compared to the dog tile page. The
+blog smashes into the dog tiles on the home page at narrow widths.
 --checkout button on home page runs below the logo, unlike chrome. This is good, but it needs some styling.
 --Submit button is below the footer on the checkout page.
---on mobile iPhone 6, the layout works well on the narrow screen, the blog sidebar does not mash up into the dog tiles. The header and footer are still not the full width of the screen. Pop-up alerts are not working on mobile version, nor does the total update when clicking an "adopt" button. The checkout form looks much better on the mobile version, though work still needs to happen on the header/checkout button, the state field needs to be wider, and the header for the radio buttons needs to appear. The last field for "dogs Adopted" and "Total Adoption Cost" need to be separated onto their own lines/fields. The submit button is missing.
+--on mobile iPhone 6, the layout works well on the narrow screen, the blog sidebar does not mash up into the
+dog tiles. The header and footer are still not the full width of the screen. Pop-up alerts are not working
+on mobile version, nor does the total update when clicking an "adopt" button. The checkout form looks much
+better on the mobile version, though work still needs to happen on the header/checkout button, the state field
+needs to be wider, and the header for the radio buttons needs to appear. The last field for "dogs Adopted" and
+"Total Adoption Cost" need to be separated onto their own lines/fields. The submit button is missing.
 
 Firefox (Mac):
---On home page, the checkout button in the header is too small for the "checkout" text and the cart icon is too small.
+--On home page, the checkout button in the header is too small for the "checkout" text and the cart icon is
+too small.
 --On home page, the header and footer are not the full width of the screen
 --the blog sidebar crashes into the dog tiles when the screen width is narrowed.
---the checkout form looks okay but the state field needs to be wider. The radio button header needs to appear. The dog photo needs to be added when a user has clicked adopt on the dog tile page, or the home page. The total adoption cost needs to be separate field.
+--the checkout form looks okay but the state field needs to be wider. The radio button header needs to appear.
+The dog photo needs to be added when a user has clicked adopt on the dog tile page, or the home page. The total
+adoption cost needs to be separate field.
 --the checkout form submit button is below the footer.
 
 Internet Explorer (PC):
@@ -40,4 +61,5 @@ Internet Explorer (PC):
 --On home page, the nav and footer are not the full width of the screen
 --Submit button is below the footer on the checkout page.
 --checkout button on home page runs below the logo, unlike chrome. This is good, but it needs some styling.
---using dev tools/emulation in internet explorer, viewing via different browsers, they all appear to have the same issues as above.
+--using dev tools/emulation in internet explorer, viewing via different browsers, they all appear to have the
+same issues as above.
