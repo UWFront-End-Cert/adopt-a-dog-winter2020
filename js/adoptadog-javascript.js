@@ -4,3 +4,10 @@ window.onload = function() {
     });
 }
 
+
+let totalCost = 0;
+
+function addToCrt(num) {
+    totalCost += num;
+    alert('Total Fees: ' + '$' + totalCost);
+};
