@@ -146,6 +146,6 @@ function stellaAdder() {
 };
 
 
-$('dogboxpix').hover(function(e) {
-  $('img'),addClass('green-tile-border')
+$('green-tile-border').hover(function(e) {
+  $('img').addClass('dogbox')
 })

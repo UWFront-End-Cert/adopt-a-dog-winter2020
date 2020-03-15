@@ -118,6 +118,10 @@ p {
   font-size: 70%;
     }
 
+.green-tile-border {
+      outline: 10px groove green;
+    }
+
 .dogbox-grid {
   display: flex;
   flex-direction: row;
@@ -139,10 +143,6 @@ p {
   padding-bottom: 1%;
 }
 
-
-.green-tile-border {
-  outline: 10px groove green;
-}
 
 .moredogs {
   background-color: pink;
