@@ -1,7 +1,6 @@
-$(document).ready(function () {
-   console.log("ello ello ello")
-});
+window.onload = function() {
+    $('.dog-box').hover(function(event) {
+        $(this).toggleClass('box-border');
+    });
+}
 
-//$('.dog-box').hover(function(event) {
-    //$(this).toggleClass('box-border');
-//})
