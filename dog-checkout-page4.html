@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="doggystyle.css">
+     <script src="adoptajava.js" charset="utf-8"></script>
 </head>
   <body>
     <header>
@@ -16,7 +17,7 @@
       </div>
       <div class=checkouticon>
          <img src="images/cart-icon.svg" width="40" alt="cart icon">
-          <h4><a href="dog-checkout-page4.html" class="checkbutton">Checkout</a><h4>
+          <h4><button onclick = dogTotal() class="checkbutton">Checkout</button><h4>
         </div>
       </header>
       <nav>
@@ -92,7 +93,7 @@
    </section>
         <h4>Total Adoption Cost</h4>
           <h5>$390</h5>
-         <input type="submit" value="Submit" class="submitbutton">
+         <button onclick = submitbutton() class="submitbutton">Submit</button>
           </form>
           <footer>
             <img src="images/adoptadog-logo.svg" alt="white dog silhoutte" class="dog-logo"

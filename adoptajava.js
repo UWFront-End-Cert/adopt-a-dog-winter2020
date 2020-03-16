@@ -54,7 +54,7 @@ function poppyAdder() {
 
   result = poppyPrice + 100;
   let input = alert('Welcome to your new pet! Your total is now' + '$' + result);
-};
+  };
 
 function MurphyAdder() {
   let murphyPrice = 123;
@@ -150,3 +150,29 @@ function stellaAdder() {
 $('dogbox').click(function(e) {
   $('div').toggleClass('green-tile-border')
 });
+
+
+function submitbutton() {
+   alert('Thank you!');
+
+};
+
+/*function dogTotal() {
+  let poppy = 135
+  let murphy = 123
+  let jack = 193
+  let duffy = 123
+  let lucas = 233
+  let jake = 195
+  let angus = 245
+  let violet = 123
+  let piper = 195
+  let maximus = 123
+  let luna = 123
+  let stella = 135
+
+  if(dogPrice = poppy) {
+
+  console.log('total' + ' ' +  dogPrice);
+}
+*/
