@@ -84,27 +84,66 @@ function handleClick(dogName, breed, adoptFee) {
     // The form information has been received" when the form has been submitted.
     // Console log the values inside the form, you can build a string or build an object.
 
+//Use JQuery to refactor the form submission
+//
 
-const form = document.getElementById('form-box-irate');
-  console.log(form);
+$(document).ready(function() {
+  console.log('ready');
 
-  form.addEventListener('submit', function(event) {
-    event.preventDefault()
-    let formInfo = {};//create an empty object
-      formInfo.name = document.getElementById('name').value;
-      formInfo.email = document.getElementById('email').value;
-      formInfo.street = document.getElementById('street').value;
-      formInfo.city = document.getElementById('city').value;
-      formInfo.state = document.getElementById('state').value;
-      formInfo.zipcode = document.getElementById('zipcode').value;
-      formInfo.yes = document.getElementById('yes').value;
-      formInfo.no = document.getElementById('no').value;
-      formInfo.region = document.getElementById('region').value;
-    result2 = `Thank you! The form has been received.`;
-    alert(result2);
-    console.log(formInfo);
+  $('#form-box-irate').submit(function(event) {
+    event.preventDefault();
 
+    const formInfo = {};
+
+    for (let i = 0; i < event.target.elements.length - 1; i++) {
+      // console.log(event.target);
+      // console.log(event.target.elements);
+      // console.log(event.target.elements.name);
+      // console.log(event.target.elements.name.value);
+      formInfo[event.target.elements[i].id] = event.target.elements[i].value;
+    }
+
+      // formInfo.name = document.getElementById('name').value;
+      // formInfo.email = document.getElementById('email').value;
+      // formInfo.street = document.getElementById('street').value;
+      // formInfo.city = document.getElementById('city').value;
+      // formInfo.state = document.getElementById('state').value;
+      // formInfo.zipcode = document.getElementById('zipcode').value;
+      // formInfo.yes = document.getElementById('yes').value;
+      // formInfo.no = document.getElementById('no').value;
+      // formInfo.region = document.getElementById('region').value;
+
+      result2 = `Thank you! The form has been received.`;
+      alert(result2);
+      console.log(formInfo);
+
+    });
 });
+//
+// })
+
+//
+
+// const form = document.getElementById('form-box-irate');
+//   console.log(form);
+//
+//   form.addEventListener('submit', function(event) {
+//     event.preventDefault()
+//     let formInfo = {};//create an empty object
+//       formInfo.name = document.getElementById('name').value;
+//       formInfo.email = document.getElementById('email').value;
+//       formInfo.street = document.getElementById('street').value;
+//       formInfo.city = document.getElementById('city').value;
+//       formInfo.state = document.getElementById('state').value;
+//       formInfo.zipcode = document.getElementById('zipcode').value;
+//       formInfo.yes = document.getElementById('yes').value;
+//       formInfo.no = document.getElementById('no').value;
+//       formInfo.region = document.getElementById('region').value;
+//     result2 = `Thank you! The form has been received.`;
+//     alert(result2);
+//     console.log(formInfo);
+//
+// });
 
 
 
