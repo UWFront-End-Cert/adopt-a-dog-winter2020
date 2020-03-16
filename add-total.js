@@ -107,6 +107,10 @@ const form = document.getElementById('form-box-irate');
 });
 
 
+
+
+
+
 // Manual way of Blog Generation section:
           // const blogBlock = document.createElement('div');
           //   blogBlock.setAttribute('class', 'blog-block');
@@ -146,9 +150,9 @@ const form = document.getElementById('form-box-irate');
           //   $('img', this).addClass('dog-box-shadow');
           // })
 
-          $('.dog-box').hover(function(e) {
-            $('.dog-box-img').addClass('dog-box-shadow');
-          })
+
+
+
 
 
 

@@ -1,4 +1,25 @@
-//
+$(document).ready(function() {
+  console.log($('.dog-box'));
+
+$('.dog-box').hover(function(e) {
+    $(this).toggleClass('dog-box-shadow');
+    })
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
 //   window.onload = function() {
 //     console.log('Page loaded');
 //
