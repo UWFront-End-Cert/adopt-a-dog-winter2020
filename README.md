@@ -22,6 +22,8 @@ The website looks very good on all the browsers as well.
 I also tested the website on Iphone 11 and my brother android phone.
 
 # testing results
-I have views my sites on chrome, safari and firefox. One interesting thing I found is that on firefox, the page can completely decrease up to 390px, the site still look very good. Because all my dogs tile are viewable and stacked well on top of each other. This makes me feel very good because now I know my site is mobile friendly.
+I have views my sites on chrome, safari and firefox. One interesting thing I found is that on firefox, the page can completely decrease up to 390px, the site still look very good. Because all my dogs tile are viewable and stacked well on top of each other. Additionally, the text size and format is will well organize.
 
 My site works well with chrome and safari, even when I decrease the page size.  I also viewed the website on my iphone 11, it looks very good. However, the background image on the header does not show up. The site also look normal on windows.
+
+When it comes to navigating the site while on a mobile device, everything works well just like a desktop. The navigation bar are readible and clickable. Overall, the testing was very successful on emulators and on navigating the website using a mobile device.
