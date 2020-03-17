@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-<main role="main">
     <header class="jumbotron bgColor ">
       <div class="container ">
         <img class="logo" src="./images/adoptadog-logo.svg" alt="Logo">
@@ -30,48 +28,7 @@
 
     <div class="container">
       <h2>Adopt A dog Blog</h2>
-      <div class="row marginBottom">
-        <div class="centerImg-md col-lg-4">
-          <img src="./images/blog-1.jpg" alt="Girl With a Dog">
-        </div>
-        <div class="content col-md-12 col-lg-8">
-          <h3>Traveling With your Dog</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, </p>
-        </div>
-      </div>
-
-      <div class="row marginBottom">
-        <div class="centerImg-md col-lg-4">
-          <img src="./images/blog-2.jpg" alt="Girl With a Dog">
-        </div>
-        <div class="content col-md-12 col-lg-8">
-          <h3>How to Walk Multiple Dogs</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, </p>
-        </div>
-      </div>
-
-      <div class="row marginBottom">
-        <div class="centerImg-md col-lg-4">
-          <img src="./images/blog-1.jpg" alt="Girl With a Dog">
-        </div>
-        <div class="content col-md-12 col-lg-8">
-          <h3>Traveling With your Dog</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, </p>
-        </div>
-      </div>
-
-      <div class="row marginBottom">
-        <div class="centerImg-md col-lg-4">
-          <img src="./images/blog-3.jpg" alt="Girl With a Dog">
-        </div>
-        <div class="content col-md-12 col-lg-8">
-          <h3>Teach Your Dog To Fetch</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, </p>
-        </div>
-      </div>
-
-    </div>
-
+      <p id="element"></p>
   </main>
 
 
@@ -87,5 +44,76 @@
 
     <p>2018 Adoptadog, LLC | Seatte, WA</p>
 </footer>
+<script>
+var blogs = [
+  {
+  "headline": "Traveling With your Dog",
+  "link_image": "https://github.com/UWFront-End-Cert/adopt-a-dog-winter2020/blob/master/images/blog-1.jpg?raw=true",
+  "blog_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature",
+},
+{
+  "headline": "How to Walk Multiple Dogs",
+  "link_image": "https://github.com/UWFront-End-Cert/adopt-a-dog-winter2020/blob/master/images/blog-2.jpg?raw=true",
+  "blog_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature",
+},
+{
+  "headline": "Traveling With your Dog",
+  "link_image": "https://github.com/UWFront-End-Cert/adopt-a-dog-winter2020/blob/master/images/blog-3.jpg?raw=true",
+  "blog_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature",
+},
+{
+  "headline": "Teach Your Dog To Fetch",
+  "link_image": "https://github.com/UWFront-End-Cert/adopt-a-dog-winter2020/blob/master/images/blog-2.jpg?raw=true",
+  "blog_text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature",
+}
+];
+var container = document.getElementById("element").parentNode
+
+let sp2 = document.getElementById("element")
+
+const div = document.createElement('div');
+const main = document.createElement('main');
+div.setAttribute('class', "conatiner");
+main.setAttribute('class', "main")
+document.body.appendChild(main);
+
+blogs.forEach(function(blog){
+  // const class1 = document.createAttribute("class");
+  // const class2 = document.createAttribute("class");
+  // const class3 = document.createAttribute("class");
+  const div1 = document.createElement('div');
+  const div2 = document.createElement('div');
+  const div3 = document.createElement('div');
+  const h3 = document.createElement('h3');
+  const p = document.createElement('p');
+  const img = document.createElement('img');
+
+  img.setAttribute('src', blog.link_image);
+  img.setAttribute('alt', "Girl With a Dog");
+  div3.setAttribute('class', "content col-md-12 col-lg-8");
+  div2.setAttribute('class', "centerImg-md col-lg-4");
+  div1.setAttribute('class', "row marginBottom");
+
+  h3.textContent = blog.headline;
+  p.textContent =blog.blog_text;
+
+
+  var documentFragment = document.createDocumentFragment();
+  documentFragment.appendChild(div3);
+  div3.appendChild(h3);
+  div3.appendChild(p);
+
+  var documentFragment2 = document.createDocumentFragment();
+  documentFragment2.appendChild(div1);
+  div1.appendChild(img);
+  div1.appendChild(documentFragment);
+  div.appendChild(documentFragment2);
+
+});
+container.insertBefore(div, sp2 );
+
+
+// }
+</script>
 </body>
 </html>
