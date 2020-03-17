@@ -1,0 +1,9 @@
+Test
+Test your course project on
+•	At least 3 different browsers
+•	On a different operating system if you can
+•	On a tablet and or phone
+
+I have views my sites on chrome, safari and firefox. One interesting thing I found is that on firefox, the page can completely decrease up to 390px, the site still look very good. Because all my dogs tile are viewable and stacked well on top of each other. This makes me feel very good because now I know my site is mobile friendly.
+
+My site works well with chrome and safari, even when I decrease the page size.  I also viewed the website on my iphone 11, it looks very good. However, the background image on the header does not show up. The site also look normal on windows. 
