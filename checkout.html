@@ -7,7 +7,7 @@
       <link rel="stylesheet" href="stylesheet/style.css">
    </head>
    <body>
-     <script src="scripts/script.js"> </script>
+
       <header class="header-container">
          <div class="adopt-dog-logo">
             <img src="images/adoptadog-logo.svg" class="logo-bar-img" alt="Adopt a dog logo">
@@ -27,7 +27,7 @@
               <li><a href="blog.html">Blog </a></li>
           </ul>
       </nav>
-       <form method="post" id="frm-checkout" name="frm-checkout" action="" >
+       <form method="post" id="frmCheckout" name="frmCheckout" action="" >
       <div class="checkout-container">
 
             <h2>Checkout</h2>
@@ -57,7 +57,7 @@
             <select class="" id="pl" name="">
             </select><br>
               </div>
-            <button type="button" id="submit" name="button" class="btn" onclick="alertSubmit()"> Submit </button>
+            <button type="button" id="submit" name="button" class="btn"> Submit </button>
 <div class="dogs-adopted">
   <img class="adopted-dog-img" src="images/lucas-card.jpg" alt="Dog image - lucas" >Lucas <p class="adopted-dog-cost"> Cost to Adopt: $123.45</p></img>
   <img class="adopted-dog-img" src="images/duffy-card.jpg" alt="Dog image - Duffy" >Duffy <p class="adopted-dog-cost"> Cost to Adopt: $123.45</p></img>
@@ -86,5 +86,7 @@
             </div>
          </div>
       </footer>
+          <script src="http://code.jquery.com/jquery-3.4.1.js"> </script>
+      <script src="scripts/checkout.js"> </script>
    </body>
 </html>

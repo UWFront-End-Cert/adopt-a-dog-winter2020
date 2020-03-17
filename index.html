@@ -6,10 +6,11 @@
     <meta charset="utf-8">
     <title>Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
-    <script src="scripts/script.js"></script>
+
     <header class="header-container">
        <div class="adopt-dog-logo">
           <img src="images/adoptadog-logo.svg" class="logo-bar-img" alt="Adopt a dog logo">
@@ -17,9 +18,9 @@
        </div>
        <div>
          <img src="images/cart-icon.svg" class="cart-img" alt="">
-          <output name="adoption-cost" for="adoption-cost" class="adoption-cost">$1234.56</output>
+          <output name="adoption-cost" id="adoption-cost" for="adoption-cost" class="adoption-cost">$<span id="total-cost">0.0</span></output>
           <br>
-          <button type="button"  name="button" class="btn-checkout btn"> Checkout </button>
+        <a href="checkout.html"> <button type="button"  name="button" class="btn-checkout btn"> Checkout </button></a>
        </div>
     </header>
 
@@ -136,6 +137,8 @@
             </div>
         </div>
     </footer>
+    <script src="http://code.jquery.com/jquery-3.4.1.js"> </script>
+<script src="scripts/index.js"></script>
 </body>
 
 </html>

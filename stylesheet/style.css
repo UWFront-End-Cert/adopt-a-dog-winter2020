@@ -243,3 +243,21 @@ background-color: #093C60;
 .footer-image-container{
   width: 50%;
 }
+.dog-border-effect{
+  box-shadow: 3px 3px 4px #000;
+}
+.dog-image-effect{
+  width:102%;
+}
+
+.ripple-hover-effect{
+  background-position: center;
+  transition: background 2s;
+  background-color: #90d4b3;
+  background-image: radial-gradient(circle,transparent 2%, #90d4b3);
+}
+.ripple-active-effect{
+  transition: background 0s;
+  background-color: #26ed58;
+  background-size: 100%;
+}
