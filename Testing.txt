@@ -1,0 +1,30 @@
+Adopt A Dog Website Test Documentation
+
+By Lucas Cheadle, March 17th 2020.
+
+Browser Tests, on MacBook Pro:
+
+1/Chrome Version 80.0.3987.132:
+As this website was primarily built using Chrome it looks exactly as developed.
+The design responds well to window resizing and looks good in all the device presets.
+
+2/Safari Version 13.0.5 (15608.5.11):
+Website looks and responds well in Safari. There are only slight differences in the default text fonts. Responsiveness behaves as expected, although the methods in the Safari Dev tools is less integrative than the one in Chrome, making the test process a little more difficult.
+
+3/Firefox Version 73.0.1:
+The default font on Firefox really makes this browser's rendition of the website different than Chrome or Safari. If appearance consistency was important the font arrangement on this website would have to be configured to over-ride Firefox's defaults. Website responds to resizing and device presets as expected. Firefox inspector highlighting features are superior to all the other browser dev tools.
+
+4/Internet Explorer Version 11.592.18362.0 (Windows via Parallels)
+Website looks as expected and responds to resizing as expected. The browser default form settings are superior to the Mac based browsers. The two Adopt A Dog pages with forms looked great.
+
+
+Device Tests:
+
+1/Laptop- All browser testing was done on a 15" MacBook Pro. The website performed exactly as expected on this laptop.
+
+2/iPad Air
+I emailed the GitHub link to my live website to myself so I could open it up on my iPad. Besides performing exactly as it should I noticed the header background photo loaded slowly. A remedy might to impliment an srcset refactor for the larger images on this website.
+
+3/iPhone SE
+I emailed the GitHub link to my live website to myself so I could open it up on my iPhone.
+Everything looks good on the iPhone.
