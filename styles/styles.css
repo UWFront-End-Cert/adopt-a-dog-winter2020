@@ -83,6 +83,7 @@ body {
 .cart-cost {
   display: flex;
   justify-content: flex-end;
+  align-items: baseline;
 }
 
 .cart-cost-button {
