@@ -76,7 +76,7 @@ body {
 
 .cart {
   width: 15%;
-  min-width: 0px;
+  min-width: 30px;
   padding-right: .5rem;
 }
 
