@@ -1,0 +1,28 @@
+Persona for the Adopt Dog website:
+Most of my site users access my website via mobile as well as tablets and they are between 25 to 60 years old. From these users, I picked one 60 years old user as a sample and his preference to access my website.
+Name: Tom Jones
+Education: High school diploma
+Age: 60
+Occupation: Private investigator
+Activities: Travelling, volunteering in private investigation
+Owns: 6-month-old Smartphone, one-year old tablet and 2-year old computer
+To accomplish his investigation job, Tom is looking for to adopt a dog.  He is working in collaborating with the government agencies so that he wants to show the available dogs from my site to get a fund. His agency does not use computer to view the dogs so that his first question was if the site supported in mobile and tablets. The good thing is the site is fully responsive in mobile phones and tablets.
+Adopt dogs project Testing Methodologies
+In order to test my Adopt Dog website browser support, In desktop I used the following browsers:
+1.	Google chrome
+2.	Firefox 
+3.	Safari
+In Mobile, I tested on:
+1.	Safari for iOS and 
+2.	Chrome for Android 
+
+Covered tests: By using these browsers I tested the following 
+•	If the text, buttons and  images are aligned properly when changing the device size and orientation
+•	If the buttons are clickable and the hover effect is also working properly
+•	If the paddings are consistent to all the pages 
+•	I also validated my code in HTML validator to increase the readability of the code
+
+Not covered tests: 
+•	Testing using screen readers 
+•	Testing for the color blind users
+•	Testing in Opera browser
