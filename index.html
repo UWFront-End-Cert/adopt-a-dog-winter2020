@@ -6,6 +6,8 @@
     <title>Adopt A Dog - Home</title>
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/49a0808614.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/adoptadog-javascript.js"></script>
 </head>
 <body>
     <header class="header">
@@ -13,10 +15,10 @@
             <img src="./images/adoptadog-logo.svg" alt="sitting dog sillouette logo" class="header-logo">
             <span class="caption">Seattle's premiere dog adoption agency</span>
         </div>
-        <div class="header-ebox-2">
+        <div class="header-box-2">
             <i class="fas fa-shopping-cart"></i>
-            <p></p>
-            <button class="checkout" type="button">Checkout</button>
+            <p class="header-total">$<span id="cart-total">00.00</span></p>
+            <a href="checkout.html" class="checkout">Checkout</a>
         </div>
     </header>
     <nav>
@@ -29,8 +31,8 @@
     <main class="main-grid">
         <section class="main-container-home-page">               
             <div class="mission">
-                <img src="./images/home-intro.jpg" alt="cute dog gets a hug from human">
                 <h2>Adopt A Dog</h2>
+                <img src="./images/home-intro.jpg" alt="cute dog gets a hug from human">
                 <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis 
                     corrupti labore perferendis nostrum officia necessitatibus, 
                     aliquam hic quae asperiores! Enim eaque adipisci autem, vero 
@@ -125,9 +127,6 @@
             <div class="more-dogs">
                 <a class="see-more-dogs" href="./dogs.html">See More Dogs</a>
             </div>
-            <div class="blog-link">
-                <a href="blog.html">Dog Blog here >></a>
-            </div> 
         </section>
         <section class="main-blog-preview">    
             <h2 class="blog-preview-title">From Our Blog</h2>
@@ -174,12 +173,10 @@
             <ul class="footer-nav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="dogs.html">Dogs</a></li>
-                <li><a href="checkout.html">Checkout</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <h4>&#9400; 2018 Adoptadog, LLC | Seattle, WA</h4>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="js/adoptadog-javascript.js"></script>
 </body>
 </html>
