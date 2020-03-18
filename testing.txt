@@ -21,7 +21,7 @@ Quote:  “I just need a site that is clear and easy to use so I can gain all th
 
 Testing
 
-This site was tested on Chrome, Safari and Firefox with much success. One minor note- on an older version of Chrome on an older iMac, there were some alignment issues with the cart icon/cost features in the header. This was solved by tweaking the flexbox code for those two elements.
+This site was tested on Chrome, Safari and Firefox with much success. One minor note- on an older version of Chrome on an older iMac, there were some alignment issues with the cart icon/cost features in the header. This was solved by tweaking the flexbox code for those two elements (added align-items: baseline)
 
 The site features well on iPhone and iPad, with the media queries operating successfully, creating a positive UX for each platform.
 
