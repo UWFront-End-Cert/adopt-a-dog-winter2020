@@ -16,3 +16,13 @@ Goals/Tasks:  Jo is thinking of settling down but wants to test what that sort o
 Environment:  Jo primarily uses an iPhone X but will occasionally use their MacBook when at home.  Jo uses Safari on their phone, but uses Chrome on their MacBook.  Jo has a T1 internet connection at work and a cable connection at home.
 
 Quote:  “I just need a site that is clear and easy to use so I can gain all the information necessary to aid in the adoption of a new dog.”
+
+
+
+Testing
+
+This site was tested on Chrome, Safari and Firefox with much success. One minor note- on an older version of Chrome on an older iMac, there were some alignment issues with the cart icon/cost features in the header. This was solved by tweaking the flexbox code for those two elements.
+
+The site features well on iPhone and iPad, with the media queries operating successfully, creating a positive UX for each platform.
+
+The site also features well across different platforms (Mac and PC). 
