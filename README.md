@@ -11,14 +11,14 @@ and hosted on GitHub pages. Adopt-a-dog is ipad and mobile compatible.
 
 <img src="images/adopt-dog.png">
 
-###R elated Sites
+### Related Sites
 For users who like the Adopt-A-Dog website, we also recommend they check out these related sites:
 
-1. link to [How to care for your new pet](url here)
-2. link to [Dog Groomers Near me](url here)
-3. link to [Adopt-a-Cat](url here)
+1. link to [How to care for your new pet](https://www.dkfindout.com/us/animals-and-nature/pet-care/)
+2. link to [10 Best Dog Groomers in Seattle](https://www.yelp.com/search?cflt=groomer&find_loc=Seattle%2C+WA)
+3. link to [Adopt-a-Cat](https://www.adoptapet.com/cat-adoption)
 
 
 ### License Information
 
-link to [license](url here)
+The University of Washington Certificate program owns the rights to the designs and concepts for this site. 
