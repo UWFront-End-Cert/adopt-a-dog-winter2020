@@ -68,6 +68,15 @@ h1, h2 {
 
 }
 
+p.checkout-total  {
+  position: relative;
+  color: white;
+  top: 20%;
+  left: 10%;
+
+
+}
+
 .checkout-button {
   width: 100px;
   position: absolute;
@@ -78,6 +87,8 @@ h1, h2 {
   background-color: green;
   color: white;
 }
+
+
 
 
 .nav {

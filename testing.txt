@@ -1,0 +1,32 @@
+Details on testing process on a variety of browsers and platforms.
+
+Overview of changes made included.
+
+Update the "Testing" section in a testing.txt file to include your research on users and devices,
+and testing steps you took to ensure site quality.
+
+Notes on Firefox:
+No checkout link in the nav bar
+Dogtile buttons are a little off-center
+“see more dogs” also off center
+Blog preview pics look a bit stretched
+Dogtiles on “dogs” page are not active
+Links work beautifully and take you where they say they will take you
+
+Same notes for Edge (couldn’t find the responsive toggle – sorry!)
+Same notes for Chrome –
+and the “checkout” button tends to float up into cart icon and mobile
+size the text evens out (balances out with images and looks good) iPad size
+on index page there’s a bit large white space in the lower right hand corner
+
+
+Phone size: too much text between pics on blog page, index looks (singular tiles are perfect),
+but the nav breaks (links go all over the place) and there ends up being too much text between pics
+
+
+Overall improvements to be made in MVP2 to ensure site quality:
+
+- make nav bar collapse on mobile viewport
+- review breakpoint on nav to fix issue of links going in multiple places
+- better spacing for dog tiles on mobile --- make sure it does not take up 100%
+- validate JS working on both index.html and dog pageß
