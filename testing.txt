@@ -1,9 +1,4 @@
-Details on testing process on a variety of browsers and platforms.
 
-Overview of changes made included.
-
-Update the "Testing" section in a testing.txt file to include your research on users and devices,
-and testing steps you took to ensure site quality.
 
 Notes on Firefox:
 No checkout link in the nav bar
